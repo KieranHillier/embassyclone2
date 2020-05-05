@@ -63,11 +63,16 @@
     justify-content: space-between;
     font-size: 35px;
     background-color:#fff;
-    height: 104px;
+    height: 68px;
 }
 
 .embassy-logo {
     padding-left: 13px;
+}
+
+.embassy-logo-small {
+    padding-left: 13px;
+    width: 133px;
 }
 
 .header-navigation ul, .header-navigation li {
@@ -103,7 +108,7 @@
     align-items: center;
 }
 
-.header-navigation ul li:hover .header-dropdown {
+.header-navigation ul li:hover .header-dropdown, .header-navigation ul li a:hover {
     color: #2ea948;
 }
 

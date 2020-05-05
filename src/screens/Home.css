@@ -1,5 +1,139 @@
+.landing-page-container {
+    height: 100vh;
+}
+
+.background-container {
+    height: 100vh;
+    display: flex;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .8s ease-in-out;
+    position: relative;
+}
+
+.side-arrow-left {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    margin-top: -38px;
+    transform: rotate(180deg);
+    width: 22px;
+    height: 76px;
+    left: 25px;
+    background: url('../images/slide-arrow.svg');
+    cursor: pointer;
+}
+
+.side-arrow-right {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    margin-top: -38px;
+    width: 22px;
+    height: 76px;
+    right: 25px;
+    background: url('../images/slide-arrow.svg');
+    cursor: pointer;
+}
+
+.image-selector-container {
+    position: absolute;
+    width: 72px;
+    z-index: 99999;
+    height: 50px;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-selector {
+    width: 9px;
+    height: 9px;
+    border: solid 1px #9b9b9b;
+    margin-right: 10px;
+    padding: 0;
+    border-radius: 7px;
+    transition: .8s ease-in-out;
+    cursor: pointer;
+}
+
+.landing-text {
+    position: absolute;
+    top: 50%;
+    margin-top: -78px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 50%;
+    right: 100px;
+    transition: .6s ease-in-out;
+    opacity: 1;
+}
+
+.landing-text h2 {
+    color: #4a4a4a;
+    font-size: 45px;
+    padding: 18px 0;
+    margin: 0;
+    font-weight: 700;
+    text-align: right;
+    transition: .4s ease-in-out;
+    opacity: 1;
+}
+
+.landing-text p {
+    font-size: 20px;
+    color: #4a4a4a;
+    text-align: right;
+    transition: .4s ease-in-out;
+    opacity: 1;
+}
+
+.landing-text-hide {
+    opacity: 0;
+}
+
+.landing-text-animate-enter {
+    opacity: 0.01;
+}
+
+.landing-text-animate-enter.landing-text-animate-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.landing-text-animate-leave {
+    opacity: 1;
+}
+
+.landing-text-animate-leave.landing-text-animate-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+} 
+
+.green-connector-container {
+    height: 150px;
+    width: 100%;
+    background: #2ea948;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.green-connector-container h2 {
+    font-weight: 500;
+    font-size: 45px;
+}
 
 
-.slide-container {
-    height: 969px;
+.white-connector-container {
+    height: 150px;
+    width: 100%;
+    background: #fff;
 }
