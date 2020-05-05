@@ -54,6 +54,7 @@ export class FixedHeader extends Component {
 
     this.state = {
       windowWidth: window.innerWidth,
+      scrollPosition: window.pageYOffset,
       hamburgerMenuOpen: false,
       mobileDropDownIdx: null,
     }
@@ -62,6 +63,10 @@ export class FixedHeader extends Component {
   componentDidMount() {
     window.addEventListener('resize', () => {
       this.setState({windowWidth: window.innerWidth})
+    });
+
+    window.addEventListener('scroll', () => {
+      this.setState({scrollPosition: window.pageYOffset})
     });
   }
 
@@ -79,17 +84,26 @@ export class FixedHeader extends Component {
     } else {
       this.setState({mobileDropDownIdx: index})
     }
-    console.log(this.state.mobileDropDownIdx)
+  }
+
+  getSecondaryHeaderStyle() {
+    if (this.state.windowWidth < this.mediaQuery.tablet) {
+      return 'secondary-header-mobile'
+    } else if (this.state.scrollPosition > 70) {
+      return 'secondary-header-scrolled'
+    } else {
+      return 'secondary-header'
+    }
   }
 
   render() {
-    const { mobileDropDownIdx } = this.state;
-    console.log(this.state)
+    const { mobileDropDownIdx, windowWidth } = this.state;
+    const { phone, tablet } = this.mediaQuery;
     return (
       <div>
         <div className={'entry-content'}>
           <div className={'fixed-header'}>
-            <div className={'primary-header'}>
+            <div className={windowWidth > phone ? 'primary-header' : 'hidden'}>
               <div className={'logo-container'} onClick={() => this.phoneClick()}>
                 <img src={PhoneLogo} className={'logo-container-svg'} alt='Phone Logo' />
                 <p className={'primary-header-text'}>1-800-334-3371</p>
@@ -99,7 +113,7 @@ export class FixedHeader extends Component {
                 <p className={'primary-header-text'}>info@embassyingredients.com</p>
               </div>
             </div>
-            <div className={this.state.windowWidth > this.mediaQuery.tablet ? 'secondary-header' : 'secondary-header-mobile'}>
+            <div className={this.getSecondaryHeaderStyle()}>
               <img src={EmbassyLogo} className='embassy-logo' alt='Embassy Logo' />
               {this.state.windowWidth > this.mediaQuery.tablet ?
                 <DesktopNav /> :
