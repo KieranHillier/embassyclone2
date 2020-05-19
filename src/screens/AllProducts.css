@@ -1,0 +1,20 @@
+.filter-container {
+    padding-top: 131px;
+    display: flex;
+    height: 60vh;
+}
+
+.filter-toggle-container {
+    background: #fff;
+    width: 300px;
+}
+
+.filter-search-container {
+    background: #f4f4f4;
+    flex: 1;
+}
+
+.filter-searchbar-container {
+    height: 180px;
+    background: #ebebeb;
+}

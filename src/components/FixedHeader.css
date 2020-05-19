@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Droid Sans';
+    src: local('Droid Sans'), url(../fonts/DroidSans.ttf) format('ttf');
+}
+
 .entry-content {
     height: 100%;
 }
@@ -170,7 +175,7 @@
 
 .mobile-nav-dropdown {
     position: absolute;
-    top: 104px;
+    top: 68px;
     left: 0;
     right: 0;
     display: flex;

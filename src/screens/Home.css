@@ -9,7 +9,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: .8s ease-in-out;
+    transition: .8s all ease;
     position: relative;
 }
 
@@ -82,8 +82,13 @@
     margin: 0;
     font-weight: 700;
     text-align: right;
-    transition: .4s ease-in-out;
+    transition: 300ms all ease;
     opacity: 1;
+    will-change: opacity;
+}
+
+.show {
+    opacity: 1 !important;
 }
 
 .landing-text p {

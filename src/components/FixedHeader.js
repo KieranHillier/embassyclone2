@@ -3,39 +3,35 @@ import PhoneLogo from '../images/call-ico.svg';
 import EmailLogo from '../images/msg-ico.svg';
 import EmbassyLogo from '../images/logo.png';
 import MobileMenu from '../images/mobile-menu.svg';
+import { Link } from 'react-router-dom';
 import './FixedHeader.css';
 
 const DesktopNav = () => (
   <nav className={'header-navigation'}>
     <ul>
-      <li><a className={'header-dropdown'} href="#">ABOUT</a>
+      <li><a className={'header-dropdown'} href="/#">ABOUT</a>
         <ul>
-          <li><a href="#">ABOUT THE COMPANY</a></li>
-          <li><a href="#">JOIN OUR TEAM</a></li>
+          <li><Link to="/about">What We Do</Link></li>
+          <li><Link to="/about">Our History</Link></li>
+          <li><Link to="/about">Leadership</Link></li>
         </ul>
       </li>
-      <li><a className={'header-dropdown'} href="#">PRODUCTS</a>
+      <li><a className={'header-dropdown'} href="/#">PRODUCTS</a>
         <ul>
-          <li><a href="#">FLAVORS</a></li>
-          <li><a href="#">BAKERY INGREDIENTS</a></li>
-          <li><a href="#">CLEAN LABEL</a></li>
-          <li><a href="#">GLUTEN FREE</a></li>
-          <li><a href="#">FUNCTIONAL INGREDIENTS</a></li>
-          <li><a href="#">PAN RELEASE AGENT</a></li>
-          <li><a href="#">BAKERY GLAZE</a></li>
-          <li><a href="#">PARTNER PRODUCTS</a></li>
+          <li><Link to="/all-products">All Products</Link></li>
+          <li><Link to="/about">Bakery Ingredients</Link></li>
+          <li><Link to="/about">Flavours</Link></li>
         </ul>
       </li>
-      <li><a className={'header-dropdown'} href="#">DISTRIBUTORS</a>
+      <li><a className={'header-dropdown'} href="/#">CUSTOMERS</a>
         <ul>
-          <li><a href="#">DISTRIBUTORS AND AGENTS</a></li>
-          <li><a href="#">CANADA</a></li>
-          <li><a href="#">UNITED STATES</a></li>
-          <li><a href="#">MEXICO</a></li>
-          <li><a href="#">MIDDLE EAST AND SOUTH-EAST ASIA</a></li>
+          <li><Link to="/about">Commercial Bakeries</Link></li>
+          <li><Link to="/about">Distributors</Link></li>
+          <li><Link to="/about">Food Service</Link></li>
+          <li><Link to="/about">Food Retailers</Link></li>
         </ul>
       </li>
-      <li><a href="#">CONTACT</a></li>
+      <li><a href="/#">CONTACT</a></li>
     </ul>
   </nav>
 );
@@ -110,9 +106,9 @@ export class FixedHeader extends Component {
           </div>
         </div>
         <div className={this.getSecondaryHeaderStyle()}>
-          <a href="#" className={'embassy-logo-container'}>
+          <Link to="/embassyclone2" className={'embassy-logo-container'}>
             <img src={EmbassyLogo} className={windowWidth > tablet ? 'embassy-logo' : 'embassy-logo-small'} alt='Embassy Logo' />
-          </a>
+          </Link>
           {this.state.windowWidth > this.mediaQuery.tablet ?
             <DesktopNav /> :
             <div className='mobile-nav'>
@@ -123,43 +119,41 @@ export class FixedHeader extends Component {
             <div className='mobile-nav-dropdown'>
               <div className='mobile-nav-dropdown-header'>
                 <div className='mobile-nav-dropdown-parent' onClick={() => this.mobileDropDown(1)}>
-                  <a className='mobile-nav-dropdown-parent-header' href="#">About</a>
+                  <a className='mobile-nav-dropdown-parent-header' href="/#">About</a>
                   <div className={mobileDropDownIdx === 1 ? 'mobile-nav-up-arrow' : 'mobile-nav-down-arrow'}> </div>
                 </div>
 
                 <div className={mobileDropDownIdx === 1 ? 'mobile-nav-dropdown-child' : 'hidden'}>
-                  <a href="#">ABOUT THE COMPANY</a>
-                  <a href="#">JOIN OUR TEAM</a>
+                  <Link to="/about">What We Do</Link>
+                  <Link to="/about">Our History</Link>
+                  <Link to="/about">Leadership</Link>
                 </div>
               </div>
               <div className='mobile-nav-dropdown-header'>
                 <div className='mobile-nav-dropdown-parent' onClick={() => this.mobileDropDown(2)}>
-                  <a className='mobile-nav-dropdown-parent-header'href="#">Products</a>
+                  <a className='mobile-nav-dropdown-parent-header'href="/#">Products</a>
                   <div className={mobileDropDownIdx === 2 ? 'mobile-nav-up-arrow' : 'mobile-nav-down-arrow'}> </div>
                 </div>
                 <div className={mobileDropDownIdx === 2 ? 'mobile-nav-dropdown-child' : 'hidden'}>
-                  <a href="#">Flavors</a>
-                  <a href="#">Bakery Ingredients</a>
-                  <a href="#">CLEAN LABEL</a>
-                  <a href="#">GLUTEN FREE</a>
-                  <a href="#">FUNCTIONAL INGREDIENTS</a>
-                  <a href="#">PAN RELEASE AGENT</a>
-                  <a href="#">BAKERY GLAZE</a>
-                  <a href="#">PARTNER PRODUCTS</a>
+                  <Link to="/all-products">All Products</Link>
+                  <Link to="/about">Bakery Ingredients</Link>
+                  <Link to="/about">Flavours</Link>
                 </div>
               </div>
               <div className='mobile-nav-dropdown-header'>
                 <div className='mobile-nav-dropdown-parent' onClick={() => this.mobileDropDown(3)}>
-                  <a className='mobile-nav-dropdown-parent-header' href="#">About</a>
+                  <a className='mobile-nav-dropdown-parent-header' href="/#">Customers</a>
                   <div className={mobileDropDownIdx === 3 ? 'mobile-nav-up-arrow' : 'mobile-nav-down-arrow'}> </div>
                 </div>
                 <div className={mobileDropDownIdx === 3 ? 'mobile-nav-dropdown-child' : 'hidden'}>
-                  <a href="#">ABOUT THE COMPANY</a>
-                  <a href="#">JOIN OUR TEAM</a>
+                  <Link to="/about">Commercial Bakeries</Link>
+                  <Link to="/about">Distributors</Link>
+                  <Link to="/about">Food Service</Link>
+                  <Link to="/about">Food Retailers</Link>
                 </div>
               </div>
               <div className='mobile-nav-dropdown-header-fixed'>
-                <a href="#">Contact</a>
+                <a href="/#">Contact</a>
               </div>
             </div>
           ) : null}
