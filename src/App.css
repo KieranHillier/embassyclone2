@@ -12,4 +12,7 @@ p {
   font-family: 'Droid Sans',Helvetica,Arial,Lucida,sans-serif;
 }
 
+h1, h2, h3 {
+  margin: 0;
+}
 
