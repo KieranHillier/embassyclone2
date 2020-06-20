@@ -174,60 +174,62 @@ export class AllProducts extends Component {
     return (
       <div className='filter-container'>
           <div className='filter-toggle-container'>
-            <p className='filter-title'>refine by</p>   
-            <div className='filter-toggle-dropdown'>
-              <span className='filter-checkbox' onClick={() => this._updateCheckbox('Bakery Mixes')}>
-                <input type="checkbox" id='checkbox1' checked={sideFilters.includes('Bakery Mixes')} />
-                <span></span>
-                <label htmlFor='checkbox1'>Bakery Mixes</label> 
-              </span>
-              <img classname='filter-dropdown-arrow' src={DropdownArrow} style={!bakeryDropDown ? {transform: 'translateY(-3px) rotate(180deg)'} : null} onClick={() => this.setState({bakeryDropDown: !bakeryDropDown})} />
-            </div>
-            {bakeryDropDown ? (
-              <div className='filter-toggle-dropdown-contents'>
-                <span className='filter-checkbox-child' onClick={() => this._updateCheckboxChild('Dessert')}>
-                  <input type="checkbox" id='checkbox2' checked={sideFiltersChild.includes('Dessert')} />
+            <div className='filter-toggle-fixed'>
+              <p className='filter-title'>refine by</p>   
+              <div className='filter-toggle-dropdown'>
+                <span className='filter-checkbox' onClick={() => this._updateCheckbox('Bakery Mixes')}>
+                  <input type="checkbox" id='checkbox1' checked={sideFilters.includes('Bakery Mixes')} />
                   <span></span>
-                  <label htmlFor='checkbox2'>Dessert</label> 
-                </span>  
-                <span className='filter-checkbox-child' onClick={() => this._updateCheckboxChild('Bread')}>
-                  <input type="checkbox" id='checkbox2' checked={sideFiltersChild.includes('Bread')} />
-                  <span></span>
-                  <label htmlFor='checkbox2'>Bread</label> 
-                </span>  
-                <span className='filter-checkbox-child' onClick={() => this._updateCheckboxChild('Pastry')}>
-                  <input type="checkbox" id='checkbox2' checked={sideFiltersChild.includes('Pastry')} />
-                  <span></span>
-                  <label htmlFor='checkbox2'>Pastry</label> 
-                </span>  
+                  <label htmlFor='checkbox1'>Bakery Mixes</label> 
+                </span>
+                <img classname='filter-dropdown-arrow' src={DropdownArrow} style={!bakeryDropDown ? {transform: 'translateY(-3px) rotate(180deg)'} : null} onClick={() => this.setState({bakeryDropDown: !bakeryDropDown})} />
               </div>
-            ) : null}
-            <span className='filter-checkbox' onClick={() => this._updateCheckbox('Functional Ingredients')}>
-              <input type="checkbox" id='checkbox2' checked={sideFilters.includes('Functional Ingredients')} />
-              <span></span>
-              <label htmlFor='checkbox2'>Functional Ingredients</label> 
-            </span>
-            <span className='filter-checkbox' onClick={() => this._updateCheckbox('Pan Release')}>
-              <input type="checkbox" id='checkbox3' checked={sideFilters.includes('Pan Release')} />
-              <span></span>
-              <label htmlFor='checkbox3'>Pan Release</label> 
-            </span>
-            <span className='filter-checkbox' onClick={() => this._updateCheckbox('Glaze')}>
-              <input type="checkbox" id='checkbox4' checked={sideFilters.includes('Glaze')} />
-              <span></span>
-              <label htmlFor='checkbox4'>Glaze</label> 
-            </span>
-            <span className='filter-checkbox' onClick={() => this._updateCheckbox('Flavors')}>
-              <input type="checkbox" id='checkbox5' checked={sideFilters.includes('Flavors')} />
-              <span></span>
-              <label htmlFor='checkbox5'>Flavors</label> 
-            </span>
-            <span className='filter-checkbox' onClick={() => this._updateCheckbox('Colors')}>
-              <input type="checkbox" id='checkbox6' checked={sideFilters.includes('Colors')} />
-              <span></span>
-              <label htmlFor='checkbox6'>Colors</label> 
-            </span>
-          </div>
+              {bakeryDropDown ? (
+                <div className='filter-toggle-dropdown-contents'>
+                  <span className='filter-checkbox-child' onClick={() => this._updateCheckboxChild('Dessert')}>
+                    <input type="checkbox" id='checkbox2' checked={sideFiltersChild.includes('Dessert')} />
+                    <span></span>
+                    <label htmlFor='checkbox2'>Dessert</label> 
+                  </span>  
+                  <span className='filter-checkbox-child' onClick={() => this._updateCheckboxChild('Bread')}>
+                    <input type="checkbox" id='checkbox2' checked={sideFiltersChild.includes('Bread')} />
+                    <span></span>
+                    <label htmlFor='checkbox2'>Bread</label> 
+                  </span>  
+                  <span className='filter-checkbox-child' onClick={() => this._updateCheckboxChild('Pastry')}>
+                    <input type="checkbox" id='checkbox2' checked={sideFiltersChild.includes('Pastry')} />
+                    <span></span>
+                    <label htmlFor='checkbox2'>Pastry</label> 
+                  </span>  
+                </div>
+              ) : null}
+              <span className='filter-checkbox' onClick={() => this._updateCheckbox('Functional Ingredients')}>
+                <input type="checkbox" id='checkbox2' checked={sideFilters.includes('Functional Ingredients')} />
+                <span></span>
+                <label htmlFor='checkbox2'>Functional Ingredients</label> 
+              </span>
+              <span className='filter-checkbox' onClick={() => this._updateCheckbox('Pan Release')}>
+                <input type="checkbox" id='checkbox3' checked={sideFilters.includes('Pan Release')} />
+                <span></span>
+                <label htmlFor='checkbox3'>Pan Release</label> 
+              </span>
+              <span className='filter-checkbox' onClick={() => this._updateCheckbox('Glaze')}>
+                <input type="checkbox" id='checkbox4' checked={sideFilters.includes('Glaze')} />
+                <span></span>
+                <label htmlFor='checkbox4'>Glaze</label> 
+              </span>
+              <span className='filter-checkbox' onClick={() => this._updateCheckbox('Flavors')}>
+                <input type="checkbox" id='checkbox5' checked={sideFilters.includes('Flavors')} />
+                <span></span>
+                <label htmlFor='checkbox5'>Flavors</label> 
+              </span>
+              <span className='filter-checkbox' onClick={() => this._updateCheckbox('Colors')}>
+                <input type="checkbox" id='checkbox6' checked={sideFilters.includes('Colors')} />
+                <span></span>
+                <label htmlFor='checkbox6'>Colors</label> 
+              </span>
+            </div>
+          </div>  
           <div className='filter-search-container'>
               <div className='filter-searchbar-container'>
                 <h1 className='filter-searchbar-title'>Search for an Embassy Ingredients Product</h1>

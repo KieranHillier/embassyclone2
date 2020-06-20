@@ -1,7 +1,4 @@
 .product-card-container {
-    height: 460px;
-    width: 330px;
-    background: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 2px;
@@ -25,6 +22,12 @@
 .product-card-img-container {
     height: 300px;
     background: grey;
+}
+
+.product-card-img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .product-card-name {

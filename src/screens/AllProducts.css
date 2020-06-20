@@ -9,8 +9,13 @@
   width: 235px;
   min-width: 235px;
   display: flex;
-  flex-direction: column;
   padding: 16px 27px 0;
+}
+
+.filter-toggle-fixed {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
 }
 
 .filter-toggle-dropdown {
@@ -88,16 +93,16 @@ input[type="checkbox"] {
 }
 
 .filter-search-results {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+  flex: 1 1;
   margin-right: 30px;
+  margin-top: 20px;
   background: #f9f9f9;
   border-radius: 3px;
 }
 
 .filter-searchbar-container {
-  height: 115px;
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -110,8 +115,8 @@ input[type="checkbox"] {
 }
 
 .filter-searchbar {
-  flex: 1;
   max-height: 35px;
+  height: 35px;
   border-radius: 6px;
   border: 1px solid black;
   margin: 13px 30px 0 0;
