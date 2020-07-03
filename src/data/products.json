@@ -1,7 +1,6 @@
 [
     {
         "title": "Cream & Pudding Cakes",
-        "image": "chocolate",
         "category1": "Bakery Mixes",
         "category2": "Dessert",
         "special": "",
@@ -11,7 +10,6 @@
     },
     {
         "title": "Sweet Dough",
-        "image": "chocolate",
         "category1": "Bakery Mixes",
         "category2": "Bread",
         "special": "",
@@ -21,7 +19,6 @@
     },
     {
         "title": "Custard",
-        "image": "chocolate",
         "category1": "Bakery Mixes",
         "category2": "Pastry",
         "special": "",
@@ -30,8 +27,7 @@
         "keywords": "custard, bakery, mixes, pastry"
     },
     {
-        "title": "carrot muffin",
-        "image": "chocolate",
+        "title": "Carrot Muffin",
         "category1": "muffin",
         "category2": "",
         "special": "",

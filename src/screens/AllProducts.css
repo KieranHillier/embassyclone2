@@ -1,21 +1,20 @@
 .filter-container {
-  padding-top: 167px;
   display: flex;
-
+  flex-direction: column;
+  padding: 100px 27px 0 27px;
 }
 
 .filter-toggle-container {
   background: #fff;
-  width: 235px;
-  min-width: 235px;
   display: flex;
-  padding: 16px 27px 0;
 }
 
 .filter-toggle-fixed {
   flex-direction: column;
   display: flex;
   width: 100%;
+  color: #000000;
+  height: fit-content;
 }
 
 .filter-toggle-dropdown {
@@ -27,7 +26,26 @@
 .filter-title {
   text-transform: uppercase;
   font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.filter-clear {
   padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.filter-clear p {
+  text-transform: uppercase;
+  background: #bf2525;
+  border-radius: 3px;
+  padding: 2px 3px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.filter-title-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .filter-dropdown-arrow {
@@ -94,12 +112,11 @@ input[type="checkbox"] {
 
 .filter-search-results {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill,minmax(280px, 1fr));
+  grid-gap: 15px;
   flex: 1 1;
-  margin-right: 30px;
-  margin-top: 20px;
-  background: #f9f9f9;
   border-radius: 3px;
+  padding: 10px 0 25px 0;
 }
 
 .filter-searchbar-container {
@@ -119,7 +136,7 @@ input[type="checkbox"] {
   height: 35px;
   border-radius: 6px;
   border: 1px solid black;
-  margin: 13px 30px 0 0;
+  margin: 10px 0;
   padding-left: 11px;
   font-size: 18px;
 }
@@ -128,3 +145,68 @@ input[type="checkbox"] {
   outline: none;
 }
 
+.modal-container {
+  height: 100%;
+  /* width: 100vw; */
+  width: 100%;
+  position: fixed;
+  background: #0000009c;
+  z-index: 99999;
+}
+
+.modal {
+  position: fixed;
+  width: 430px;
+  height: 433px;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close-modal {
+  width: 10px;
+  height: 10px;
+  background: black;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .filter-container {
+    padding: 150px 27px 0 27px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .filter-container {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .filter-searchbar {
+    font-size: 18px;
+  }
+
+  .filter-toggle-container {
+    width: 235px;
+    min-width: 235px;
+    padding-right: 27px;
+    padding-top: 10px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}

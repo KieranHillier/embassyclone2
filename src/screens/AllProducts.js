@@ -2,19 +2,38 @@ import React, { Component } from 'react';
 import './AllProducts.css';
 import { GlobalContext } from '../context/GlobalState';
 import ProductsData from '../data/products.json';
-import DropdownArrow from '../images/dropdownArrow.svg';
 import { ProductCard } from '../components/ProductCard'
+import { ProductFilter } from '../components/ProductFilter'
 
 export class AllProducts extends Component {
   static contextType = GlobalContext
 
-  state = {
-    results: [],
-    query: "",
-    queryStatus: "initial",
-    sideFilters: [],
-    bakeryDropDown: false,
-    sideFiltersChild: [],
+  constructor() {
+    super()
+    this.mediaQuery = {
+      desktop: 992,
+      tablet: 800,
+      phone: 576,
+    }
+
+    this.state = {
+      results: [],
+      sideFilters: [],
+      sideFiltersChild: [],
+      query: "",
+      queryStatus: "initial",
+      bakeryDropDown: false,
+      flavorDropDown: false,
+      modalOpen: false,
+      modalDescription: null,
+      modalFeatures: null,
+    }
+
+    this._openModal = this._openModal.bind(this)
+    this._removeFilters = this._removeFilters.bind(this)
+    this._updateCheckbox = this._updateCheckbox.bind(this)
+    this._dropdownToggle = this._dropdownToggle.bind(this)
+    this._updateCheckboxChild = this._updateCheckboxChild.bind(this)
   }
 
   _findResults = () => {
@@ -31,72 +50,49 @@ export class AllProducts extends Component {
     //check if query is blank
     if (checkQuery) {
       matchingResults = matchingResults.filter(ele => ele.keywords.includes(query))
-      console.log('Performed query Check', matchingResults)
+      //console.log('Performed query Check', matchingResults)
     } 
 
     //check
     if (checkFilter) {
       matchingResults = matchingResults.filter(ele => sideFilters.includes(ele.category1))
-      console.log('Performed side filter Check', matchingResults)
+      //console.log('Performed side filter Check', matchingResults)
     }
 
     //check
     if (checkFilterChild) {
       matchingResults = matchingResults.filter(ele => sideFiltersChild.includes(ele.category2))
-      console.log('Performed side filter child Check', matchingResults)
+      //console.log('Performed side filter child Check', matchingResults)
     }
 
-    // if (sideFiltersChild.length > 0) {
-    //   ProductsData.forEach(element => {
-    //     const keyWords = element.keywords;
-    //     if (keyWords.includes(query) && sideFilters.includes(element.category2)) {
-    //       matchingResults.push(element);
-    //     }
-    //   });
-    // } else if (sideFilters.length > 0) {
-    //   //find results that match the element's keywords & keyword
-    //   ProductsData.forEach(element => {
-    //     const keyWords = element.keywords;
-    //     if (keyWords.includes(query) && sideFilters.includes(element.category1)) {
-    //       matchingResults.push(element);
-    //     }
-    //   });
-    // } else {
-    //   //find results that match the element's keywords
-    //   ProductsData.forEach(element => {
-    //     const keyWords = element.keywords;
-    //     if (keyWords.includes(query)) {
-    //       matchingResults.push(element);
-    //     }
-    //   });
-    // }
-
-      //check if search produced any results. if successful store results in state. 
-      //if unsuccessful store "failed" in state
+    //check if search produced any results. if successful store results in state. 
+    //if unsuccessful store "failed" in state
     matchingResults.length === 0
       ? this.setState({ results: [], queryStatus: "failed" })
       : this.setState({ results: matchingResults, queryStatus: "filtered" });
   };
 
-  _handleKeyPress = e => {
-    //check if user presses "Enter" key while focused on input
-    //if so, search for results
-    if (e.key === "Enter") {
-      this._findResults();
-    }
-  };
+  // _handleKeyPress = e => {
+  //   //check if user presses "Enter" key while focused on input
+  //   //if so, search for results
+  //     console.log('changed')
+  //     this._findResults();
+
+  // };
 
   _handleInputChange = e => {
     //track value of input inside 'query' state
     this.setState({ query: e.target.value });
     const { sideFilters, sideFiltersChild } = this.state
-
+    console.log('changed')
     //if input is blank, remove all matches
     if (e.target.value === "" && sideFilters.length === 0 && sideFiltersChild.length === 0) {
       this.setState({
         results: [],
         queryStatus: "initial"
       });
+    } else {
+      this._findResults()
     }
   };
 
@@ -129,19 +125,22 @@ export class AllProducts extends Component {
     
     if (queryStatus === "initial") {
       return ProductsData.map((element, idx) => (
-        <ProductCard id={idx} element={element} />
+        <ProductCard id={idx} element={element} openModal={this._openModal} />
       ));
     } else if (results.length > 0) {
       //loop through "results" and render all results
       return results.map((element, idx) => (
-        <ProductCard id={idx} element={element} />
+        <ProductCard id={idx} element={element} openModal={this._openModal} />
       ));
     }
   };
 
   _updateCheckbox(val) {
-    const { sideFilters } = this.state
+    const { sideFilters, sideFiltersChild, bakeryDropDown, flavorDropDown } = this.state
 
+
+
+    //toggle the targeted checkbox
     if (!sideFilters.includes(val)) {
       this.setState({sideFilters: [...sideFilters, val]}, this._findResults)
     } else {
@@ -169,86 +168,122 @@ export class AllProducts extends Component {
     }
   }
 
+  _removeFilters() {
+    this.setState({
+      sideFilters: [],
+      sideFiltersChild: [],
+      flavorDropDown: false,
+      bakeryDropDown: false
+    }, this._findResults)
+  }
+
+  _dropdownToggle(category, name) {
+    const { bakeryDropDown, sideFiltersChild, flavorDropDown, sideFilters} = this.state
+    this.setState({ [category]: !this.state[category] })
+
+    //check if Bakery Mixes dropdown needs to reset
+    if (name === 'Bakery Mixes' && bakeryDropDown) {
+      const arr = [...sideFiltersChild]
+      const bakeryChildren = ['Dessert', 'Bread', 'Pastry']
+      const filteredResults = arr.filter(ele => !bakeryChildren.includes(ele))
+      this.setState({ 
+        bakeryDropDown: !bakeryDropDown,
+        sideFiltersChild: filteredResults
+      })
+    }
+
+    //check if Flavors dropdown needs to reset
+    if (name === 'Flavors' && flavorDropDown) {
+      const arr = [...sideFiltersChild]
+      const flavorChildren = ['Sweet', 'Spice', 'Nut', 'Fruit', 'Dairy', 'Alcohol', 'Savoury', 'Functional']
+      const filteredResults = arr.filter(ele => !flavorChildren.includes(ele))
+      this.setState({ 
+        flavorDropDown: !flavorDropDown,
+        sideFiltersChild: filteredResults
+      })
+    }
+
+    if (!sideFilters.includes('Bakery Mixes') || !sideFilters.includes('Flavors')) {
+      this._updateCheckbox(name)
+    }
+  }
+
+  _closeModal() {
+    this.setState({ 
+      modalOpen: false,
+      modalDescription: null,
+      modalFeatures: null
+    })
+    document.body.style.overflow = "unset"
+  }
+
+  _openModal(ele) {
+    console.log(ele)
+    document.body.style.overflow = "hidden"
+    this.setState({
+      modalOpen: true,
+      modalDescription: ele.description,
+      modalFeatures: ele.features
+    })
+  }
+ 
   render() {
-    const { results, sideFilters, sideFiltersChild, bakeryDropDown } = this.state
+    const { modalDescription, modalFeatures, modalOpen } = this.state
+    const { dimensions, mediaQuery } = this.context
     return (
-      <div className='filter-container'>
-          <div className='filter-toggle-container'>
-            <div className='filter-toggle-fixed'>
-              <p className='filter-title'>refine by</p>   
-              <div className='filter-toggle-dropdown'>
-                <span className='filter-checkbox' onClick={() => this._updateCheckbox('Bakery Mixes')}>
-                  <input type="checkbox" id='checkbox1' checked={sideFilters.includes('Bakery Mixes')} />
-                  <span></span>
-                  <label htmlFor='checkbox1'>Bakery Mixes</label> 
-                </span>
-                <img classname='filter-dropdown-arrow' src={DropdownArrow} style={!bakeryDropDown ? {transform: 'translateY(-3px) rotate(180deg)'} : null} onClick={() => this.setState({bakeryDropDown: !bakeryDropDown})} />
-              </div>
-              {bakeryDropDown ? (
-                <div className='filter-toggle-dropdown-contents'>
-                  <span className='filter-checkbox-child' onClick={() => this._updateCheckboxChild('Dessert')}>
-                    <input type="checkbox" id='checkbox2' checked={sideFiltersChild.includes('Dessert')} />
-                    <span></span>
-                    <label htmlFor='checkbox2'>Dessert</label> 
-                  </span>  
-                  <span className='filter-checkbox-child' onClick={() => this._updateCheckboxChild('Bread')}>
-                    <input type="checkbox" id='checkbox2' checked={sideFiltersChild.includes('Bread')} />
-                    <span></span>
-                    <label htmlFor='checkbox2'>Bread</label> 
-                  </span>  
-                  <span className='filter-checkbox-child' onClick={() => this._updateCheckboxChild('Pastry')}>
-                    <input type="checkbox" id='checkbox2' checked={sideFiltersChild.includes('Pastry')} />
-                    <span></span>
-                    <label htmlFor='checkbox2'>Pastry</label> 
-                  </span>  
-                </div>
-              ) : null}
-              <span className='filter-checkbox' onClick={() => this._updateCheckbox('Functional Ingredients')}>
-                <input type="checkbox" id='checkbox2' checked={sideFilters.includes('Functional Ingredients')} />
-                <span></span>
-                <label htmlFor='checkbox2'>Functional Ingredients</label> 
-              </span>
-              <span className='filter-checkbox' onClick={() => this._updateCheckbox('Pan Release')}>
-                <input type="checkbox" id='checkbox3' checked={sideFilters.includes('Pan Release')} />
-                <span></span>
-                <label htmlFor='checkbox3'>Pan Release</label> 
-              </span>
-              <span className='filter-checkbox' onClick={() => this._updateCheckbox('Glaze')}>
-                <input type="checkbox" id='checkbox4' checked={sideFilters.includes('Glaze')} />
-                <span></span>
-                <label htmlFor='checkbox4'>Glaze</label> 
-              </span>
-              <span className='filter-checkbox' onClick={() => this._updateCheckbox('Flavors')}>
-                <input type="checkbox" id='checkbox5' checked={sideFilters.includes('Flavors')} />
-                <span></span>
-                <label htmlFor='checkbox5'>Flavors</label> 
-              </span>
-              <span className='filter-checkbox' onClick={() => this._updateCheckbox('Colors')}>
-                <input type="checkbox" id='checkbox6' checked={sideFilters.includes('Colors')} />
-                <span></span>
-                <label htmlFor='checkbox6'>Colors</label> 
-              </span>
+      <>
+        {modalOpen ? (
+            <div className='modal-container' onClick={() => this._closeModal()}>
+            <div className='modal'>
+              <div className='close-modal' onClick={() => this._closeModal()}></div>
+              <h2>Description</h2>
+              <p>{modalDescription}</p>
+              <h2>Features</h2>
+              <p>{modalFeatures}</p>
             </div>
+          </div>
+        ) : null}
+        <div className='filter-container'>
+          <div className='filter-toggle-container'>
+            {dimensions.width >= mediaQuery.desktop ? (
+              <ProductFilter 
+                removeFilters = {this._removeFilters}
+                dropdownToggle = {this._dropdownToggle}
+                updateCheckboxChild = {this._updateCheckboxChild}
+                updateCheckbox = {this._updateCheckbox}
+                parentState = {this.state}
+              />
+            ) : null}
           </div>  
           <div className='filter-search-container'>
-              <div className='filter-searchbar-container'>
-                <h1 className='filter-searchbar-title'>Search for an Embassy Ingredients Product</h1>
-                <input
-                  onKeyPress={this._handleKeyPress}
-                  onChange={this._handleInputChange}
-                  className="filter-searchbar"
-                  type="text"
-                  ref="searchValue"
-                  placeholder="Search... (ex: Brownie)"
-                  name="search"
-                  autoComplete="off"
+            <div className='filter-searchbar-container'>
+              <h1 className='filter-searchbar-title'>Search for an Embassy Ingredients Product</h1>
+              <input
+                onKeyPress={this._handleKeyPress}
+                onChange={this._handleInputChange}
+                className="filter-searchbar"
+                type="text"
+                ref="searchValue"
+                placeholder="Enter a product name"
+                name="search"
+                autoComplete="off"
+              />
+              {dimensions.width < mediaQuery.desktop ? (
+                <ProductFilter 
+                  removeFilters = {this._removeFilters}
+                  dropdownToggle = {this._dropdownToggle}
+                  updateCheckboxChild = {this._updateCheckboxChild}
+                  updateCheckbox = {this._updateCheckbox}
+                  parentState = {this.state}
                 />
-              </div>
-              <div className='filter-search-results'>
-                {this._renderResults()}
-              </div>
+              ) : null}
+            </div>
+            <div className='filter-search-results'>
+              {this._renderResults()}
+            </div>
           </div>
-      </div>
+        </div>
+      </>
     )
   }
 }
