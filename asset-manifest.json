@@ -1,30 +1,32 @@
 {
   "files": {
-    "main.css": "/embassyclone2/static/css/main.395fb771.chunk.css",
-    "main.js": "/embassyclone2/static/js/main.9ff492fa.chunk.js",
-    "main.js.map": "/embassyclone2/static/js/main.9ff492fa.chunk.js.map",
+    "main.css": "/embassyclone2/static/css/main.5202b8a4.chunk.css",
+    "main.js": "/embassyclone2/static/js/main.bced15b4.chunk.js",
+    "main.js.map": "/embassyclone2/static/js/main.bced15b4.chunk.js.map",
     "runtime-main.js": "/embassyclone2/static/js/runtime-main.034cb205.js",
     "runtime-main.js.map": "/embassyclone2/static/js/runtime-main.034cb205.js.map",
-    "static/js/2.78b9f19f.chunk.js": "/embassyclone2/static/js/2.78b9f19f.chunk.js",
-    "static/js/2.78b9f19f.chunk.js.map": "/embassyclone2/static/js/2.78b9f19f.chunk.js.map",
+    "static/js/2.95f8f1f4.chunk.js": "/embassyclone2/static/js/2.95f8f1f4.chunk.js",
+    "static/js/2.95f8f1f4.chunk.js.map": "/embassyclone2/static/js/2.95f8f1f4.chunk.js.map",
     "index.html": "/embassyclone2/index.html",
-    "precache-manifest.76bad0875772f2be039d00747f61a055.js": "/embassyclone2/precache-manifest.76bad0875772f2be039d00747f61a055.js",
+    "precache-manifest.3cb257f9b7526049c6cf7e79f78ca8ab.js": "/embassyclone2/precache-manifest.3cb257f9b7526049c6cf7e79f78ca8ab.js",
     "service-worker.js": "/embassyclone2/service-worker.js",
-    "static/css/main.395fb771.chunk.css.map": "/embassyclone2/static/css/main.395fb771.chunk.css.map",
-    "static/js/2.78b9f19f.chunk.js.LICENSE.txt": "/embassyclone2/static/js/2.78b9f19f.chunk.js.LICENSE.txt",
+    "static/css/main.5202b8a4.chunk.css.map": "/embassyclone2/static/css/main.5202b8a4.chunk.css.map",
+    "static/js/2.95f8f1f4.chunk.js.LICENSE.txt": "/embassyclone2/static/js/2.95f8f1f4.chunk.js.LICENSE.txt",
+    "static/media/Chocolate.png": "/embassyclone2/static/media/Chocolate.67ee5619.png",
     "static/media/FixedHeader.css": "/embassyclone2/static/media/DroidSans.9e94decf.ttf",
     "static/media/call-ico.svg": "/embassyclone2/static/media/call-ico.299eb7ae.svg",
+    "static/media/dropdownArrow.svg": "/embassyclone2/static/media/dropdownArrow.4ce9d606.svg",
     "static/media/home-banner-1.jpg": "/embassyclone2/static/media/home-banner-1.2e152f8f.jpg",
     "static/media/home-banner-2.jpg": "/embassyclone2/static/media/home-banner-2.5a66856f.jpg",
     "static/media/home-banner-3.jpg": "/embassyclone2/static/media/home-banner-3.b012b4a6.jpg",
-    "static/media/mobile-menu.svg": "/embassyclone2/static/media/mobile-menu.7577b95b.svg",
+    "static/media/mobile-menu.svg": "/embassyclone2/static/media/mobile-menu.aba639b3.svg",
     "static/media/msg-ico.svg": "/embassyclone2/static/media/msg-ico.00f61729.svg",
-    "static/media/Home.css": "/embassyclone2/static/media/slide-arrow.3586999d.svg"
+    "static/media/Home.css": "/embassyclone2/static/media/slide-arrow.233d5d1d.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.034cb205.js",
-    "static/js/2.78b9f19f.chunk.js",
-    "static/css/main.395fb771.chunk.css",
-    "static/js/main.9ff492fa.chunk.js"
+    "static/js/2.95f8f1f4.chunk.js",
+    "static/css/main.5202b8a4.chunk.css",
+    "static/js/main.bced15b4.chunk.js"
   ]
 }
