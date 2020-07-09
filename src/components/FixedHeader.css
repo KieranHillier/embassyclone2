@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'Droid Sans';
-    src: local('Droid Sans'), url(../fonts/DroidSans.ttf) format('ttf');
-}
-
 .entry-content {
     height: 100%;
 }
@@ -11,8 +6,6 @@
     position: fixed;
     z-index: 9999;
     width: 100%;
-    font-family: 'Droid Sans',Helvetica,Arial,Lucida,sans-serif;
-    color: #4a4a4a;
 }
 
 .logo-container {
@@ -43,10 +36,11 @@
     align-items: center;
     position: relative;
     justify-content: space-between;
-    font-size: 35px;
+    /* font-size: 35px; */
     background-color: rgba(255, 255, 255, 0);
-    height: 104px;
+    height: 131px;
     transition: .4s ease-in-out;
+    padding: 0 27px;
 }
 
 .secondary-header-scrolled {
@@ -54,11 +48,12 @@
     align-items: center;
     position: relative;
     justify-content: space-between;
-    font-size: 35px;
+    /* font-size: 35px; */
     background-color: #fff;
     height: 84px;  
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: background-color .4s,color .4s,transform .4s,opacity .4s ease-in-out;
+    padding: 0 27px;
 }
 
 .secondary-header-mobile {
@@ -66,17 +61,16 @@
     align-items: center;
     position: relative;
     justify-content: space-between;
-    font-size: 35px;
+    /* font-size: 35px; */
     background-color:#fff;
     height: 68px;
+    padding: 0 27px;
 }
 
 .embassy-logo {
-    padding-left: 13px;
 }
 
 .embassy-logo-small {
-    padding-left: 13px;
     width: 133px;
 }
 
@@ -106,11 +100,15 @@
     display: block;
     text-decoration: none;
     padding: 22px 28px 22px 0;
-    color: #4a4a4a;
-    font-family: 'Droid Sans',Helvetica,Arial,Lucida,sans-serif;
+    color: #000;
+    /* font-family: 'Droid Sans',Helvetica,Arial,Lucida,sans-serif; */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header-navigation-last {
+    padding: 22px 0 22px !important;
 }
 
 .header-navigation ul li:hover .header-dropdown, .header-navigation ul li a:hover {
@@ -121,13 +119,13 @@
     border-color: #2ea948;
 }
 
-.header-navigation .header-dropdown:after {
-    /* content: "";
+/* .header-navigation .header-dropdown:after {
+    content: "";
     background: url(//embassyingredients.com/wp-content/themes/Divi-Space-Child-1/images/menu-arrow.svg) no-repeat;
     width: 12px;
     height: 7px;
     display: inline-block;
-    margin: 5px; */
+    margin: 5px;
     content: " ";
     border: solid #4a4a4a;
     border-width: 0 3px 3px 0;
@@ -137,12 +135,13 @@
     -ms-transform: translateY(-3px) rotate(45deg);
     transform: translateY(-3px) rotate(45deg);
     margin: 5px;
-}
+} */
 
 .header-navigation ul li ul {
     display: none;
     position: absolute;
     background-color: #fff;
+    top: 73px;
     z-index: 9999;
     width: 240px;
     border-top: 3px solid #2ea948;

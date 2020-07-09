@@ -1,0 +1,114 @@
+.history-container {
+  display: flex;
+  flex-direction: column;
+  padding: 95px 27px 0 27px;
+}
+
+.history-header-image {
+  
+  background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url('../images/historyHeader.png');
+  height: 146px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.history-content-container {
+  margin: 176px 0 25px;
+  /* background: url('../images/Timeline.png'); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+}
+
+.hisotry-content-container-title {
+  text-align: center;
+  padding: 20px 0 45px;
+  color: #2ea948;
+}
+
+.history-content-container h1 {
+  line-height: 30px;
+}
+
+.history-content-section {
+  flex: 1;
+  width: 100%;
+  display: flex;
+}
+
+.history-content-section-left {
+  flex: 5;
+  text-align: right;
+  background-repeat: no-repeat !important;
+  background-size: 120px !important;
+  background-position-x: right !important;
+}
+
+.history-content-section-left p{
+  width: 80%;
+  float: right;
+  padding-top: 10px;
+}
+
+.history-content-section-right p {
+  width: 80%;
+  padding-top: 10px;
+}
+
+.history-content-section-middle {
+  flex: 1;
+  background: url('../images/timeline-mini.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.history-content-section-middle-last {
+  background: url('../images/timeline-circle.png');
+  flex: 1;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 15px;
+}
+
+.history-content-section-right {
+  flex: 5;
+  background-repeat: no-repeat !important;
+  background-size: 120px !important;
+  background-position-x: left !important;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .history-container {
+    padding: 118px 27px 0 27px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}

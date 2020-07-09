@@ -1,0 +1,276 @@
+.career-container {
+  display: flex;
+  flex-direction: column;
+  padding: 68px 27px 0 27px;
+}
+
+.career-header-image {
+  background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('../images/career-header.png');
+  width: 100%;
+  height: 230px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.career-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.career-header-btn {
+  background: #2ea948;
+  padding: 9px 45px;
+  border-radius: 27px;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.career-header-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.career-middle-container {
+  padding: 260px 0 25px;
+  text-align: center;
+  color: #000;
+}
+
+.career-values-pretitle {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #2ea948;
+  font-size: 23px;
+}
+
+.career-values-title {
+  color: #2ea948;
+  font-weight: 900;
+  margin-top: 5px;
+  font-size: 28px;
+}
+
+.career-values-container {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  margin: 27px 0;
+}
+
+.career-values-item-overlay {
+  position: absolute;
+  /* top: 0; */
+  /* right: 0; */
+  width: 100%;
+  bottom: 0;
+  top: 0;
+  background: #0000005e;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.career-values-item-text {
+  color: #fff;
+  width: 75%;
+  max-width: 600px;
+}
+
+.career-values-item-text h3 {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.career-values-item-text p {
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.career-values-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.career-values-top-child1 {
+  flex: 1;
+  background: url('../images/career-smore.png');
+  margin: 0px 12px 12px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.career-values-bottom-child1 {
+  flex: 1;
+  background: url('../images/career-oreo.png');
+  margin: 12px 12px 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.career-values-right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.career-values-top-child2 {
+  flex: 2;
+  display: flex;
+}
+
+.career-values-top-child2-left {
+  flex: 1;
+  background: url('../images/career-passion-fruit.png');
+  margin: 0 12px 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+.career-values-bottom-child2-right {
+  flex: 1;
+  background: url('../images/career-donut.png');
+  margin: 0 0 12px 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+.career-values-bottom-child2 {
+  flex: 1;
+  background: url('../images/career-cinamon.png');
+  margin: 12px 0 0 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* careers min */
+.career-values-container-min {
+  display: flex;
+  flex-direction: column;
+  height: 1000px;
+  margin: 27px 0;
+}
+
+.career-values-item {
+  flex: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+  border-radius: 2px;
+  position: relative;
+}
+
+.career-values-item:nth-of-type(1) {
+  background-image: url('../images/career-smore.png');
+}
+
+.career-values-item:nth-of-type(2) {
+  background-image: url('../images/career-oreo.png');
+}
+
+.career-values-item:nth-of-type(3) {
+  background-image: url('../images/career-passion-fruit.png');
+}
+
+.career-values-item:nth-of-type(4) {
+  background-image: url('../images/career-donut.png');
+}
+
+.career-values-item:nth-of-type(5) {
+  background-image: url('../images/career-cinamon.png');
+}
+
+.career-perks-icons {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(110px, 1fr));
+  grid-gap: 33px 7px;
+  margin: 27px 0;
+}
+
+.career-perk-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'AirbnbBook';
+  font-size: 14px;
+}
+
+.career-icon {
+  background-image: url('../images/career-pig.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 45px;
+}
+
+.career-reference-cards {
+  margin: 27px 0;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .career-container {
+    padding: 118px 27px 0 27px;
+  }
+  .career-icon {
+    width: 65px;
+    height: 65px;
+  }
+  .career-perk-icon {
+    font-size: 20px;
+  }
+  .career-values-item-text h3 {
+    font-size: 28px;
+  }
+  .career-values-item-text p {
+    font-size: 21px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .career-perks-icons {
+    grid-template-columns: repeat(3,minmax(280px, 1fr));
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .career-perks-icons {
+    grid-template-columns: repeat(4,minmax(280px, 1fr));
+  }
+}

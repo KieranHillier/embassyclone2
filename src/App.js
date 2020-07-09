@@ -6,6 +6,9 @@ import { FixedHeader } from './components/FixedHeader';
 import { Footer } from './components/Footer';
 import { GlobalProvider } from './context/GlobalState';
 import './App.css';
+import Leadership from './screens/Leadership';
+import History from './screens/History';
+import Careers from './screens/Careers';
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
       <Switch>
         <Route path='/embassyclone2' component={Home} exact />
         <Route path='/all-products' component={AllProducts} />
+        <Route path='/leadership' component={Leadership} />
+        <Route path='/history' component={History} />
+        <Route path='/careers' component={Careers} />
       </Switch>
       <Footer />
     </GlobalProvider>

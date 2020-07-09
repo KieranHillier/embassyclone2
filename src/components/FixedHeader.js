@@ -11,9 +11,9 @@ const DesktopNav = () => (
     <ul>
       <li><a className={'header-dropdown'} href="/#">ABOUT</a>
         <ul>
-          <li><Link to="/about">What We Do</Link></li>
-          <li><Link to="/about">Our History</Link></li>
-          <li><Link to="/about">Leadership</Link></li>
+          <li><Link to="/careers">Careers</Link></li>
+          <li><Link to="/history">Our History</Link></li>
+          <li><Link to="/leadership">Leadership</Link></li>
         </ul>
       </li>
       <li><a className={'header-dropdown'} href="/#">PRODUCTS</a>
@@ -31,7 +31,7 @@ const DesktopNav = () => (
           <li><Link to="/about">Food Retailers</Link></li>
         </ul>
       </li>
-      <li><a href="/#">CONTACT</a></li>
+      <li><a className='header-navigation-last' href="/#">CONTACT</a></li>
     </ul>
   </nav>
 );
@@ -42,7 +42,7 @@ export class FixedHeader extends Component {
     super()
     this.mediaQuery = {
       desktop: 1200,
-      tablet: 800,
+      tablet: 768,
       phone: 576,
     };
 
@@ -95,21 +95,11 @@ export class FixedHeader extends Component {
     const { phone, tablet } = this.mediaQuery;
     return (
       <div className={'fixed-header'}>
-        <div className={windowWidth > phone ? 'primary-header' : 'hidden'}>
-          <div className={'logo-container'} onClick={() => this.phoneClick()}>
-            <img src={PhoneLogo} className={'logo-container-svg'} alt='Phone Logo' />
-            <p className={'primary-header-text'}>1-800-334-3371</p>
-          </div>
-          <div className={'logo-container'} onClick={() => this.emailClick()}>
-            <img src={EmailLogo} alt='Email Logo' />
-            <p className={'primary-header-text'}>info@embassyingredients.com</p>
-          </div>
-        </div>
         <div className={this.getSecondaryHeaderStyle()}>
           <Link to="/embassyclone2" className={'embassy-logo-container'}>
-            <img src={EmbassyLogo} className={windowWidth > tablet ? 'embassy-logo' : 'embassy-logo-small'} alt='Embassy Logo' />
+            <img src={EmbassyLogo} className={windowWidth >= tablet ? 'embassy-logo' : 'embassy-logo-small'} alt='Embassy Logo' />
           </Link>
-          {this.state.windowWidth > this.mediaQuery.tablet ?
+          {this.state.windowWidth >= this.mediaQuery.tablet ?
             <DesktopNav /> :
             <div className='mobile-nav'>
               <img src={MobileMenu} className='hamburger-menu' alt='Mobile Menu' onClick={() => this.setState({hamburgerMenuOpen: !this.state.hamburgerMenuOpen})}/>
@@ -162,3 +152,15 @@ export class FixedHeader extends Component {
     )
   }
 }
+
+
+// <div className={windowWidth > phone ? 'primary-header' : 'hidden'}>
+// <div className={'logo-container'} onClick={() => this.phoneClick()}>
+//   <img src={PhoneLogo} className={'logo-container-svg'} alt='Phone Logo' />
+//   <p className={'primary-header-text'}>1-800-334-3371</p>
+// </div>
+// <div className={'logo-container'} onClick={() => this.emailClick()}>
+//   <img src={EmailLogo} alt='Email Logo' />
+//   <p className={'primary-header-text'}>info@embassyingredients.com</p>
+// </div>
+// </div>
