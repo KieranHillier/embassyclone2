@@ -1,40 +1,8 @@
 import React, { Component } from 'react';
-import PhoneLogo from '../images/call-ico.svg';
-import EmailLogo from '../images/msg-ico.svg';
 import EmbassyLogo from '../images/logo.png';
 import MobileMenu from '../images/mobile-menu.svg';
 import { Link } from 'react-router-dom';
 import './FixedHeader.css';
-
-const DesktopNav = () => (
-  <nav className={'header-navigation'}>
-    <ul>
-      <li><a className={'header-dropdown'} href="/#">ABOUT</a>
-        <ul>
-          <li><Link to="/careers">Careers</Link></li>
-          <li><Link to="/history">Our History</Link></li>
-          <li><Link to="/leadership">Leadership</Link></li>
-        </ul>
-      </li>
-      <li><a className={'header-dropdown'} href="/#">PRODUCTS</a>
-        <ul>
-          <li><Link to="/all-products">All Products</Link></li>
-          <li><Link to="/about">Bakery Ingredients</Link></li>
-          <li><Link to="/about">Flavours</Link></li>
-        </ul>
-      </li>
-      <li><a className={'header-dropdown'} href="/#">CUSTOMERS</a>
-        <ul>
-          <li><Link to="/about">Commercial Bakeries</Link></li>
-          <li><Link to="/about">Distributors</Link></li>
-          <li><Link to="/about">Food Service</Link></li>
-          <li><Link to="/about">Food Retailers</Link></li>
-        </ul>
-      </li>
-      <li><a className='header-navigation-last' href="/#">CONTACT</a></li>
-    </ul>
-  </nav>
-);
 
 export class FixedHeader extends Component {
 
@@ -51,6 +19,7 @@ export class FixedHeader extends Component {
       scrollPosition: window.pageYOffset,
       hamburgerMenuOpen: false,
       mobileDropDownIdx: null,
+      hoveredHeader: null,
     }
   }
 
@@ -90,21 +59,67 @@ export class FixedHeader extends Component {
     }
   }
 
+  _closeHamburgerMenu() {
+    this.setState({
+      hamburgerMenuOpen: false,
+      mobileDropDownIdx: null
+    })
+  }
+
+  _hoverFixedHeader(num) {
+    this.setState({
+      hoveredHeader: num
+    })
+  }
+
+  _closeFixedHeader() {
+    this.setState({
+      hoveredHeader: null
+    })
+  }
+
   render() {
-    const { mobileDropDownIdx, windowWidth } = this.state;
-    const { phone, tablet } = this.mediaQuery;
+    const { mobileDropDownIdx, windowWidth, hoveredHeader } = this.state;
+    const { tablet } = this.mediaQuery;
     return (
       <div className={'fixed-header'}>
         <div className={this.getSecondaryHeaderStyle()}>
           <Link to="/embassyclone2" className={'embassy-logo-container'}>
             <img src={EmbassyLogo} className={windowWidth >= tablet ? 'embassy-logo' : 'embassy-logo-small'} alt='Embassy Logo' />
           </Link>
-          {this.state.windowWidth >= this.mediaQuery.tablet ?
-            <DesktopNav /> :
+          {this.state.windowWidth >= this.mediaQuery.tablet ? (
+            <nav className={'header-navigation'}>
+              <ul>
+                <li><a className={'header-dropdown'} onMouseEnter={() => this._hoverFixedHeader(1)} onMouseLeave={() => this._closeFixedHeader()} href="/#">ABOUT</a>
+                  <ul style={hoveredHeader === 1 ? {display: 'flex'} : {display: 'none'}} onMouseEnter={() => this._hoverFixedHeader(1)} onMouseLeave={() => this._closeFixedHeader()}>
+                    <li><Link to="/careers">Careers</Link></li>
+                    <li><Link to="/history">Our History</Link></li>
+                    <li><Link to="/leadership">Leadership</Link></li>
+                  </ul>
+                </li>
+                <li><a className={'header-dropdown'} onMouseEnter={() => this._hoverFixedHeader(2)} onMouseLeave={() => this._closeFixedHeader()} href="/#">PRODUCTS</a>
+                  <ul style={hoveredHeader === 2 ? {display: 'flex'} : {display: 'none'}} onMouseEnter={() => this._hoverFixedHeader(2)} onMouseLeave={() => this._closeFixedHeader()}>
+                    <li><Link to="/all-products" onClick={() => this._closeFixedHeader()}>All Products</Link></li>
+                    <li><Link to="/about">Bakery Ingredients</Link></li>
+                    <li><Link to="/about">Flavours</Link></li>
+                  </ul>
+                </li>
+                <li><a className={'header-dropdown'} onMouseEnter={() => this._hoverFixedHeader(3)} onMouseLeave={() => this._closeFixedHeader()} href="/#">CUSTOMERS</a>
+                  <ul style={hoveredHeader === 3 ? {display: 'flex'} : {display: 'none'}} onMouseEnter={() => this._hoverFixedHeader(3)} onMouseLeave={() => this._closeFixedHeader()}>
+                    <li><Link to="/about">Commercial Bakeries</Link></li>
+                    <li><Link to="/about">Distributors</Link></li>
+                    <li><Link to="/about">Food Service</Link></li>
+                    <li><Link to="/about">Food Retailers</Link></li>
+                  </ul>
+                </li>
+                <li><a className='header-navigation-last' href="/#">CONTACT</a></li>
+              </ul>
+            </nav>
+          ) : (
             <div className='mobile-nav'>
               <img src={MobileMenu} className='hamburger-menu' alt='Mobile Menu' onClick={() => this.setState({hamburgerMenuOpen: !this.state.hamburgerMenuOpen})}/>
             </div>
-          }
+          )}
           {this.state.hamburgerMenuOpen && this.state.windowWidth < this.mediaQuery.tablet ? (
             <div className='mobile-nav-dropdown'>
               <div className='mobile-nav-dropdown-header'>
@@ -112,11 +127,10 @@ export class FixedHeader extends Component {
                   <a className='mobile-nav-dropdown-parent-header' href="/#">About</a>
                   <div className={mobileDropDownIdx === 1 ? 'mobile-nav-up-arrow' : 'mobile-nav-down-arrow'}> </div>
                 </div>
-
                 <div className={mobileDropDownIdx === 1 ? 'mobile-nav-dropdown-child' : 'hidden'}>
-                  <Link to="/about">What We Do</Link>
-                  <Link to="/about">Our History</Link>
-                  <Link to="/about">Leadership</Link>
+                  <Link to="/about" onClick={() => this._closeHamburgerMenu()}>What We Do</Link>
+                  <Link to="/about" onClick={() => this._closeHamburgerMenu()}>Our History</Link>
+                  <Link to="/about" onClick={() => this._closeHamburgerMenu()}>Leadership</Link>
                 </div>
               </div>
               <div className='mobile-nav-dropdown-header'>
@@ -125,9 +139,9 @@ export class FixedHeader extends Component {
                   <div className={mobileDropDownIdx === 2 ? 'mobile-nav-up-arrow' : 'mobile-nav-down-arrow'}> </div>
                 </div>
                 <div className={mobileDropDownIdx === 2 ? 'mobile-nav-dropdown-child' : 'hidden'}>
-                  <Link to="/all-products">All Products</Link>
-                  <Link to="/about">Bakery Ingredients</Link>
-                  <Link to="/about">Flavours</Link>
+                  <Link to="/all-products" onClick={() => this._closeHamburgerMenu()}>All Products</Link>
+                  <Link to="/about" onClick={() => this._closeHamburgerMenu()}>Bakery Ingredients</Link>
+                  <Link to="/about" onClick={() => this._closeHamburgerMenu()}>Flavours</Link>
                 </div>
               </div>
               <div className='mobile-nav-dropdown-header'>
@@ -136,14 +150,14 @@ export class FixedHeader extends Component {
                   <div className={mobileDropDownIdx === 3 ? 'mobile-nav-up-arrow' : 'mobile-nav-down-arrow'}> </div>
                 </div>
                 <div className={mobileDropDownIdx === 3 ? 'mobile-nav-dropdown-child' : 'hidden'}>
-                  <Link to="/about">Commercial Bakeries</Link>
-                  <Link to="/about">Distributors</Link>
-                  <Link to="/about">Food Service</Link>
-                  <Link to="/about">Food Retailers</Link>
+                  <Link to="/about" onClick={() => this._closeHamburgerMenu()}>Commercial Bakeries</Link>
+                  <Link to="/about" onClick={() => this._closeHamburgerMenu()}>Distributors</Link>
+                  <Link to="/about" onClick={() => this._closeHamburgerMenu()}>Food Service</Link>
+                  <Link to="/about" >Food Retailers</Link>
                 </div>
               </div>
               <div className='mobile-nav-dropdown-header-fixed'>
-                <a href="/#">Contact</a>
+                <a href="/#" onClick={() => this._closeHamburgerMenu()}>Contact</a>
               </div>
             </div>
           ) : null}

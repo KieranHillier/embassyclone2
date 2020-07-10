@@ -1,20 +1,11 @@
 import React, { Component } from 'react';
 import './ProductCard.css';
-import Chocolate from '../images/Chocolate.png'
-import { GlobalContext } from '../context/GlobalState';
-import HomeBanner from '../images/home-banner-1.jpg'
 
 const images = {
   'Cream & Pudding Cakes': require("../images/Chocolate.png")
 }
 
 export class ProductCard extends Component {
-  constructor(props) {
-      super(props)
-      // this.state = {
-      //   image: require(this.props.element.image)
-      // }
-  }
 
   render() {
     const { element, openModal } = this.props
@@ -22,7 +13,7 @@ export class ProductCard extends Component {
       <div className='product-card-container' onClick={() => openModal(element)}>
         <div className='product-card-margin'>
             <div className='product-card-img-container'>
-                <img src={images[element.title]} />
+                <img src={images[element.title]} alt={element.title} />
             </div>
             <div className='product-card-text'>
               <h2 className='product-card-name'>{element.title}</h2>

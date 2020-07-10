@@ -72,7 +72,7 @@
   width: 100%;
   height: 1000px;
   display: flex;
-  margin: 27px 0;
+  margin: 27px 0 60px;
 }
 
 .career-values-item-overlay {
@@ -177,7 +177,7 @@
   display: flex;
   flex-direction: column;
   height: 1000px;
-  margin: 27px 0;
+  margin: 27px 0 60px;
 }
 
 .career-values-item {
@@ -232,9 +232,52 @@
   height: 45px;
 }
 
+.career-reference-container {
+  margin: 60px 0 30px;
+}
+
 .career-reference-cards {
   margin: 27px 0;
+  display: flex;
+  justify-content: center;
 }
+
+.career-reference-card {
+  flex: 1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 420px;
+}
+
+.career-reference-card:last-of-type {
+  margin-right: 0;
+  border-radius: 3px;
+}
+
+.career-reference-image {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.career-reference-circle-image {
+  background: gray;
+  width: 200px;
+  border-radius: 100px;
+  height: 200px;
+  margin: 30px 0;
+}
+
+.career-reference-text {
+  flex: 2;
+  font-family: 'AirbnbBook';
+  padding: 0 20px 30px;
+}
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
@@ -259,12 +302,18 @@
   .career-values-item-text p {
     font-size: 21px;
   }
+  .career-reference-cards {
+    justify-content: space-around;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   .career-perks-icons {
     grid-template-columns: repeat(3,minmax(280px, 1fr));
+  }
+  .career-reference-cards {
+    justify-content: space-between;
   }
 }
 

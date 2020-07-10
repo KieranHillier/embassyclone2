@@ -30,7 +30,7 @@ export class ProductFilter extends Component {
   render() {
     const { removeFilters, dropdownToggle, updateCheckbox, updateCheckboxChild, parentState } = this.props
     const { windowWidth, filterToggle } = this.state
-    const { desktop, tablet } = this.mediaQuery
+    const { desktop } = this.mediaQuery
     return (
       <>
         {windowWidth < desktop ? (
@@ -42,7 +42,7 @@ export class ProductFilter extends Component {
               <div className='filter-min-container'>
                 <div className='filter-min-item filter-min-parent' onClick={() => updateCheckbox('Bakery Mixes')} style={parentState.sideFilters.includes('Bakery Mixes') ? {background: '#f3f0f0'} : null}>
                   <p>Bakery Mixes</p>
-                  <img className='filter-dropdown-arrow' src={DropdownArrow} style={!parentState.bakeryDropDown ? {transform: 'translateY(-3px) rotate(180deg)'} : null} onClick={() => dropdownToggle('bakeryDropDown', 'Bakery Mixes')} />
+                  <img className='filter-dropdown-arrow' alt='' src={DropdownArrow} style={!parentState.bakeryDropDown ? {transform: 'translateY(-3px) rotate(180deg)'} : null} onClick={() => dropdownToggle('bakeryDropDown', 'Bakery Mixes')} />
                 </div>
                 {parentState.bakeryDropDown ? (
                   <>
@@ -56,7 +56,7 @@ export class ProductFilter extends Component {
                 <div className='filter-min-item' onClick={() => updateCheckbox('Glaze')} style={parentState.sideFilters.includes('Glaze') ? {background: '#f3f0f0'} : null}>Glaze</div>
                 <div className='filter-min-item filter-min-parent' onClick={() => updateCheckbox('Flavors')} style={parentState.sideFilters.includes('Flavors') ? {background: '#f3f0f0'} : null}>
                   <p>Flavors</p>
-                  <img className='filter-dropdown-arrow' src={DropdownArrow} style={!parentState.flavorDropDown ? {transform: 'translateY(-3px) rotate(180deg)'} : null} onClick={() => dropdownToggle('flavorDropDown', 'Flavors')} />
+                  <img className='filter-dropdown-arrow' alt='' src={DropdownArrow} style={!parentState.flavorDropDown ? {transform: 'translateY(-3px) rotate(180deg)'} : null} onClick={() => dropdownToggle('flavorDropDown', 'Flavors')} />
                 </div>
                 {parentState.flavorDropDown ? (
                   <>
@@ -90,7 +90,7 @@ export class ProductFilter extends Component {
                 <span></span>
                 <label htmlFor='checkbox1'>Bakery Mixes</label> 
               </span>
-              <img className='filter-dropdown-arrow' src={DropdownArrow} style={!parentState.bakeryDropDown ? {transform: 'translateY(-3px) rotate(180deg)'} : null} onClick={() => dropdownToggle('bakeryDropDown', 'Bakery Mixes')} />
+              <img className='filter-dropdown-arrow' alt='' src={DropdownArrow} style={!parentState.bakeryDropDown ? {transform: 'translateY(-3px) rotate(180deg)'} : null} onClick={() => dropdownToggle('bakeryDropDown', 'Bakery Mixes')} />
             </div>
             {parentState.bakeryDropDown ? (
               <div className='filter-toggle-dropdown-contents'>
@@ -132,7 +132,7 @@ export class ProductFilter extends Component {
                 <span></span>
                 <label htmlFor='checkbox6'>Flavors</label> 
               </span>
-              <img className='filter-dropdown-arrow' src={DropdownArrow} style={!parentState.flavorDropDown ? {transform: 'translateY(-3px) rotate(180deg)'} : null} onClick={() => dropdownToggle('flavorDropDown', 'Flavors')} />
+              <img className='filter-dropdown-arrow' alt='' src={DropdownArrow} style={!parentState.flavorDropDown ? {transform: 'translateY(-3px) rotate(180deg)'} : null} onClick={() => dropdownToggle('flavorDropDown', 'Flavors')} />
             </div>
             {parentState.flavorDropDown ? (
               <div className='filter-toggle-dropdown-contents'>

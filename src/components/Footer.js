@@ -1,66 +1,140 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { GlobalContext } from '../context/GlobalState';
 import './Footer.css';
 
-const mediaQuery = {
-  desktop: 992,
-  tablet: 800,
-  phone: 576,
-}
+const certificationIcons = [
+  require('../images/fixed-footer/brc.png'),
+  require('../images/fixed-footer/cor.png'),
+  require('../images/fixed-footer/ctpat.png'),
+  require('../images/fixed-footer/gluten-free.png'),
+  require('../images/fixed-footer/halal.png'),
+  require('../images/fixed-footer/non-gmo.png'),
+  require('../images/fixed-footer/organic.png'),
+  require('../images/fixed-footer/peanut.png')
+];
+
+const mediaIcons = [
+  require('../images/fixed-footer/fixed-twitter.png'),
+  require('../images/fixed-footer/fixed-instagram.png'),
+  require('../images/fixed-footer/fixed-linkedin.png')
+]
 
 export class Footer extends Component {
-  
+
+  static contextType = GlobalContext
   state = {
-    backgroundIndex: 1,
+    dropdownIdx: null,
+  }
+
+  _renderCertificationIcons = () => {
+    return certificationIcons.map((link, idx) => (
+      <img className='certification-icon' src={link} key={idx} alt='certification-logo'/>
+    ))
+  }
+
+  _toggleDropdown(num) {
+    if (this.state.dropdownIdx === num) {
+      this.setState({ dropdownIdx: null })
+    } else {
+      this.setState({ dropdownIdx: num })
+    }
   }
 
   render() {
+    const { dimensions, mediaQuery } = this.context
+    const { dropdownIdx } = this.state
     return (
       <div className='footer-container'>
-        <div className='top-container'>
-          <div className='footer-section'>
-            <h2>Company</h2>
-            <Link to="/about">Products</Link>
-            <Link to="/about">Distributors</Link>
+        {dimensions.width >= mediaQuery.desktop ? ( 
+          <div className='top-container'>
+            <div className='footer-section'>
+              <h2>Company</h2>
+              <Link to="/about">Products</Link>
+              <Link to="/about">Distributors</Link>
+            </div>
+            <div className='footer-section'>
+              <h2>About Us</h2>
+              <Link to="/about">What We Do</Link>
+              <Link to="/about">Our History</Link>
+              <Link to="/about">Leadership Team</Link>
+              <Link to="/about">Careers</Link>
+            </div>
+            <div className='footer-section'>
+              <h2>General Contact</h2>
+              <p>1-800-334-3371 (ext.200)</p>
+              <p>1-(905)-789-3200</p>
+              <p>info@embassyingredients.com</p>
+            </div>
+            <div className='footer-section'>
+              <h2>Location</h2>
+              <p>Embassy Ingredients Ltd</p>
+              <p>5 Intermodal Drive Unit 1-2</p>
+              <p>Brampton, ON, L6T 5V9</p>
+            </div>
+            <div className='footer-section'>
+              <h2>Certifications</h2>
+              <div className='certification-icons'>
+                {this._renderCertificationIcons()}
+              </div>
+            </div>
           </div>
-          <div className='footer-section'>
-            <h2>About Us</h2>
-            <Link to="/about">What We Do</Link>
-            <Link to="/about">Our History</Link>
-            <Link to="/about">Leadership Team</Link>
-            <Link to="/about">Careers</Link>
+        ) : (
+          <div className='top-container'>
+            <div className='mobile-footer-header' onClick={() => this._toggleDropdown(1)}>Company</div>
+            {dropdownIdx === 1 ? (
+              <div className='mobile-footer-section'>
+                <Link to="/about">Products</Link>
+                <Link to="/about">Distributors</Link>
+              </div>
+            ) : null}
+            <div className='mobile-footer-header' onClick={() => this._toggleDropdown(2)}>About Us</div>
+            {dropdownIdx === 2 ? (
+              <div className='mobile-footer-section'>
+                <Link to="/about">What We Do</Link>
+                <Link to="/about">Our History</Link>
+                <Link to="/about">Leadership Team</Link>
+                <Link to="/about">Careers</Link>
+              </div>
+            ) : null}
+            <div className='mobile-footer-header' onClick={() => this._toggleDropdown(3)}>General Contact</div>
+            {dropdownIdx === 3 ? (
+              <div className='mobile-footer-section'>
+                <p>1-800-334-3371 (ext.200)</p>
+                <p>1-(905)-789-3200</p>
+                <p>info@embassyingredients.com</p>
+              </div>
+            ) : null}
+            <div className='mobile-footer-header' onClick={() => this._toggleDropdown(4)}>Location</div>
+            {dropdownIdx === 4 ? (
+              <div className='mobile-footer-section'>
+                <p>Embassy Ingredients Ltd</p>
+                <p>5 Intermodal Drive Unit 1-2</p>
+                <p>Brampton, ON, L6T 5V9</p>
+              </div>
+            ) : null}
+            <div className='mobile-footer-header' onClick={() => this._toggleDropdown(5)}>Certifications</div>
+            {dropdownIdx === 5 ? (
+              <div className='mobile-footer-section'>
+                <div className='certification-icons'>
+                  {this._renderCertificationIcons()}
+                </div>
+              </div>
+            ) : null}
           </div>
-          <div className='footer-section'>
-            <h2>General Contact</h2>
-            <p>1-800-334-3371 (ext.200)</p>
-            <p>1-(905)-789-3200</p>
-            <p>info@embassyingredients.com</p>
-          </div>
-          <div className='footer-section'>
-            <div className='empty-header'></div>
-            <p>Corporate Office:</p>
-            <p>Phone: 1 (905) 789-3200</p>
-            <p>Email: info@embassyingredients.com</p>
-          </div>
-          <div className='footer-section'>
-            <div className='empty-header'></div>
-            <p>Hours of Operation:</p>
-            <p>Monday - Friday</p>
-            <p>8:00am - 5:00pm</p>
-          </div>
-          <div className='footer-section'>
-            <h2>Certifications</h2>
-            <p>1-800-334-3371 (ext. 200)</p>
-            <p>1-(905)-789-3200</p>
-            <p>Email: info@embassyingredients.com</p>
-          </div>
-        </div>
+        )}
         <div className='bottom-container'>
-          <p>Copyright 2020 Embassy Ingredients</p>
+          <p>&#169; Copyright 2020 Embassy Ingredients</p>
           <div className='media-container'>
-            <img src={""}/>
-            <img src={""}/>
-            <img src={""}/>
+            <a href='https://twitter.com/embassyingrdnts' target='_blank' rel='noopener noreferrer'>
+              <img src={mediaIcons[0]} alt='twitter icon'/>
+            </a>
+            <a href='https://www.instagram.com/embassy_ingredients' target='_blank' rel='noopener noreferrer'>
+              <img src={mediaIcons[1]} alt='instagram icon'/>
+            </a>
+            <a href='https://www.linkedin.com/company/embassyingredients/' target='_blank' rel='noopener noreferrer'>
+              <img src={mediaIcons[2]} alt='linkedin icon'/>
+            </a>
           </div>
         </div>
       </div>

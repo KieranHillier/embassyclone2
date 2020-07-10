@@ -13,7 +13,7 @@ class Careers extends Component {
           <div className='career-header-container'>
             <h1>Are We the Bread to Your Butter?</h1>
             <div className='career-header-btn'>
-              <a href="https://www.linkedin.com/company/embassyingredients/jobs/" target="_blank">join our team</a>
+              <a href="https://www.linkedin.com/company/embassyingredients/jobs/" target="_blank" rel="noopener noreferrer">join our team</a>
             </div>
           </div>
         </div>
@@ -154,17 +154,33 @@ class Careers extends Component {
             <h1>A Taste of the Embassy Environment</h1>
             <div className='career-reference-cards'>
               <div className='career-reference-card'>
-                <div className='career-reference-image'></div>
-                <p className='career-regerence-text'></p>
+                <div className='career-reference-image'>
+                  <div className='career-reference-circle-image' />
+                </div>
+                <p className='career-reference-text'>
+                  “The culture at Embassy is fun, innovative and hard-working! We wear every “hat” to get the job done.”
+                </p>
               </div>
-              <div className='career-reference-card'>
-                <div className='career-reference-image'></div>
-                <p className='career-regerence-text'></p>
-              </div>
-              <div className='career-reference-card'>
-                <div className='career-reference-image'></div>
-                <p className='career-regerence-text'></p>
-              </div>
+              {dimensions.width >= mediaQuery.tablet ? (
+                <div className='career-reference-card'>
+                  <div className='career-reference-image'>
+                    <div className='career-reference-circle-image' />
+                  </div>
+                  <p className='career-reference-text'>
+                    “When you need help with a project everyone is always happy to jump in and offer support.”
+                  </p>
+                </div>
+              ) : null}
+              {dimensions.width >= (mediaQuery.desktop + 40) ? (
+                <div className='career-reference-card'>
+                  <div className='career-reference-image'>
+                    <div className='career-reference-circle-image' />
+                  </div>
+                  <p className='career-reference-text'>
+                    “I love that I get the opportunity to grow my skill set at Embassy. Plus, who wouldn’t love to eat tasty treats all day?!”
+                  </p>
+                </div>
+              ) : null}
             </div>
           </div>
         </div>

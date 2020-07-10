@@ -121,7 +121,7 @@ export class AllProducts extends Component {
   }
 
   _renderResults = () => {
-    const { results, favourites, queryStatus } = this.state;
+    const { results, queryStatus } = this.state;
     
     if (queryStatus === "initial") {
       return ProductsData.map((element, idx) => (
@@ -136,7 +136,7 @@ export class AllProducts extends Component {
   };
 
   _updateCheckbox(val) {
-    const { sideFilters, sideFiltersChild, bakeryDropDown, flavorDropDown } = this.state
+    const { sideFilters } = this.state
 
 
 

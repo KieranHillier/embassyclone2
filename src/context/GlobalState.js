@@ -5,7 +5,7 @@ const initialState = {
     language: 'EN',
     mediaQuery: {
         desktop: 992,
-        tablet: 800,
+        tablet: 768,
         phone: 576,
     }
 }
