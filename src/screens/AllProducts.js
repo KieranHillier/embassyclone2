@@ -138,8 +138,6 @@ export class AllProducts extends Component {
   _updateCheckbox(val) {
     const { sideFilters } = this.state
 
-
-
     //toggle the targeted checkbox
     if (!sideFilters.includes(val)) {
       this.setState({sideFilters: [...sideFilters, val]}, this._findResults)

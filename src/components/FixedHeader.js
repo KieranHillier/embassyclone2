@@ -112,7 +112,7 @@ export class FixedHeader extends Component {
                     <li><Link to="/about">Food Retailers</Link></li>
                   </ul>
                 </li>
-                <li><a className='header-navigation-last' href="/#">CONTACT</a></li>
+                <li><Link to="/contact" className='header-navigation-last'>CONTACT</Link></li>
               </ul>
             </nav>
           ) : (

@@ -1,0 +1,158 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  padding: 68px 27px 0 27px;
+}
+
+.contact-top-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-top-container h1 {
+  text-transform: uppercase;
+  margin: 20px;
+  color: #2ea948;
+}
+
+.contact-top-container p {
+  width: 100%;
+}
+
+.contact-textfields {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-input-container {
+  margin: 20px 0 15px;
+  display: grid;
+  grid-gap: 15px;
+}
+
+.contact-inputfield {
+  padding: 10px 10px 10px 15px;
+  font-family: 'AirbnbBook';
+  font-size: 18px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: 1px solid #cec6c6;
+  background: #FBFBFB;
+}
+
+.contact-inputfield:focus, .contact-textarea:focus {
+  outline: none;
+}
+
+.contact-textarea-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-textarea {
+  padding: 10px 10px 46px 15px;
+  font-family: 'AirbnbBook';
+  font-size: 18px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: 1px solid #cec6c6;
+  background: #FBFBFB;
+  resize: none;
+}
+
+.contact-textarea-btn {
+  background-color: #2ea948;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 7px 15px;
+  color: #fff;
+  border-radius: 7px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contact-info-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.contact-info-item {
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+
+.contact-info-item:last-of-type, .contact-info-item:nth-of-type(2) {
+  padding-right: 0;
+}
+
+
+.contact-info-item h2{
+  color: #2ea948;
+  margin-bottom: 7px;
+}
+
+.contact-info-item span {
+  font-family: 'AirbnbBook';
+}
+
+.contact-info-item:nth-of-type(3) p, .contact-info-item:nth-of-type(4) p {
+  font-family: 'AirbnbBook';
+}
+
+.contact-map-container {
+  width: 100%;
+  height: 350px;
+}
+
+.contact-map-marker img {
+  width: 30px;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .contact-container {
+    padding: 118px 27px 0 27px;
+  }
+
+  .contact-info-container {
+    justify-content: space-around;
+  }
+
+  .contact-top-container p {
+    width: 60%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .contact-input-container {
+    grid-template-columns: repeat(2,auto);
+
+  }
+
+  .contact-info-container {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .contact-info-item:nth-of-type(2) {
+    padding-right: 20px;
+  }
+  
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}

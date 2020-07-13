@@ -9,6 +9,7 @@ import './App.css';
 import Leadership from './screens/Leadership';
 import History from './screens/History';
 import Careers from './screens/Careers';
+import Contact from './screens/Contact';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/leadership' component={Leadership} />
         <Route path='/history' component={History} />
         <Route path='/careers' component={Careers} />
+        <Route path='/contact' component={Contact} />
       </Switch>
       <Footer />
     </GlobalProvider>
