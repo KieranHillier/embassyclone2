@@ -10,6 +10,7 @@ import Leadership from './screens/Leadership';
 import History from './screens/History';
 import Careers from './screens/Careers';
 import Contact from './screens/Contact';
+import NoMatch from './screens/NoMatch';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/history' component={History} />
         <Route path='/careers' component={Careers} />
         <Route path='/contact' component={Contact} />
+        <Route path='*' component={NoMatch} />
       </Switch>
       <Footer />
     </GlobalProvider>

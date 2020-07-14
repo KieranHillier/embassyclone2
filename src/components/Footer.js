@@ -48,35 +48,37 @@ export class Footer extends Component {
       <div className='footer-container'>
         {dimensions.width >= mediaQuery.desktop ? ( 
           <div className='top-container'>
-            <div className='footer-section'>
-              <h2>Company</h2>
-              <Link to="/about">Products</Link>
-              <Link to="/about">Distributors</Link>
-            </div>
-            <div className='footer-section'>
-              <h2>About Us</h2>
-              <Link to="/about">What We Do</Link>
-              <Link to="/about">Our History</Link>
-              <Link to="/about">Leadership Team</Link>
-              <Link to="/about">Careers</Link>
-            </div>
-            <div className='footer-section'>
-              <h2>General Contact</h2>
-              <p>1-800-334-3371 (ext.200)</p>
-              <p>1-(905)-789-3200</p>
-              <p>info@embassyingredients.com</p>
-            </div>
-            <div className='footer-section'>
-              <h2>Location</h2>
-              <p>Embassy Ingredients Ltd</p>
-              <p>5 Intermodal Drive Unit 1-2</p>
-              <p>Brampton, ON, L6T 5V9</p>
-            </div>
-            <div className='footer-section'>
-              <h2>Certifications</h2>
-              <div className='certification-icons'>
-                {this._renderCertificationIcons()}
+            <div className='top-content-container'> 
+              <div className='footer-section'>
+                <h2>Company</h2>
+                <Link to="/about">Products</Link>
+                <Link to="/about">Distributors</Link>
               </div>
+              <div className='footer-section'>
+                <h2>About Us</h2>
+                <Link to="/about">What We Do</Link>
+                <Link to="/about">Our History</Link>
+                <Link to="/about">Leadership Team</Link>
+                <Link to="/about">Careers</Link>
+              </div>
+              <div className='footer-section'>
+                <h2>General Contact</h2>
+                <p>1-800-334-3371 (ext.200)</p>
+                <p>1-(905)-789-3200</p>
+                <p>info@embassyingredients.com</p>
+              </div>
+              <div className='footer-section'>
+                <h2>Location</h2>
+                <p>Embassy Ingredients Ltd</p>
+                <p>5 Intermodal Drive Unit 1-2</p>
+                <p>Brampton, ON, L6T 5V9</p>
+              </div>
+              <div className='footer-section'>
+                <h2>Certifications</h2>
+                <div className='certification-icons'>
+                  {this._renderCertificationIcons()}
+                </div>
+              </div>           
             </div>
           </div>
         ) : (
@@ -124,17 +126,19 @@ export class Footer extends Component {
           </div>
         )}
         <div className='bottom-container'>
+          <div className='bottom-content-container'>
           <p>&#169; Copyright 2020 Embassy Ingredients</p>
-          <div className='media-container'>
-            <a href='https://twitter.com/embassyingrdnts' target='_blank' rel='noopener noreferrer'>
-              <img src={mediaIcons[0]} alt='twitter icon'/>
-            </a>
-            <a href='https://www.instagram.com/embassy_ingredients' target='_blank' rel='noopener noreferrer'>
-              <img src={mediaIcons[1]} alt='instagram icon'/>
-            </a>
-            <a href='https://www.linkedin.com/company/embassyingredients/' target='_blank' rel='noopener noreferrer'>
-              <img src={mediaIcons[2]} alt='linkedin icon'/>
-            </a>
+            <div className='media-container'>
+              <a href='https://twitter.com/embassyingrdnts' target='_blank' rel='noopener noreferrer'>
+                <img src={mediaIcons[0]} alt='twitter icon'/>
+              </a>
+              <a href='https://www.instagram.com/embassy_ingredients' target='_blank' rel='noopener noreferrer'>
+                <img src={mediaIcons[1]} alt='instagram icon'/>
+              </a>
+              <a href='https://www.linkedin.com/company/embassyingredients/' target='_blank' rel='noopener noreferrer'>
+                <img src={mediaIcons[2]} alt='linkedin icon'/>
+              </a>
+            </div>
           </div>
         </div>
       </div>

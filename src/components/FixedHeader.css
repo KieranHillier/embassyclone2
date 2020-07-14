@@ -8,6 +8,15 @@
     width: 100%;
 }
 
+.fixed-contents-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    /* font-size: 35px; */ 
+    width: 100%;
+}
+
 .logo-container {
     display: flex;
     margin: 0 0 0 13px;
@@ -275,3 +284,15 @@
     transform: translateY(+3px) rotate(45deg);
     margin: 5px;
 }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .fixed-contents-container {
+      margin: 0 auto;
+      max-width: 1200px;
+    }  
+
+    .secondary-header-scrolled {
+        box-shadow: 0 4px 2px -2px rgba(0,0,0,0.1);
+    }
+  }

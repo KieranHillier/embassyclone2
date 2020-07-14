@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Contact.css';
-import ReactMapboxGl, { Layer, Feature, ZoomControl, Marker } from 'react-mapbox-gl';
+import ReactMapboxGl, { ZoomControl, Marker } from 'react-mapbox-gl';
 
 const Map = ReactMapboxGl({
   accessToken: process.env.REACT_APP_MAP,
@@ -90,7 +90,7 @@ class Contact extends Component {
       <div className='contact-map-container'>
         <Map
           style='mapbox://styles/mapbox/streets-v9'
-          center={[-79.766670, 43.683334]}
+          center={[-79.676876, 43.730793]}
           containerStyle={{
             height: '100%',
             width: '100%'
@@ -98,14 +98,11 @@ class Contact extends Component {
         >
           <ZoomControl/>
           <Marker
-            coordinates={[-79.766670, 43.683334]}
+            coordinates={[-79.676876, 43.730793]}
             className='contact-map-marker'
             anchor="bottom">
-            <img src={require('../images/map-marker.png')}/>
+            <img alt='map marker' src={require('../images/map-marker.png')}/>
           </Marker>
-          <Layer type='symbol' id='marker' layout={{ 'icon-image': 'marker-15' }}>
-            <Feature coordinates={[-79.766670, 43.683334]} />
-          </Layer>
         </Map>
       </div>
       </>

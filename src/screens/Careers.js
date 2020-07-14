@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import { GlobalContext } from '../context/GlobalState';
 import './Careers.css'
 
+const careerProfiles = [
+  require('../images/career/career-profile1.png'),
+  require('../images/career/career-profile2.png'),
+  require('../images/career/career-profile3.png')
+];
 class Careers extends Component {
   static contextType = GlobalContext
 
@@ -155,7 +160,7 @@ class Careers extends Component {
             <div className='career-reference-cards'>
               <div className='career-reference-card'>
                 <div className='career-reference-image'>
-                  <div className='career-reference-circle-image' />
+                  <div className='career-reference-circle-image' style={{backgroundImage: `url(${careerProfiles[0]})`}}/>
                 </div>
                 <p className='career-reference-text'>
                   “The culture at Embassy is fun, innovative and hard-working! We wear every “hat” to get the job done.”
@@ -164,7 +169,7 @@ class Careers extends Component {
               {dimensions.width >= mediaQuery.tablet ? (
                 <div className='career-reference-card'>
                   <div className='career-reference-image'>
-                    <div className='career-reference-circle-image' />
+                    <div className='career-reference-circle-image' style={{backgroundImage: `url(${careerProfiles[1]})`}}/>
                   </div>
                   <p className='career-reference-text'>
                     “When you need help with a project everyone is always happy to jump in and offer support.”
@@ -174,7 +179,7 @@ class Careers extends Component {
               {dimensions.width >= (mediaQuery.desktop + 40) ? (
                 <div className='career-reference-card'>
                   <div className='career-reference-image'>
-                    <div className='career-reference-circle-image' />
+                    <div className='career-reference-circle-image' style={{backgroundImage: `url(${careerProfiles[2]})`}}/>
                   </div>
                   <p className='career-reference-text'>
                     “I love that I get the opportunity to grow my skill set at Embassy. Plus, who wouldn’t love to eat tasty treats all day?!”

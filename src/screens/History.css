@@ -110,5 +110,12 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+  .history-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
+  .history-content-section p {
+    width: 100%;
+  }
 }
