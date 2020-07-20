@@ -1,0 +1,26 @@
+.distributors-child-container {
+    border-bottom: 1px solid gray;
+    padding: 5px 10px 5px 50px;
+}
+
+.distributors-child-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-family: 'AirbnbBook';
+}
+
+.distributors-child-body {
+    white-space: pre-wrap;
+    padding-top: 10px;
+}
+
+.distributors-child-body p {
+    padding: 5px 0;
+}
+
+.distributors-child-body a {
+    padding: 5px 0;
+    color: #212121;
+}

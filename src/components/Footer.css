@@ -41,6 +41,9 @@
   color: #fff;
   font-weight: 100;
   padding: 0 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bottom-content-container {

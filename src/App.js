@@ -11,6 +11,7 @@ import History from './screens/History';
 import Careers from './screens/Careers';
 import Contact from './screens/Contact';
 import NoMatch from './screens/NoMatch';
+import Distributors from './screens/Distributors';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/history' component={History} />
         <Route path='/careers' component={Careers} />
         <Route path='/contact' component={Contact} />
+        <Route path='/distributors' component={Distributors} />
         <Route path='*' component={NoMatch} />
       </Switch>
       <Footer />

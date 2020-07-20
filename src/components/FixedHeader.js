@@ -100,7 +100,7 @@ export class FixedHeader extends Component {
                     </ul>
                   </li>
                   <li><Link to="/all-products" className='header-navigation'>PRODUCTS</Link></li>
-                  <li><Link to="/contact" className='header-navigation'>DISTRIBUTORS</Link></li>
+                  <li><Link to="/distributors" className='header-navigation'>DISTRIBUTORS</Link></li>
                   <li><Link to="/contact" className='header-navigation-last'>CONTACT</Link></li>
                 </ul>
               </nav>
