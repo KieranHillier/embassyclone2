@@ -75,7 +75,7 @@
     ], 
     "quebec": [
         {
-            "title":  "BakeMark Canada",
+            "title": "BakeMark Canada",
             "address": "2345 Frances Hughes\nLaval, QC\nH7S 1N5",
             "number": "Phone Number: (450) 667-3388",
             "fax": "Fax Number: (450) 667-3342",
@@ -84,7 +84,7 @@
             "email": "e-mail: quebecatlanticsales@bakemarkcanada.com"
         },       
         {
-            "title":  "OVentes Rudolph Inc.",
+            "title": "OVentes Rudolph Inc.",
             "address": "4625 Iberville Street\nMontreal, QC\nH2H 2L9",
             "number": "Phone Number: (514) 596-1998",
             "fax": "Fax Number: (514) 596-0933",
@@ -92,6 +92,142 @@
             "website": "www.ventesrudolph.com",
             "email": "e-mail: info@ventesrudolph.com"
         }      
+    ], 
+    "western": [
+        {
+            "title":  "BakeMark Canada (CGY, AB)",
+            "address": "3202 – 9th Street South East\nCalgary, AB\nT2G 3C3",
+            "number": "Phone Number: (403) 243-5493",
+            "fax": "Fax Number: (403) 287-3762",
+            "toll": "Toll Free: 1-800-661-1248",
+            "website": "www.yourbakemark.com",
+            "email": ""
+        },       
+        {
+            "title":  "BakeMark Canada (EDM, AB)",
+            "address": "10754 – 181 Street\nEdmonton, AB\nT5S 1K8",
+            "number": "Phone Number: (780) 483-2831",
+            "fax": "Fax Number: (780) 489-1394",
+            "toll": "Toll Free: 1-800-363-8234",
+            "website": "www.yourbakemark.com",
+            "email": ""
+        },      
+        {
+            "title":  "BakeMark Canada (BC)",
+            "address": "2480 Viking Way\nRichmond, BC\nV6V 1N2",
+            "number": "Phone Number: (604) 303-1700",
+            "fax": "Fax Number: (604) 270-8002",
+            "toll": "Toll Free: 1-800-665-9441",
+            "website": "www.yourbakemark.com",
+            "email": ""
+        },      
+        {
+            "title":  "BakeMark Canada (MB)",
+            "address": "1000 Alexander Avenue\nWinnipeg, MB\nR3E 3M1",
+            "number": "Phone Number: (204) 774-2424",
+            "fax": "Fax Number: (204) 772-8312",
+            "toll": "Toll Free: 1-800-665-2062",
+            "website": "www.yourbakemark.com",
+            "email": ""
+        },      
+        {
+            "title":  "J & S Food Service",
+            "address": "6040 Gateway Boulevard\nEdmonton, AB\nT6H 2H6",
+            "number": "Phone Number: (780) 435-5446",
+            "fax": "Fax Number: (780) 435-5896",
+            "toll": "Toll Free: 1-800-268-2339",
+            "website": "www.jandsfoodservice.com",
+            "email": "e-mail: jsfoodservice@telus.net"
+        },      
+        {
+            "title":  "Snow Cap Enterprises Ltd.",
+            "address": "5698 Trapp Ave.\nBurnaby, BC\nV3N 5G4",
+            "number": "Phone Number: (604) 515-3200",
+            "fax": "Fax Number: (604) 515-3201",
+            "toll": "Toll Free: 1-800-561-2868",
+            "website": "www.snowcap.com",
+            "email": "e-mail: order@snowcap.com"
+        }     
+    ],
+    "atlantic": [
+        {
+            "title":  "B.M.S Distributors",
+            "address": "4852 Plymouth Road\nR.R. #2\nNew Glasgow, NS\nB2H 5C5",
+            "number": "Phone Number: (902) 755-3020",
+            "fax": "Fax Number: (902) 755-3460",
+            "toll": "Toll Free: 1-800-267-3478",
+            "website": "www.bmsdistributors.com",
+            "email": ""          
+        }
+    ],
+    "mexico": [
+        {
+            "title":  "Lallemand Mexico",
+            "address": "Fundidores s/n Manzana 1, Lote 13\nParque Industrial Xhala\nCuautitlan Izcalli\n54714\nMexico",
+            "number": "Phone Number: +52 (55) 262 05300",
+            "fax": "Fax Number: +52 (55) 262 05124",
+            "toll": "",
+            "website": "www.lallemandmexico.com",
+            "email": ""          
+        }
+    ],
+    "central_america": [
+        {
+            "title":  "American Bakery Distributors (Nicaragua)",
+            "address": "Cocteleria abuelitaaa\nLas Conchas\nCuidad\nJardin Managua, Nicaragua",
+            "number": "Phone Number: +505 8613 4374",
+            "fax": "",
+            "toll": "",
+            "website": "abd.com.ni",
+            "email": "email: gventas@abd.com.ni"          
+        },
+        {
+            "title":  "EPM Market (Panama)",
+            "address": "",
+            "number": "",
+            "fax": "",
+            "toll": "",
+            "website": "",
+            "email": ""          
+        },
+        {
+            "title":  "Fides (Honduras)",
+            "address": "",
+            "number": "",
+            "fax": "",
+            "toll": "",
+            "website": "",
+            "email": ""           
+        },
+        {
+            "title":  "NTD (Dominican Republic) - Santo Domingo",
+            "address": "Santo Domingo Antigua Carretera Duarte Km. 17\nBarrio Arenoso\nLos Alcarrizos, Santo Domingo\nRepública Dominicana",
+            "number": "Phone Number: (809) 564 8888",
+            "fax": "Fax Number: (809) 372 4040",
+            "toll": "",
+            "website": "www.ntdingredientes.com",
+            "email": "email: ventas@ntdingredientes.com"          
+        },
+        {
+            "title":  "NTD (Dominican Republic) - Punta Cana",
+            "address": "Naves Industriales 4B, 5, 6, 7\nCiudad Caracolí\nBávaro, Punta Cana\n23000\nRepública Dominicana",
+            "number": "Phone Number: (809) 564 8888 Ext. 302",
+            "fax": "",
+            "toll": "",
+            "website": "www.ntdingredientes.com",
+            "email": "email: ventas@ntdingredientes.com"         
+        }
+    ],
+    "middle_east_and_asia": [
+        {
+            "title":  "Interspan Canada Inc.",
+            "address": "231 Millway Ave\nUnit #6\nConcord, ON\nL4K 3W7",
+            "number": "Phone Number: (905) 660-9336",
+            "fax": "Fax Number: (905) 660-9228",
+            "toll": "",
+            "website": "www.interspancanada.com/foods",
+            "email": ""          
+        }
     ]
 }
 

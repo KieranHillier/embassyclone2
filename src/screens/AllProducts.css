@@ -51,6 +51,7 @@
 .filter-dropdown-arrow {
   width: 21px;
   padding: 5px 0;
+  cursor: pointer;
 }
 
 .filter-checkbox {
