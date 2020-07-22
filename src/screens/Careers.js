@@ -30,7 +30,7 @@ class Careers extends Component {
               <div className='career-values-left'>
                 <div className='career-values-top-child1'>
                   <div className='career-values-item-overlay'>
-                    <div className='career-values-item-text'>
+                    <div className='career-values-item-text career-top-abs'>
                       <h3>always deliver s'more</h3>
                       <p>Be creative and deliver solutions that exceed expectations</p>
                     </div>
@@ -49,7 +49,7 @@ class Careers extends Component {
                 <div className='career-values-top-child2'>
                   <div className='career-values-top-child2-left'>
                     <div className='career-values-item-overlay'>
-                      <div className='career-values-item-text'>
+                      <div className='career-values-item-text career-top-abs'>
                         <h3>put the passion in passionfruit</h3>
                         <p>Be excited to challenge yourself and inspire those around you</p>
                       </div>
@@ -57,7 +57,7 @@ class Careers extends Component {
                   </div>
                   <div className='career-values-bottom-child2-right'>
                     <div className='career-values-item-overlay'>
-                      <div className='career-values-item-text'>
+                      <div className='career-values-item-text career-top-abs'>
                         <h3>just worry about the calories</h3>
                         <p>Ensure a safe environment with every move</p>
                       </div>
@@ -122,35 +122,35 @@ class Careers extends Component {
             <h1>Perks &amp; Benefits</h1>
             <div className='career-perks-icons'>
               <div className='career-perk-icon'>
-                <div className='career-icon'></div>
+                <div className='career-icon career-icon-1'></div>
                 <p>Competitive Wages</p>
               </div>
               <div className='career-perk-icon'>
-                <div className='career-icon'></div>
+                <div className='career-icon career-icon-2'></div>
                 <p>Culture of Learning</p> 
               </div>
               <div className='career-perk-icon'>
-                <div className='career-icon'></div>
+                <div className='career-icon career-icon-3'></div>
                 <p>Dynamic Work Environment</p>
               </div>
               <div className='career-perk-icon'>
-                <div className='career-icon'></div>
+                <div className='career-icon career-icon-4'></div>
                 <p>Health &amp; Dental Benefits</p>
               </div>
               <div className='career-perk-icon'>
-                <div className='career-icon'></div>
+                <div className='career-icon career-icon-5'></div>
                 <p>RRSP Matching</p>
               </div>
               <div className='career-perk-icon'>
-                <div className='career-icon'></div>
+                <div className='career-icon career-icon-6'></div>
                 <p>Company Functions</p>
               </div>
               <div className='career-perk-icon'>
-                <div className='career-icon'></div>
+                <div className='career-icon career-icon-7'></div>
                 <p>Bakery Treats Galore</p>
               </div>
               <div className='career-perk-icon'>
-                <div className='career-icon'></div>
+                <div className='career-icon career-icon-8'></div>
                 <p>Life Insurance Plans</p>
               </div>
             </div>

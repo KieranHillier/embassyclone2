@@ -13,7 +13,7 @@
     ),
     url('../images/career-header.png');
   width: 100%;
-  height: 230px;
+  height: 250px;
   position: absolute;
   left: 0;
   right: 0;
@@ -50,7 +50,7 @@
 }
 
 .career-middle-container {
-  padding: 260px 0 25px;
+  padding: 280px 0 25px;
   text-align: center;
   color: #000;
 }
@@ -96,6 +96,11 @@
   color: #fff;
   width: 75%;
   max-width: 600px;
+}
+
+.career-top-abs {
+  position: absolute;
+  top: 197px;
 }
 
 .career-values-item-text h3 {
@@ -151,7 +156,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
 }
 
 .career-values-bottom-child2-right {
@@ -226,11 +230,43 @@
 }
 
 .career-icon {
-  background-image: url('../images/career-pig.png');
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   width: 45px;
   height: 45px;
+}
+
+.career-icon-1 {
+  background-image: url('../images/career/career-pig.png');
+}
+
+.career-icon-2 {
+  background-image: url('../images/career/career-brain.png');
+}
+
+.career-icon-3 {
+  background-image: url('../images/career/career-person.png');
+}
+
+.career-icon-4 {
+  background-image: url('../images/career/career-house.png');
+}
+
+.career-icon-5 {
+  background-image: url('../images/career/career-dollar.png');
+}
+
+.career-icon-6 {
+  background-image: url('../images/career/career-calendar.png');
+}
+
+.career-icon-7 {
+  background-image: url('../images/career/career-cupcake.png');
+}
+
+.career-icon-8 {
+  background-image: url('../images/career/career-heart.png');
 }
 
 .career-reference-container {
@@ -281,7 +317,6 @@
   padding: 0 20px 30px;
 }
 
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
 
@@ -318,6 +353,14 @@
   .career-reference-cards {
     justify-content: space-between;
   }
+/* 
+  .career-extra-margin {
+    margin-bottom: 95px;
+  }
+  
+  .career-extra-margin2 {
+    margin-bottom: 55px;
+  } */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

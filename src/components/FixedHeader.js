@@ -91,12 +91,11 @@ export class FixedHeader extends Component {
             {this.state.windowWidth >= this.mediaQuery.tablet ? (
               <nav className={'header-navigation'}>
                 <ul>
-                  <li><Link to="/mission" className={'header-dropdown'} onMouseEnter={() => this._hoverFixedHeader(1)} onMouseLeave={() => this._closeFixedHeader()}>ABOUT</Link>
-                    <ul style={hoveredHeader === 1 ? {display: 'flex'} : {display: 'none'}} onMouseEnter={() => this._hoverFixedHeader(1)} onMouseLeave={() => this._closeFixedHeader()}>
-                      <li><Link to="/mission">What We Do</Link></li>
-                      <li><Link to="/history">Our History</Link></li>
-                      <li><Link to="/leadership">Leadership</Link></li>
-                      <li><Link to="/careers">Careers</Link></li>
+                  <li><Link to="/careers" className={'header-dropdown'} onMouseEnter={() => this._hoverFixedHeader(1)} onMouseLeave={() => this._closeFixedHeader()}>ABOUT</Link>
+                    <ul style={hoveredHeader === 1 ? {display: 'flex'} : {display: 'none'}} onMouseEnter={() => this._hoverFixedHeader(1)} onMouseLeave={() => this._closeFixedHeader()}>     
+                      <li><Link to="/careers" onClick={() => this._closeFixedHeader()}>Careers</Link></li>
+                      <li><Link to="/leadership" onClick={() => this._closeFixedHeader()}>Leadership</Link></li>
+                      <li><Link to="/history" onClick={() => this._closeFixedHeader()}>Our History</Link></li>
                     </ul>
                   </li>
                   <li><Link to="/all-products" className='header-navigation'>PRODUCTS</Link></li>

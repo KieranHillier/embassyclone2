@@ -65,8 +65,11 @@ class Leadership extends Component {
         ) : null}
         <div className='leadership-container'>
           <div className='leadership-header-image'></div>
-          <div className='leadership-team-container'>
-            {this._renderLeadershipTeam()}
+          <div className='leadership-content-container'>
+            <h1 className='leadership-header-text'>Meet Our Leadership Team</h1>
+            <div className='leadership-team-container'>
+              {this._renderLeadershipTeam()}
+            </div>
           </div>
         </div>
       </>

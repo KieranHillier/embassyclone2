@@ -7,7 +7,7 @@
 .leadership-header-image {
   background: url('../images/leadershipHeader.png');
   width: 100%;
-  height: 146px;
+  height: 230px;
   position: absolute;
   left: 0;
   right: 0;
@@ -15,11 +15,20 @@
   background-size: cover;
 }
 
+.leadership-header-text {
+  text-align: center;
+  padding: 20px 0 45px;
+  color: #2ea948;
+}
+
+.leadership-content-container {
+  padding: 260px 0 25px;
+}
+
 .leadership-team-container {
   display: grid;
   grid-template-columns: repeat(1,minmax(280px, 1fr));
   grid-gap: 40px 15px;
-  padding: 176px 0 25px;
 }
 
 .leadership-card-container {
