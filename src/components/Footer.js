@@ -5,13 +5,13 @@ import './Footer.css';
 
 const certificationIcons = [
   require('../images/fixed-footer/brc.png'),
-  require('../images/fixed-footer/cor.png'),
-  require('../images/fixed-footer/ctpat.png'),
-  require('../images/fixed-footer/gluten-free.png'),
+  require('../images/fixed-footer/cor1.png'),
+  require('../images/fixed-footer/peanut1.png'),
+  require('../images/fixed-footer/gluten-free1.png'),
   require('../images/fixed-footer/halal.png'),
   require('../images/fixed-footer/non-gmo.png'),
   require('../images/fixed-footer/organic.png'),
-  require('../images/fixed-footer/peanut.png')
+  require('../images/fixed-footer/ctpat.png')
 ];
 
 const mediaIcons = [

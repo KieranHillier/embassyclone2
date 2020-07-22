@@ -1,11 +1,37 @@
 import React, { Component } from 'react';
 import './Home.css';
 
-const backgroundImages = [
-  require('../images/home-banner-1.jpg'),
-  require('../images/home-banner-2.jpg'),
-  require('../images/home-banner-3.jpg')
+const clIcons = [
+  require('../images/home/home-cl1.png'),
+  require('../images/home/home-cl2.png'),
+  require('../images/home/home-cl3.png'),
+  require('../images/home/home-cl4.png')
 ];
+
+const clText = [
+  'Natural Flavors & Colors',
+  'No Modified Ingredients',
+  'Whole Foods Compliant',
+  'Passes Retailer Standards'
+]
+
+const homeIcons = [
+  require('../images/home/home-icon1.png'),
+  require('../images/home/home-icon2.png'),
+  require('../images/home/home-icon3.png'),
+  require('../images/home/home-icon4.png'),
+  require('../images/home/home-icon5.png'),
+  require('../images/home/home-icon6.png'),
+]
+
+const homeIconsText = [
+  'R&D Bakery Lab',
+  'Product Customization',
+  'Flavor Lab',
+  'Certified Flavorists',
+  'Food Scientist',
+  'Bakery Specialist'
+]
 
 const backgroundContent = [
   {
@@ -24,68 +50,103 @@ const backgroundContent = [
 
 export class Home extends Component {
   
-  constructor(props) {
-    super(props);
-    this.wrapperRef = React.createRef();
+  constructor() {
+    super();
     this.state = {
       backgroundIndex: 1,
-      landingTextClasses: ['temp'],
-      transition: false,
     }
   }
 
-  componentDidMount() {
-    this.interval = this.startInterval()
+  _renderHomeIcons = () => {
+    return homeIcons.map((link, idx) => (
+      <div className='home-icon-container'>
+        <img className='home-icon' src={link} key={idx} alt='home-icon'/>
+        <p>{homeIconsText[idx]}</p>
+      </div>
+    ))
   }
 
-  componentWillUnmount() {
-    clearInterval(this.interval)
-  }
-
-  startInterval() {
-    return setInterval(() => {
-      if (this.state.backgroundIndex < 2) {
-        this.setState({backgroundIndex: this.state.backgroundIndex + 1})
-      } else {
-        this.setState({backgroundIndex: 0})
-      }
-    }, 8000)
-  }
-
-  pauseInterval(idx) {
-    if (idx === 3) {
-      idx = 0
-    } else if (idx === -1) {
-      idx = 2
-    }
-    this.setState({backgroundIndex: idx})
-    clearInterval(this.interval)
+  _renderCLIcons = () => {
+    return clIcons.map((link, idx) => (
+      <div className='home-cl-container'>
+        <img className='home-cl-icon' src={link} key={idx} alt='cl-icon'/>
+        <p>{clText[idx]}</p>
+      </div>  
+    ))
   }
 
   render() {
     const { backgroundIndex } = this.state;
     return (
       <div>
-        <div className={'entry-content'}>
-
+        <div className='entry-content'>
           <div className='landing-page-container'>
-            <div style={{backgroundImage: `url(${backgroundImages[backgroundIndex]})`}} className='background-container'> 
-              <div className='side-arrow-right' onClick={() => this.pauseInterval(backgroundIndex + 1)} alt='right-arrow'></div>
-              <div className='side-arrow-left' onClick={() => this.pauseInterval(backgroundIndex - 1)} alt='left-arrow'></div>
-          
-              <div key={backgroundIndex} className='landing-text'>
-                <h2 ref={this.wrapperRef}>{backgroundContent[backgroundIndex].title}</h2>
-                <p>{backgroundContent[backgroundIndex].body}</p>
-              </div>
-              <div className='image-selector-container'>
-                <div style={backgroundIndex === 0 ? {background: '#2cb34a'} : null} className='image-selector' onClick={() => this.pauseInterval(0)}></div>
-                <div style={backgroundIndex === 1 ? {background: '#2cb34a'} : null} className='image-selector' onClick={() => this.pauseInterval(1)}></div>
-                <div style={backgroundIndex === 2 ? {background: '#2cb34a'} : null} className='image-selector' onClick={() => this.pauseInterval(2)}></div>
+            <div className='background-container'> 
+              <div className='home-text-container'>
+                <div className='landing-text'>
+                  <h2>{backgroundContent[backgroundIndex].title}</h2>
+                  <p>{backgroundContent[backgroundIndex].body}</p>
+                </div>
               </div>
             </div>
           </div>
-          <div className='green-connector-container'>
-            <h2>Something Inspirational heh</h2>
+          <div className='home-promise-container'>
+            <div className='home-promise-text'>
+              <p>brand promise</p>
+              <h2>Tailored Approach - Fanatically Bakery Focused - Customer Obsessed</h2>
+            </div>
+          </div>
+          <div className='home-body-container'>
+            <div className='home-body-text'>
+              <div className='home-body-top-container'>
+                <div className='home-body-left-container'>
+                  <h2>Unlimited <span className='home-body-thin'>Possibilities</span></h2>
+                  <p>No matter what you are looking for, with our team of Certified Flavorists, Bakery Specialists, and Food Scientists, Embassy offers a variety of formats and concetrates to meet your product and process requirements.</p>
+                </div>
+                <div className='home-body-right-container icons-container'>
+                  <div className='home-icons'>
+                    {this._renderHomeIcons()}
+                  </div>
+                </div>
+              </div>
+              <div className='home-body-bottom-container'>
+                <div className='home-body-left-container'>
+                  <div className='home-cl-icons'>
+                    {this._renderCLIcons()}
+                  </div>
+                </div>
+                <div className='home-body-right-container'>
+                  <h2>Clean-Label <span className='home-body-thin'>Matters</span></h2>
+                  <p>Consumers demand it and we create it! Our quality flavors, bakery mixes, and bases are made from the highest quality ingredients. Our focus is to use ingredients customers can pronounce.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='home-promise-container'>
+            <div className='home-promise-text'>
+              <p>brand promise</p>
+              <h2>Tailored Approach - Fanatically Bakery Focused - Customer Obsessed</h2>
+            </div>
+          </div>
+          <div className='home-body-container'>
+            <div className='home-body-text'>
+              <div className='home-body-top-container'>
+                <div className='home-body-left-container'>
+                  <h2>Leaders <span className='home-body-thin'>in Market Trends</span></h2>
+                  <p>Innovation is at Embassy’s core. We find inspiration from around the world and develop innovative products before the trend emerges in your mark.</p>
+                </div>
+                <div className='home-body-right-container'></div>
+              </div>
+              <div className='home-body-bottom-container'>
+                <div className='home-body-left-container'>
+                  
+                </div>
+                <div className='home-body-right-container'>
+                  <h2>Unmatched <span className='home-body-thin'>Quality</span></h2>
+                  <p>Our unique approach combines the expertise of Certified Flavorists, Bakery Specialists, and Food Scientists, guaranteeing superior product manufacturing and advanced ingredient development.</p>
+                </div>
+              </div>
+            </div>
           </div>
           <div className='white-connector-container'>
           </div>
