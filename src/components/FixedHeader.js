@@ -108,49 +108,33 @@ export class FixedHeader extends Component {
                 <img src={MobileMenu} className='hamburger-menu' alt='Mobile Menu' onClick={() => this.setState({hamburgerMenuOpen: !this.state.hamburgerMenuOpen})}/>
               </div>
             )}
-            {this.state.hamburgerMenuOpen && this.state.windowWidth < this.mediaQuery.tablet ? (
-              <div className='mobile-nav-dropdown'>
-                <div className='mobile-nav-dropdown-header'>
-                  <div className='mobile-nav-dropdown-parent' onClick={() => this.mobileDropDown(1)}>
-                    <a className='mobile-nav-dropdown-parent-header' href="/#">About</a>
-                    <div className={mobileDropDownIdx === 1 ? 'mobile-nav-up-arrow' : 'mobile-nav-down-arrow'}> </div>
-                  </div>
-                  <div className={mobileDropDownIdx === 1 ? 'mobile-nav-dropdown-child' : 'hidden'}>
-                    <Link to="/about" onClick={() => this._closeHamburgerMenu()}>What We Do</Link>
-                    <Link to="/about" onClick={() => this._closeHamburgerMenu()}>Our History</Link>
-                    <Link to="/about" onClick={() => this._closeHamburgerMenu()}>Leadership</Link>
-                  </div>
-                </div>
-                <div className='mobile-nav-dropdown-header'>
-                  <div className='mobile-nav-dropdown-parent' onClick={() => this.mobileDropDown(2)}>
-                    <a className='mobile-nav-dropdown-parent-header'href="/#">Products</a>
-                    <div className={mobileDropDownIdx === 2 ? 'mobile-nav-up-arrow' : 'mobile-nav-down-arrow'}> </div>
-                  </div>
-                  <div className={mobileDropDownIdx === 2 ? 'mobile-nav-dropdown-child' : 'hidden'}>
-                    <Link to="/all-products" onClick={() => this._closeHamburgerMenu()}>All Products</Link>
-                    <Link to="/about" onClick={() => this._closeHamburgerMenu()}>Bakery Ingredients</Link>
-                    <Link to="/about" onClick={() => this._closeHamburgerMenu()}>Flavours</Link>
-                  </div>
-                </div>
-                <div className='mobile-nav-dropdown-header'>
-                  <div className='mobile-nav-dropdown-parent' onClick={() => this.mobileDropDown(3)}>
-                    <a className='mobile-nav-dropdown-parent-header' href="/#">Customers</a>
-                    <div className={mobileDropDownIdx === 3 ? 'mobile-nav-up-arrow' : 'mobile-nav-down-arrow'}> </div>
-                  </div>
-                  <div className={mobileDropDownIdx === 3 ? 'mobile-nav-dropdown-child' : 'hidden'}>
-                    <Link to="/about" onClick={() => this._closeHamburgerMenu()}>Commercial Bakeries</Link>
-                    <Link to="/about" onClick={() => this._closeHamburgerMenu()}>Distributors</Link>
-                    <Link to="/about" onClick={() => this._closeHamburgerMenu()}>Food Service</Link>
-                    <Link to="/about" >Food Retailers</Link>
-                  </div>
-                </div>
-                <div className='mobile-nav-dropdown-header-fixed'>
-                  <a href="/#" onClick={() => this._closeHamburgerMenu()}>Contact</a>
-                </div>
-              </div>
-            ) : null}
+
           </div>
         </div>
+          {this.state.hamburgerMenuOpen && this.state.windowWidth < this.mediaQuery.tablet ? (
+            <div className='mobile-nav-dropdown'>
+              <div className='mobile-nav-dropdown-header'>
+                <div className='mobile-nav-dropdown-parent' onClick={() => this.mobileDropDown(1)}>
+                  <a className='mobile-nav-dropdown-parent-header' href="/#">About</a>
+                  <div className={mobileDropDownIdx === 1 ? 'mobile-nav-up-arrow' : 'mobile-nav-down-arrow'}> </div>
+                </div>
+                <div className={mobileDropDownIdx === 1 ? 'mobile-nav-dropdown-child' : 'hidden'}>
+                  <Link to="/careers" onClick={() => this._closeHamburgerMenu()}>Careers</Link>
+                  <Link to="/leadership" onClick={() => this._closeHamburgerMenu()}>Leadership</Link>
+                  <Link to="/history" onClick={() => this._closeHamburgerMenu()}>Our History</Link>
+                </div>
+              </div>
+              <div className='mobile-nav-dropdown-header-fixed' onClick={() => this._closeHamburgerMenu()}>
+                <Link to="/all-products">Products</Link>
+              </div>
+              <div className='mobile-nav-dropdown-header-fixed' onClick={() => this._closeHamburgerMenu()}>
+                <Link to="/distributors">Distributors</Link>
+              </div>
+              <div className='mobile-nav-dropdown-header-fixed' onClick={() => this._closeHamburgerMenu()}>
+                <Link to="/contact">Contact</Link>
+              </div>
+            </div>
+          ) : null}
       </div>
     )
   }
