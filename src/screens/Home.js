@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { GlobalContext } from '../context/GlobalState';
 import './Home.css';
 
 const clIcons = [
@@ -66,7 +67,8 @@ const backgroundContent = [
 ];
 
 export class Home extends Component {
-  
+  static contextType = GlobalContext
+
   constructor() {
     super();
     this.state = {
@@ -94,12 +96,15 @@ export class Home extends Component {
 
   _renderCertifications = () => {
     return certificationIcons.map((link, idx) => (
-      <img className='home-certification-icon' src={link} key={idx} alt='certification-logo'/>
+      <div className='home-certification-icon-container'>
+        <img className='home-certification-icon' src={link} key={idx} alt='certification-logo'/>
+      </div>
     ))
   }
 
   render() {
     const { backgroundIndex } = this.state;
+    const { dimensions, mediaQuery } = this.context;
     return (
       <div>
         <div className='entry-content'>
@@ -130,22 +135,37 @@ export class Home extends Component {
                   <p>No matter what you are looking for, with our team of Certified Flavorists, Bakery Specialists, and Food Scientists, Embassy offers a variety of formats and concetrates to meet your product and process requirements.</p>
                 </div>
                 <div className='home-body-right-container icons-container'>
-                  <div className='home-icons'>
+                  <div className='home-icons home-icons-padding'>
                     {this._renderHomeIcons()}
                   </div>
                 </div>
               </div>
-              <div className='home-body-bottom-container'>
-                <div className='home-body-left-container'>
-                  <div className='home-cl-icons'>
-                    {this._renderCLIcons()}
+
+              {dimensions.width >= mediaQuery.desktop ? ( 
+                <div className='home-body-bottom-container'>
+                  <div className='home-body-left-container'>
+                    <div className='home-cl-icons'>
+                      {this._renderCLIcons()}
+                    </div>
+                  </div>
+                  <div className='home-body-right-container'>
+                    <h2>Clean-Label <span className='home-body-thin'>Matters</span></h2>
+                    <p>Consumers demand it and we create it! Our quality flavors, bakery mixes, and bases are made from the highest quality ingredients. Our focus is to use ingredients customers can pronounce.</p>
                   </div>
                 </div>
-                <div className='home-body-right-container'>
-                  <h2>Clean-Label <span className='home-body-thin'>Matters</span></h2>
-                  <p>Consumers demand it and we create it! Our quality flavors, bakery mixes, and bases are made from the highest quality ingredients. Our focus is to use ingredients customers can pronounce.</p>
-                </div>
-              </div>
+              ) : (
+                <div className='home-body-top-container'>
+                  <div className='home-body-left-container'>
+                    <h2>Clean-Label <span className='home-body-thin'>Matters</span></h2>
+                    <p>Consumers demand it and we create it! Our quality flavors, bakery mixes, and bases are made from the highest quality ingredients. Our focus is to use ingredients customers can pronounce.</p>
+                  </div>
+                  <div className='home-body-right-container icons-container'>
+                    <div className='home-icons'>
+                      {this._renderCLIcons()}
+                    </div>
+                  </div>
+                </div>       
+              )}
             </div>
           </div>
           <div className='home-contact-container'>
@@ -172,15 +192,27 @@ export class Home extends Component {
                   <div className='home-img-container image-1'></div>
                 </div>
               </div>
-              <div className='home-body-bottom-container'>
-                <div className='home-body-left-container'>
-                  <div className='home-img-container image-2'></div>
+              {dimensions.width >= mediaQuery.desktop ? ( 
+                <div className='home-body-bottom-container'>
+                  <div className='home-body-left-container'>
+                    <div className='home-img-container image-2'></div>
+                  </div>
+                  <div className='home-body-right-container'>
+                    <h2>Unmatched <span className='home-body-thin'>Quality</span></h2>
+                    <p>Our unique approach combines the expertise of Certified Flavorists, Bakery Specialists, and Food Scientists, guaranteeing superior product manufacturing and advanced ingredient development.</p>
+                  </div>
                 </div>
-                <div className='home-body-right-container'>
-                  <h2>Unmatched <span className='home-body-thin'>Quality</span></h2>
-                  <p>Our unique approach combines the expertise of Certified Flavorists, Bakery Specialists, and Food Scientists, guaranteeing superior product manufacturing and advanced ingredient development.</p>
+              ) : (
+                <div className='home-body-top-container'>
+                  <div className='home-body-left-container'>
+                    <h2>Unmatched <span className='home-body-thin'>Quality</span></h2>
+                    <p>Our unique approach combines the expertise of Certified Flavorists, Bakery Specialists, and Food Scientists, guaranteeing superior product manufacturing and advanced ingredient development.</p>
+                  </div>
+                  <div className='home-body-right-container'>
+                    <div className='home-img-container image-2'></div>
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
           <div className='home-contact-container'>
