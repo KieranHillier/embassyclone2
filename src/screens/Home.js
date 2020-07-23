@@ -160,7 +160,7 @@ export class Home extends Component {
                     <p>Consumers demand it and we create it! Our quality flavors, bakery mixes, and bases are made from the highest quality ingredients. Our focus is to use ingredients customers can pronounce.</p>
                   </div>
                   <div className='home-body-right-container icons-container'>
-                    <div className='home-icons'>
+                    <div className='home-icons mini-cl-icons'>
                       {this._renderCLIcons()}
                     </div>
                   </div>

@@ -157,6 +157,8 @@
     padding-left: 0;
     display: flex;
     padding-top: 35px;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-body-thin {
@@ -194,7 +196,6 @@
     display: grid;
     grid-template-columns: repeat(2,150px);
     grid-gap: 10px;
-    width: 100%;
 }
 
 .home-icons-padding {
@@ -269,7 +270,7 @@
 .home-contact-btn {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -320,6 +321,18 @@
 @media (min-width: 768px) {
 
 
+    .home-icons {
+        grid-template-columns: repeat(3,auto);
+    }
+
+    .mini-cl-icons {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
     .home-certifications {
         display: flex;
         justify-content: space-between;
@@ -331,8 +344,24 @@
     }
 
     .landing-text {
-        color: #fff;
+        color: #000;
         max-width: 40%;
+    }
+
+    .home-contact-content-container {
+        width: 89%;
+    }
+
+    .second-container {
+        width: 89%;
+    }
+
+    .home-contact-btn {
+        justify-content: center;
+    }
+
+    .home-img-container {
+        background-position: top;
     }
 }
 
@@ -341,6 +370,10 @@
 
     .home-certification-icon {
         height: 68px;
+    }
+
+    .home-contact-content-container {
+        width: 89%;
     }
     
     .home-body-top-container, .home-body-bottom-container {
@@ -400,14 +433,6 @@
         padding: 8px 67px;
     }
 
-    .home-contact-content-container {
-        width: 70%;
-    }
-
-    .second-container {
-        width: 89%;
-    }
-
     .home-icon-container p{
         font-size: 15px;
     }
@@ -449,12 +474,16 @@
     }
 
     .home-icons {
-        grid-template-columns: repeat(3,auto);
+        width: 100%;
     }
 
     .home-icons-padding {
         padding-bottom: 0;
     }
+
+    /* .icons-container {
+        justify-content: ;
+    } */
 
 }
 

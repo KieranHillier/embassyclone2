@@ -21,12 +21,12 @@
 }
 
 .history-content-container {
-  margin: 260px 0 25px;
+  margin: 220px 0 25px;
   /* background: url('../images/Timeline.png'); */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 1000px;
+  height: 1200px;
   display: flex;
   flex-direction: column;
   color: #000;
@@ -46,6 +46,7 @@
   flex: 1;
   width: 100%;
   display: flex;
+  height: 190px;
 }
 
 .history-content-section-left {
@@ -90,6 +91,26 @@
   background-position-x: left !important;
 }
 
+.history-content-section-left-mini {
+  flex: 1;
+  background: url('../images/timeline-mini.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.history-content-section-left-mini-last {
+  background: url('../images/timeline-circle.png');
+  flex: 1;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 14px;
+}
+
+.history-content-section-right-mini {
+  flex: 5;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
 
@@ -104,7 +125,14 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+  .history-content-section {
+    width: 100%;
+    height: unset;
+  }
 
+  .history-content-container {
+    height: 1000px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
