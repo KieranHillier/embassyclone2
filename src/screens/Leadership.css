@@ -21,8 +21,12 @@
   color: #2ea948;
 }
 
+.leadership-ceo-container {
+  padding: 0 0 40px 0;
+}
+
 .leadership-content-container {
-  padding: 260px 0 25px;
+  padding: 260px 0 80px;
 }
 
 .leadership-team-container {

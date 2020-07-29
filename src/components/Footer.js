@@ -51,15 +51,14 @@ export class Footer extends Component {
             <div className='top-content-container'> 
               <div className='footer-section'>
                 <h2>Company</h2>
-                <Link to="/about">Products</Link>
-                <Link to="/about">Distributors</Link>
+                <Link to="/all-products">Products</Link>
+                <Link to="/distributors">Distributors</Link>
               </div>
               <div className='footer-section'>
                 <h2>About Us</h2>
-                <Link to="/about">What We Do</Link>
-                <Link to="/about">Our History</Link>
-                <Link to="/about">Leadership Team</Link>
-                <Link to="/about">Careers</Link>
+                <Link to="/careers">Careers</Link>
+                <Link to="/leadership">Leadership Team</Link>
+                <Link to="/history">Our History</Link>
               </div>
               <div className='footer-section'>
                 <h2>General Contact</h2>

@@ -52,20 +52,24 @@
 .history-content-section-left {
   flex: 5;
   text-align: right;
-  background-repeat: no-repeat !important;
-  background-size: 120px !important;
-  background-position-x: right !important;
+  background-repeat: no-repeat;
+  background-size: 120px;
+  background-position-x: right;
 }
 
 .history-content-section-left p{
   width: 80%;
   float: right;
   padding-top: 10px;
+  font-family: 'AirbnbBook';
+  font-size: 17px;
 }
 
 .history-content-section-right p {
   width: 80%;
   padding-top: 10px;
+  font-family: 'AirbnbBook';
+  font-size: 17px;
 }
 
 .history-content-section-middle {
@@ -86,9 +90,13 @@
 
 .history-content-section-right {
   flex: 5;
-  background-repeat: no-repeat !important;
-  background-size: 120px !important;
-  background-position-x: left !important;
+  background-repeat: no-repeat;
+  background-size: 120px;
+  background-position-x: left;
+}
+
+.history-bottle {
+  background-size: 154px;
 }
 
 .history-content-section-left-mini {
@@ -109,6 +117,12 @@
 
 .history-content-section-right-mini {
   flex: 5;
+}
+
+.history-content-section-right-mini p{
+  font-size: 15px;
+  font-family: 'AirbnbBook';
+  padding-top: 7px;
 }
 
 /* Small devices (landscape phones, 576px and up) */

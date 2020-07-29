@@ -3,12 +3,12 @@ import { GlobalContext } from '../context/GlobalState';
 import './History.css'
 
 const timelineImages = [
-  require('../images/timeline1.png'),
-  require('../images/timeline2.png'),
-  require('../images/timeline3.png'),
-  require('../images/timeline4.png'),
-  require('../images/timeline5.png'),
-  require('../images/timeline6.png'),
+  require('../images/history/timeline1.png'),
+  require('../images/history/timeline2.png'),
+  require('../images/history/timeline3.png'),
+  require('../images/history/timeline4.png'),
+  require('../images/history/timeline5.png'),
+  require('../images/history/timeline6.png'),
 ]
 
 class History extends Component {
@@ -26,7 +26,7 @@ class History extends Component {
           {dimensions.width >= mediaQuery.tablet ? (
             <>
               <div className='history-content-section'>
-                <div className='history-content-section-left' style={{background: `url(${timelineImages[0]})`}}></div>
+                <div className='history-content-section-left' style={{backgroundImage: `url(${timelineImages[0]})`}}></div>
                 <div className='history-content-section-middle'></div>
                 <div className='history-content-section-right'>
                   <h1>1971</h1>
@@ -39,12 +39,12 @@ class History extends Component {
                   <p>Martino Brambilla became owner and President at the age of 17. He changed the name of the business to Embassy Food Specialties Ltd. and shifted the primary focus of the business to flavors.</p>
                 </div>
                 <div className='history-content-section-middle'></div>
-                <div className='history-content-section-right' style={{background: `url(${timelineImages[1]})`}}>
+                <div className='history-content-section-right history-bottle' style={{backgroundImage: `url(${timelineImages[1]})`}}>
                   
                 </div>
               </div>
               <div className='history-content-section'>
-                <div className='history-content-section-left' style={{background: `url(${timelineImages[2]})`}}></div>
+                <div className='history-content-section-left' style={{backgroundImage: `url(${timelineImages[2]})`}}></div>
                 <div className='history-content-section-middle'></div>
                 <div className='history-content-section-right'>
                   <h1>1992</h1>
@@ -57,11 +57,11 @@ class History extends Component {
                   <p>Embassy moved into a new custom-deisgned manufacturing facility outside of Toronto, Ontario.</p>
                 </div>
                 <div className='history-content-section-middle'></div>
-                <div className='history-content-section-right' style={{background: `url(${timelineImages[3]})`}}>
+                <div className='history-content-section-right' style={{backgroundImage: `url(${timelineImages[3]})`}}>
                 </div>
               </div>
               <div className='history-content-section'>
-                <div className='history-content-section-left' style={{background: `url(${timelineImages[4]})`}}></div>
+                <div className='history-content-section-left' style={{backgroundImage: `url(${timelineImages[4]})`}}></div>
                 <div className='history-content-section-middle'></div>
                 <div className='history-content-section-right'>
                   <h1>2010</h1>
@@ -74,7 +74,7 @@ class History extends Component {
                   <p>Embassy changed the business name to Embassy Ingredients Ltd. to more accurately reflect its flavor and bakery capabilities.</p>
                 </div>
                 <div className='history-content-section-middle-last'></div>
-                <div className='history-content-section-right' style={{background: `url(${timelineImages[5]})`}}>
+                <div className='history-content-section-right' style={{backgroundImage: `url(${timelineImages[5]})`}}>
                 </div>
               </div>
             </>

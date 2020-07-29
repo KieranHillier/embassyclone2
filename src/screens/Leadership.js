@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import LeadershipData from '../data/leadershipTeam.json';
 import './Leadership.css';
 
+const ceoData =   {
+  "name": "Martino Brambilla",
+  "position": "Founder & President",
+  "favouriteTreat": "Donuts",
+  "description": "Martino Brambilla is the founder, and president of Embassy Ingredients since 1981.\n\nMartino sets the company strategy to specialize in both flavours and bakery ingredients in order to create an industry with healthier, tastier, and more flavourful foods.\n\nMartino garduated from both Harvard Business School and London Business School."
+}
+
 const LeadershipCard = (props) => (
   <div className='leadership-card-container' onClick={() => props.openModal(props.data)}>
     <div className='leadership-card-img-container'>
@@ -67,6 +74,17 @@ class Leadership extends Component {
           <div className='leadership-header-image'></div>
           <div className='leadership-content-container'>
             <h1 className='leadership-header-text'>Meet Our Leadership Team</h1>
+            <div className='leadership-ceo-container'>
+              <div className='leadership-card-container' onClick={() => this._openModal(ceoData)}>
+                <div className='leadership-card-img-container'>
+                  <div className='leadership-card-img' />
+                </div>
+                <div className='leadership-card-text-container'>
+                  <h3>{ceoData.name}</h3>
+                  <p>{ceoData.position}</p>
+                </div>
+              </div>
+            </div>
             <div className='leadership-team-container'>
               {this._renderLeadershipTeam()}
             </div>

@@ -1,13 +1,49 @@
 import React, { Component } from 'react';
 import './Contact.css';
 import ReactMapboxGl, { ZoomControl, Marker } from 'react-mapbox-gl';
+import emailjs from 'emailjs-com';
 
 const Map = ReactMapboxGl({
   accessToken: process.env.REACT_APP_MAP,
-  scrollZoom: false
+  scrollZoom: false,
+  dragPan: window.innerWidth > 576 ? true : false
 });
 
 class Contact extends Component {
+
+  state = {
+    errorMsg: false
+  }
+
+  _sendEmail() {
+    const emailParams = {
+      name: this.refs.name.value,
+      email: this.refs.email.value,
+      company: this.refs.company.value,
+      phone: this.refs.phone.value,
+      message: this.refs.message.value,
+    }
+
+    //check for blanks
+    if (emailParams.name.trim() === "" || emailParams.email.trim() === "" || emailParams.company.trim() === "" || emailParams.message.trim() === "") {
+      this.setState({
+        errorMsg: true
+      })
+    }
+
+    //check if phone number is provided
+    if (emailParams.phone.trim() === "") {
+      emailParams.phone = "No number provided"
+    }
+
+    emailjs.send('gmail', process.env.REACT_APP_EMAIL_TEMPLATE_ID, emailParams, process.env.REACT_APP_EMAIL_USER_ID)
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+      }, (err) => {
+          console.log('FAILED...', err);
+    });
+  }
+
   render() {
     return (
       <>
@@ -53,12 +89,14 @@ class Contact extends Component {
           </div>
           <div className='contact-textarea-container'>
             <textarea 
-              className='contact-textarea' 
+              className='contact-textarea'
+              ref='message'
               name='contact-text-area' rows='12'
               placeholder='Message...'
             />
-            <div className='contact-textarea-btn'>send</div>
+            <div className='contact-textarea-btn' onClick={() => this._sendEmail()}>send</div>
           </div>
+          {this.state.errorMsg ? <p className='contact-error-msg'>*Ensure all text fields are filled out correctly</p> : null}
         </div>
         <div className='contact-info-container'>
           <div className='contact-info-item'>
@@ -83,7 +121,7 @@ class Contact extends Component {
           <div className='contact-info-item'>
             <h2>US Office</h2>
             <p>Jonathon York, Sales and Marketing Director</p>
-            <p>Email: <span>yorkj@EmbassyIngredients.com</span></p>
+            <p className='contact-info-us-office'>Email: <span>yorkj@EmbassyIngredients.com</span></p>
           </div>
         </div>
       </div>

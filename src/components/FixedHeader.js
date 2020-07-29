@@ -115,7 +115,7 @@ export class FixedHeader extends Component {
             <div className='mobile-nav-dropdown'>
               <div className='mobile-nav-dropdown-header'>
                 <div className='mobile-nav-dropdown-parent' onClick={() => this.mobileDropDown(1)}>
-                  <a className='mobile-nav-dropdown-parent-header' href="/#">About</a>
+                  <div className='mobile-nav-dropdown-parent-header'>About</div>
                   <div className={mobileDropDownIdx === 1 ? 'mobile-nav-up-arrow' : 'mobile-nav-down-arrow'}> </div>
                 </div>
                 <div className={mobileDropDownIdx === 1 ? 'mobile-nav-dropdown-child' : 'hidden'}>
