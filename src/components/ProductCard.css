@@ -5,6 +5,7 @@
     display: flex;
     color: #000;
     cursor: pointer;
+    height: 443px;
 }
 
 .product-card-container:hover {
@@ -20,12 +21,11 @@
 
 .product-card-img-container {
     height: 300px;
-    background: grey;
 }
 
 .product-card-img-container img{
     width: 100%;
-    height: 100%;
+    height: 300px;
     object-fit: cover;
 }
 

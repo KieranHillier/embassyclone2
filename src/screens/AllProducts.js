@@ -4,6 +4,21 @@ import { GlobalContext } from '../context/GlobalState';
 import ProductsData from '../data/products.json';
 import { ProductCard } from '../components/ProductCard'
 import { ProductFilter } from '../components/ProductFilter'
+import { Link } from 'react-router-dom';
+
+let productImages = {}
+ProductsData.forEach((ele, idx) => {
+  productImages[ele.title] = require(`../images/products/${ele.title}.jpg`)
+})
+
+const filterIcons = {
+  'plant': require("../images/products/filters/plant-based.png"),
+  'plant-active': require("../images/products/filters/plant-based-active.png"),
+  'clean': require("../images/products/filters/clean-label.png"),
+  'clean-active': require("../images/products/filters/clean-label-active.png"),
+  'gluten': require("../images/products/filters/gluten-free.png"),
+  'gluten-active': require("../images/products/filters/gluten-free-active.png"),
+}
 
 export class AllProducts extends Component {
   static contextType = GlobalContext
@@ -24,6 +39,9 @@ export class AllProducts extends Component {
       queryStatus: "initial",
       bakeryDropDown: false,
       flavorDropDown: false,
+      plantActive: false,
+      cleanActive: false,
+      glutenActive: false,
       modalOpen: false,
       modalDescription: null,
       modalFeatures: null,
@@ -125,12 +143,12 @@ export class AllProducts extends Component {
     
     if (queryStatus === "initial") {
       return ProductsData.map((element, idx) => (
-        <ProductCard id={idx} element={element} openModal={this._openModal} />
+        <ProductCard id={idx} element={element} productImage={productImages[element.title]} openModal={this._openModal} />
       ));
     } else if (results.length > 0) {
       //loop through "results" and render all results
       return results.map((element, idx) => (
-        <ProductCard id={idx} element={element} openModal={this._openModal} />
+        <ProductCard id={idx} element={element} productImage={productImages[element.title]} openModal={this._openModal} />
       ));
     }
   };
@@ -226,7 +244,7 @@ export class AllProducts extends Component {
   }
  
   render() {
-    const { modalDescription, modalFeatures, modalOpen } = this.state
+    const { modalDescription, modalFeatures, modalOpen, results, queryStatus, plantActive, glutenActive, cleanActive } = this.state
     const { dimensions, mediaQuery } = this.context
     return (
       <>
@@ -266,6 +284,17 @@ export class AllProducts extends Component {
                 name="search"
                 autoComplete="off"
               />
+              <div className='filter-searchbar-special'>
+                <div className='filter-searchbar-special-filter' onClick={() => this.setState({ plantActive: !plantActive })}>
+                  <img src={plantActive ? filterIcons['plant-active'] : filterIcons['plant']} alt='plant-filter' />
+                </div>
+                <div className='filter-searchbar-special-filter' onClick={() => this.setState({ glutenActive: !glutenActive })}>
+                  <img src={glutenActive ? filterIcons['gluten-active'] : filterIcons['gluten']} alt='gluten-filter' />
+                </div>
+                <div className='filter-searchbar-special-filter' onClick={() => this.setState({ cleanActive: !cleanActive })}>
+                  <img src={cleanActive ? filterIcons['clean-active'] : filterIcons['clean']} alt='clean-filter' />
+                </div>
+              </div>
               {dimensions.width < mediaQuery.desktop ? (
                 <ProductFilter 
                   removeFilters = {this._removeFilters}
@@ -276,9 +305,18 @@ export class AllProducts extends Component {
                 />
               ) : null}
             </div>
-            <div className='filter-search-results'>
-              {this._renderResults()}
-            </div>
+            {results.length > 0 || queryStatus === 'initial' ? (
+              <div className='filter-search-results'>
+                {this._renderResults()}
+              </div>
+              ) : (
+              <div className='filter-search-no-match'>
+                <h2>Couldn't find what you were looking for?</h2>
+                <div className='filter-no-match-btn'>
+                  <Link to='/contact'>contact us</Link>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </>

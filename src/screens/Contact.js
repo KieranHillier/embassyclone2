@@ -127,7 +127,7 @@ class Contact extends Component {
       </div>
       <div className='contact-map-container'>
         <Map
-          style='mapbox://styles/mapbox/streets-v9'
+          style={'mapbox://styles/mapbox/streets-v9'}
           center={[-79.676876, 43.730793]}
           containerStyle={{
             height: '100%',

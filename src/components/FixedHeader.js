@@ -79,8 +79,8 @@ export class FixedHeader extends Component {
   }
 
   render() {
-    const { mobileDropDownIdx, windowWidth, hoveredHeader, scrollPosition } = this.state;
-    const { tablet, desktop } = this.mediaQuery;
+    const { mobileDropDownIdx, windowWidth, hoveredHeader } = this.state;
+    const { tablet } = this.mediaQuery;
     return (
       <div className={'fixed-header'}>
         <div className={this.getSecondaryHeaderStyle()}>
@@ -139,33 +139,3 @@ export class FixedHeader extends Component {
     )
   }
 }
-
-
-// <div className={windowWidth > phone ? 'primary-header' : 'hidden'}>
-// <div className={'logo-container'} onClick={() => this.phoneClick()}>
-//   <img src={PhoneLogo} className={'logo-container-svg'} alt='Phone Logo' />
-//   <p className={'primary-header-text'}>1-800-334-3371</p>
-// </div>
-// <div className={'logo-container'} onClick={() => this.emailClick()}>
-//   <img src={EmailLogo} alt='Email Logo' />
-//   <p className={'primary-header-text'}>info@embassyingredients.com</p>
-// </div>
-// </div>
-
-
-
-{/* <li><a className={'header-dropdown'} onMouseEnter={() => this._hoverFixedHeader(2)} onMouseLeave={() => this._closeFixedHeader()} href="/#">PRODUCTS</a>
-<ul style={hoveredHeader === 2 ? {display: 'flex'} : {display: 'none'}} onMouseEnter={() => this._hoverFixedHeader(2)} onMouseLeave={() => this._closeFixedHeader()}>
-  <li><Link to="/all-products" onClick={() => this._closeFixedHeader()}>All Products</Link></li>
-  <li><Link to="/about">Bakery Ingredients</Link></li>
-  <li><Link to="/about">Flavours</Link></li>
-</ul>
-</li>
-<li><a className={'header-dropdown'} onMouseEnter={() => this._hoverFixedHeader(3)} onMouseLeave={() => this._closeFixedHeader()} href="/#">CUSTOMERS</a>
-<ul style={hoveredHeader === 3 ? {display: 'flex'} : {display: 'none'}} onMouseEnter={() => this._hoverFixedHeader(3)} onMouseLeave={() => this._closeFixedHeader()}>
-  <li><Link to="/about">Commercial Bakeries</Link></li>
-  <li><Link to="/about">Distributors</Link></li>
-  <li><Link to="/about">Food Service</Link></li>
-  <li><Link to="/about">Food Retailers</Link></li>
-</ul>
-</li> */}
