@@ -36,6 +36,7 @@
 .filter-min-container {
   border: 1px solid #908c8c;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .filter-min-parent {

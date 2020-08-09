@@ -57,10 +57,9 @@ export class AllProducts extends Component {
   _findResults = () => {
     //value inside search input
     const query = this.refs.searchValue.value.toLowerCase();
-    const { sideFilters, sideFiltersChild } = this.state
+    const { sideFilters, sideFiltersChild, plantActive, cleanActive, glutenActive } = this.state
 
     let matchingResults = [...ProductsData];
-    console.log(matchingResults)
     const checkQuery = query !== '' ? true : false;
     const checkFilter = sideFilters.length > 0 ? true : false;
     const checkFilterChild = sideFiltersChild.length > 0 ? true : false;
@@ -68,19 +67,29 @@ export class AllProducts extends Component {
     //check if query is blank
     if (checkQuery) {
       matchingResults = matchingResults.filter(ele => ele.keywords.includes(query))
-      //console.log('Performed query Check', matchingResults)
     } 
 
     //check
     if (checkFilter) {
       matchingResults = matchingResults.filter(ele => sideFilters.includes(ele.category1))
-      //console.log('Performed side filter Check', matchingResults)
     }
 
     //check
     if (checkFilterChild) {
       matchingResults = matchingResults.filter(ele => sideFiltersChild.includes(ele.category2))
-      //console.log('Performed side filter child Check', matchingResults)
+    }
+
+    //check
+    if (plantActive) {
+      matchingResults = matchingResults.filter(ele => ele.special.includes('plant-based'))
+    }
+
+    if (cleanActive) {
+      matchingResults = matchingResults.filter(ele => ele.special.includes('clean label'))
+    }
+
+    if (glutenActive) {
+      matchingResults = matchingResults.filter(ele => ele.special.includes('gluten-free'))
     }
 
     //check if search produced any results. if successful store results in state. 
@@ -90,19 +99,10 @@ export class AllProducts extends Component {
       : this.setState({ results: matchingResults, queryStatus: "filtered" });
   };
 
-  // _handleKeyPress = e => {
-  //   //check if user presses "Enter" key while focused on input
-  //   //if so, search for results
-  //     console.log('changed')
-  //     this._findResults();
-
-  // };
-
   _handleInputChange = e => {
     //track value of input inside 'query' state
     this.setState({ query: e.target.value });
     const { sideFilters, sideFiltersChild } = this.state
-    console.log('changed')
     //if input is blank, remove all matches
     if (e.target.value === "" && sideFilters.length === 0 && sideFiltersChild.length === 0) {
       this.setState({
@@ -153,8 +153,25 @@ export class AllProducts extends Component {
     }
   };
 
-  _updateCheckbox(val) {
-    const { sideFilters } = this.state
+  _updateCheckbox(val, dropdown) {
+    const { sideFilters, sideFiltersChild } = this.state
+
+    if (dropdown) {
+      const childFilters = {
+        bakeryDropDown: ['Dessert', 'Bread', 'Pastry'],
+        flavorDropDown: ['Sweet', 'Spice', 'Nut', 'Fruit', 'Dairy', 'Alcohol']
+      } 
+
+      if (dropdown === 'bakeryDropDown' || dropdown === 'flavorDropDown') {
+        const arr = [...sideFiltersChild]
+        const children = childFilters[dropdown]
+        const filteredResults = arr.filter(ele => !children.includes(ele))
+        this.setState({ 
+          [dropdown]: !this.state[dropdown],
+          sideFiltersChild: filteredResults
+        })
+      }
+    }
 
     //toggle the targeted checkbox
     if (!sideFilters.includes(val)) {
@@ -182,6 +199,10 @@ export class AllProducts extends Component {
         this.setState({ sideFiltersChild: arr }, this._findResults)
       }
     }
+  }
+
+  _updateSpecialFilter(filter) {
+    this.setState({[filter]: !this.state[filter]}, this._findResults)
   }
 
   _removeFilters() {
@@ -284,17 +305,6 @@ export class AllProducts extends Component {
                 name="search"
                 autoComplete="off"
               />
-              <div className='filter-searchbar-special'>
-                <div className='filter-searchbar-special-filter' onClick={() => this.setState({ plantActive: !plantActive })}>
-                  <img src={plantActive ? filterIcons['plant-active'] : filterIcons['plant']} alt='plant-filter' />
-                </div>
-                <div className='filter-searchbar-special-filter' onClick={() => this.setState({ glutenActive: !glutenActive })}>
-                  <img src={glutenActive ? filterIcons['gluten-active'] : filterIcons['gluten']} alt='gluten-filter' />
-                </div>
-                <div className='filter-searchbar-special-filter' onClick={() => this.setState({ cleanActive: !cleanActive })}>
-                  <img src={cleanActive ? filterIcons['clean-active'] : filterIcons['clean']} alt='clean-filter' />
-                </div>
-              </div>
               {dimensions.width < mediaQuery.desktop ? (
                 <ProductFilter 
                   removeFilters = {this._removeFilters}
@@ -304,6 +314,20 @@ export class AllProducts extends Component {
                   parentState = {this.state}
                 />
               ) : null}
+              <div className='filter-searchbar-special-container'>
+                <div className='filter-searchbar-special'>
+                  <div className='filter-searchbar-special-filter' onClick={() => this._updateSpecialFilter('plantActive')}>
+                    <img src={plantActive ? filterIcons['plant-active'] : filterIcons['plant']} alt='plant-filter' />
+                  </div>
+                  <div className='filter-searchbar-special-filter' onClick={() => this._updateSpecialFilter('glutenActive')}>
+                    <img src={glutenActive ? filterIcons['gluten-active'] : filterIcons['gluten']} alt='gluten-filter' />
+                  </div>
+                  <div className='filter-searchbar-special-filter' onClick={() => this._updateSpecialFilter('cleanActive')}>
+                    <img src={cleanActive ? filterIcons['clean-active'] : filterIcons['clean']} alt='clean-filter' />
+                  </div>
+                </div>
+                <div className='filter-searchbar-count'>{queryStatus === 'initial' ? ProductsData.length : results.length}<span> - Products</span></div>
+              </div>
             </div>
             {results.length > 0 || queryStatus === 'initial' ? (
               <div className='filter-search-results'>

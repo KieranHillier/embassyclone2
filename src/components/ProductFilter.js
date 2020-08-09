@@ -66,11 +66,8 @@ export class ProductFilter extends Component {
                     <div className='filter-min-item filter-min-item-child' onClick={() => updateCheckboxChild('Fruit')} style={parentState.sideFiltersChild.includes('Fruit') ? {background: '#f3f0f0'} : null}>Fruit</div>
                     <div className='filter-min-item filter-min-item-child' onClick={() => updateCheckboxChild('Dairy')} style={parentState.sideFiltersChild.includes('Dairy') ? {background: '#f3f0f0'} : null}>Dairy</div>
                     <div className='filter-min-item filter-min-item-child' onClick={() => updateCheckboxChild('Alcohol')} style={parentState.sideFiltersChild.includes('Alcohol') ? {background: '#f3f0f0'} : null}>Alcohol</div>
-                    <div className='filter-min-item filter-min-item-child' onClick={() => updateCheckboxChild('Savoury')} style={parentState.sideFiltersChild.includes('Savoury') ? {background: '#f3f0f0'} : null}>Savoury</div>
-                    <div className='filter-min-item filter-min-item-child' onClick={() => updateCheckboxChild('Functional')} style={parentState.sideFiltersChild.includes('Functional') ? {background: '#f3f0f0'} : null}>Functional</div>
                   </>
                 ) : null}
-                <div className='filter-min-item' onClick={() => updateCheckbox('Colors')} style={parentState.sideFilters.includes('Colors') ? {background: '#f3f0f0'} : null}>Colors</div>
               </div>
             ) : null}
           </>  
@@ -85,12 +82,12 @@ export class ProductFilter extends Component {
               ) : null}   
             </div>
             <div className='filter-toggle-dropdown'>
-              <span className='filter-checkbox' onClick={() => updateCheckbox('Bakery Mixes')}>
+              <span className='filter-checkbox' onClick={() => updateCheckbox('Bakery Mixes', 'bakeryDropDown')}>
                 <input type="checkbox" id='checkbox1' checked={parentState.sideFilters.includes('Bakery Mixes') || parentState.bakeryDropDown} />
                 <span></span>
                 <label htmlFor='checkbox1'>Bakery Mixes</label> 
               </span>
-              <img className='filter-dropdown-arrow' alt='' src={DropdownArrow} style={!parentState.bakeryDropDown ? {transform: 'translateY(-3px) rotate(180deg)'} : null} onClick={() => dropdownToggle('bakeryDropDown', 'Bakery Mixes')} />
+              <img className='filter-dropdown-arrow' alt='' src={DropdownArrow} style={!parentState.bakeryDropDown ? {transform: 'translateY(-3px) rotate(180deg)'} : null} onClick={() => updateCheckbox('Bakery Mixes', 'bakeryDropDown')} />
             </div>
             {parentState.bakeryDropDown ? (
               <div className='filter-toggle-dropdown-contents'>
@@ -127,12 +124,12 @@ export class ProductFilter extends Component {
               <label htmlFor='checkbox4'>Glaze</label> 
             </span>
             <div className='filter-toggle-dropdown'>
-              <span className='filter-checkbox' onClick={() => updateCheckbox('Flavors')}>
+              <span className='filter-checkbox' onClick={() => updateCheckbox('Flavors', 'flavorDropDown')}>
                 <input type="checkbox" id='checkbox6' checked={parentState.sideFilters.includes('Flavors') || parentState.flavorDropDown} />
                 <span></span>
                 <label htmlFor='checkbox6'>Flavors</label> 
               </span>
-              <img className='filter-dropdown-arrow' alt='' src={DropdownArrow} style={!parentState.flavorDropDown ? {transform: 'translateY(-3px) rotate(180deg)'} : null} onClick={() => dropdownToggle('flavorDropDown', 'Flavors')} />
+              <img className='filter-dropdown-arrow' alt='' src={DropdownArrow} style={!parentState.flavorDropDown ? {transform: 'translateY(-3px) rotate(180deg)'} : null} onClick={() => updateCheckbox('Flavors', 'flavorDropDown')} />
             </div>
             {parentState.flavorDropDown ? (
               <div className='filter-toggle-dropdown-contents'>
@@ -165,24 +162,9 @@ export class ProductFilter extends Component {
                   <input type="checkbox" id='checkbox2' checked={parentState.sideFiltersChild.includes('Alcohol')} />
                   <span></span>
                   <label htmlFor='checkbox2'>Alcohol</label> 
-                </span>  
-                <span className='filter-checkbox-child' onClick={() => updateCheckboxChild('Savoury')}>
-                  <input type="checkbox" id='checkbox2' checked={parentState.sideFiltersChild.includes('Savoury')} />
-                  <span></span>
-                  <label htmlFor='checkbox2'>Savoury</label> 
-                </span>  
-                <span className='filter-checkbox-child' onClick={() => updateCheckboxChild('Functional')}>
-                  <input type="checkbox" id='checkbox2' checked={parentState.sideFiltersChild.includes('Functional')} />
-                  <span></span>
-                  <label htmlFor='checkbox2'>Functional</label> 
-                </span>  
+                </span>   
               </div>
             ) : null}
-            <span className='filter-checkbox' onClick={() => updateCheckbox('Colors')}>
-              <input type="checkbox" id='checkbox5' checked={parentState.sideFilters.includes('Colors')} />
-              <span></span>
-              <label htmlFor='checkbox5'>Colors</label> 
-            </span>
           </div>
         )}
       </>

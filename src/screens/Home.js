@@ -35,11 +35,6 @@ const homeIconsText = [
   'Bakery Specialist'
 ]
 
-const homeImages = [
-  require('../images/home/home-full1.png'),
-  require('../images/home/home-full2.png'),
-]
-
 const certificationIcons = [
   require('../images/fixed-footer/brc.png'),
   require('../images/fixed-footer/cor1.png'),

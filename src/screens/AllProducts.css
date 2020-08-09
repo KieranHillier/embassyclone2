@@ -157,18 +157,32 @@ input[type="checkbox"] {
 
 .modal {
   position: fixed;
-  width: 430px;
-  height: 433px;
+  width: 95%;
+  max-width: 430px;
   background: #fff;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 25px;
+}
+
+.modal h2 {
+  color: #2ea948;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.modal p {
+  font-weight: 300;
+  font-family: 'AirbnbBook';
+  margin-bottom: 15px;
 }
 
 .close-modal {
-  width: 10px;
-  height: 10px;
-  background: black;
+  width: 20px;
+  height: 82px;
+  background: url('../images/close-button.png');
+  background-repeat: no-repeat;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -185,7 +199,7 @@ input[type="checkbox"] {
 
 .filter-no-match-btn a{
     padding: 7px 10px;
-    background: green;
+    background: #2ea948;
     border-radius: 5px;
     color: #fff;
     text-decoration: none;
@@ -198,11 +212,27 @@ input[type="checkbox"] {
 
 .filter-searchbar-special {
   display: flex;
+  flex-direction: column;
 }
 
 .filter-searchbar-special-filter {
   padding-right: 10px;
   cursor: pointer;
+}
+
+.filter-searchbar-special-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-searchbar-count {
+  /* color: #2ea948; */
+  font-weight: bold;
+}
+
+.filter-searchbar-count span{
+  color: #000;
+  font-weight: 100;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -211,6 +241,10 @@ input[type="checkbox"] {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(280px, 1fr));
     grid-gap: 15px;
+  }
+
+  .filter-searchbar-special {
+    flex-direction: row;
   }
 }
 

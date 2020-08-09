@@ -6,6 +6,8 @@
     color: #000;
     cursor: pointer;
     height: 443px;
+    max-width: 400px;
+    margin-bottom: 10px;
 }
 
 .product-card-container:hover {
@@ -46,4 +48,31 @@
 
 .product-card-text {
     padding: 10px 0;
+}
+
+.product-card-bottom-container {
+    display: flex;
+}
+
+.product-card-categories {
+    flex: 2;
+}
+
+.product-special-filters {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.product-special-filters img{
+    height: 22px;
+    margin-right: 3px;
+}
+
+@media (min-width: 629px) {
+    .product-card-container {
+        max-width: unset;
+        margin-bottom: unset;
+    }
 }

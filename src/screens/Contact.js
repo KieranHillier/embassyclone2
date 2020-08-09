@@ -12,7 +12,8 @@ const Map = ReactMapboxGl({
 class Contact extends Component {
 
   state = {
-    errorMsg: false
+    errorMsg: false,
+    successMsg: false
   }
 
   _sendEmail() {
@@ -29,6 +30,7 @@ class Contact extends Component {
       this.setState({
         errorMsg: true
       })
+      return
     }
 
     //check if phone number is provided
@@ -39,8 +41,19 @@ class Contact extends Component {
     emailjs.send('gmail', process.env.REACT_APP_EMAIL_TEMPLATE_ID, emailParams, process.env.REACT_APP_EMAIL_USER_ID)
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
+        if (this.state.errorMsg) {
+          this.setState({
+            errorMsg: false,
+            successMsg: true
+          })
+        } else {
+          this.setState({
+            successMsg: true
+          })
+        }
       }, (err) => {
-          console.log('FAILED...', err);
+        alert('Email failed', err)
+        console.log('FAILED...', err);
     });
   }
 
@@ -94,9 +107,10 @@ class Contact extends Component {
               name='contact-text-area' rows='12'
               placeholder='Message...'
             />
-            <div className='contact-textarea-btn' onClick={() => this._sendEmail()}>send</div>
+            <div className='contact-textarea-btn' disabled onClick={() => this._sendEmail()}>send</div>
           </div>
           {this.state.errorMsg ? <p className='contact-error-msg'>*Ensure all text fields are filled out correctly</p> : null}
+          {this.state.successMsg ? <p className='contact-success-msg'>Email sent successfully!</p> : null}
         </div>
         <div className='contact-info-container'>
           <div className='contact-info-item'>
@@ -104,14 +118,14 @@ class Contact extends Component {
             <p>Toll-Free: <span>1-800-334-3371 (ext. 200)</span></p>
             <p>Phone: <span>1-(905)-789-3200</span></p>
             <p>Fax: <span>1-(905)-789-3201</span></p>
-            <p>Email: <span>info@embassyingredients.com</span></p>
+            <p><span>info@embassyingredients.com</span></p>
           </div>
           <div className='contact-info-item'>
             <h2>Already a Customer?</h2>
             <p>Toll-Free: <span>1-800-334-3371 (ext. 227)</span></p>
             <p>Phone: <span>1-(905)-789-3200</span></p>
             <p>Order Desk: <span>1-(905)-789-3227</span></p>
-            <p>Email: <span>orderdesk@embassyingredients.com</span></p>
+            <p><span>orderdesk@embassyingredients.com</span></p>
           </div>
           <div className='contact-info-item'>
             <h2>Head Office</h2>
@@ -121,7 +135,7 @@ class Contact extends Component {
           <div className='contact-info-item'>
             <h2>US Office</h2>
             <p>Jonathon York, Sales and Marketing Director</p>
-            <p className='contact-info-us-office'>Email: <span>yorkj@EmbassyIngredients.com</span></p>
+            <p className='contact-info-us-office'><span>yorkj@EmbassyIngredients.com</span></p>
           </div>
         </div>
       </div>

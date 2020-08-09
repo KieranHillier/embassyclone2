@@ -6,13 +6,29 @@ const ceoData =   {
   "name": "Martino Brambilla",
   "position": "Founder & President",
   "favouriteTreat": "Donuts",
-  "description": "Martino Brambilla is the founder, and president of Embassy Ingredients since 1981.\n\nMartino sets the company strategy to specialize in both flavours and bakery ingredients in order to create an industry with healthier, tastier, and more flavourful foods.\n\nMartino garduated from both Harvard Business School and London Business School."
+  "description": "Martino Brambilla is the founder, and president of Embassy Ingredients since 1981.\n\nMartino sets the company strategy to specialize in both flavours and bakery ingredients in order to create an industry with healthier, tastier, and more flavourful foods.\n\nMartino garduated from both Harvard Business School and London Business School.",
+  "img": require(`../images/leadership/Martino Brambilla.png`)
 }
+
+// const leadershipPics = {
+//   'Martino Brambilla': require("../images/products/filters/plant-based-logo.png"),
+//   'Virginia Chan': require("../images/products/filters/clean-label-logo.png"),
+//   'Gwynne Sitsker': require("../images/products/filters/gluten-free-logo.png"),
+//   'Hagop Tozak': require("../images/products/filters/gluten-free-logo.png"),
+//   'Angel Wong': require("../images/products/filters/gluten-free-logo.png"),
+//   'Jonathon York': require("../images/products/filters/gluten-free-logo.png"),
+//   'Vittoria Garisto': require("../images/products/filters/gluten-free-logo.png"),
+// }
+
+let leadershipImages = {}
+LeadershipData.forEach((ele) => {
+  leadershipImages[ele.name] = require(`../images/leadership/${ele.name}.png`)
+})
 
 const LeadershipCard = (props) => (
   <div className='leadership-card-container' onClick={() => props.openModal(props.data)}>
     <div className='leadership-card-img-container'>
-      <div className='leadership-card-img' />
+      <img className='leadership-card-img' alt='leadership-img' src={props.img} />
     </div>
     <div className='leadership-card-text-container'>
       <h3>{props.data.name}</h3>
@@ -35,7 +51,7 @@ class Leadership extends Component {
 
   _renderLeadershipTeam = () => {
     return LeadershipData.map((element, idx) => (
-      <LeadershipCard data={element} id={idx} openModal={this._openModal}/>
+      <LeadershipCard data={element} id={idx} img={leadershipImages[element.name]} openModal={this._openModal}/>
     ))
   }
 
@@ -57,6 +73,7 @@ class Leadership extends Component {
 
   render() {
     const { modalOpen, modalData } = this.state
+    console.log(leadershipImages)
     return (
       <>
         {modalOpen ? (
@@ -77,7 +94,7 @@ class Leadership extends Component {
             <div className='leadership-ceo-container'>
               <div className='leadership-card-container' onClick={() => this._openModal(ceoData)}>
                 <div className='leadership-card-img-container'>
-                  <div className='leadership-card-img' />
+                  <img className='leadership-card-img' alt='leadership-img' src={ceoData.img} />
                 </div>
                 <div className='leadership-card-text-container'>
                   <h3>{ceoData.name}</h3>
