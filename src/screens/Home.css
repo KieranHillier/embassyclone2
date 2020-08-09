@@ -86,7 +86,7 @@
 
 .home-landing-btn a {
     padding: 8px 25px;
-    background: #2ea948;
+    background: #54b846;
     font-family: 'AirbnbBook';
     text-transform: uppercase;
     text-decoration: none;
@@ -98,7 +98,7 @@
 
 .home-promise-container {
     height: 150px;
-    background: #2ea948;
+    background: #54b846;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,7 +237,7 @@
 
 .home-contact-container {
     height: 150px;
-    background: #2ea948;
+    background: #54b846;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,7 +280,7 @@
     font-family: 'AirbnbBook';
     text-transform: uppercase;
     text-decoration: none;
-    color: #2ea948;
+    color: #54b846;
     border-radius: 10px;
     font-size: 14px;
     font-weight: 600;

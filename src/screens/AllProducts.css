@@ -96,7 +96,7 @@ input[type="checkbox"] {
     cursor: pointer;
   }
   input[type="checkbox"]:checked + span {
-    background: #2ea948 -19px top no-repeat;
+    background: #54b846 -19px top no-repeat;
   }
   
   input[type="checkbox"] + span {
@@ -167,7 +167,7 @@ input[type="checkbox"] {
 }
 
 .modal h2 {
-  color: #2ea948;
+  color: #54b846;
   font-weight: 600;
   margin-bottom: 5px;
 }
@@ -199,7 +199,7 @@ input[type="checkbox"] {
 
 .filter-no-match-btn a{
     padding: 7px 10px;
-    background: #2ea948;
+    background: #54b846;
     border-radius: 5px;
     color: #fff;
     text-decoration: none;
@@ -226,7 +226,7 @@ input[type="checkbox"] {
 }
 
 .filter-searchbar-count {
-  /* color: #2ea948; */
+  /* color: #54b846; */
   font-weight: bold;
 }
 

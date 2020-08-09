@@ -24,7 +24,7 @@
 }
 
 .distributors-header-text h1 {
-    color: #2ea948;
+    color: #54b846;
 }
 
 .distributors-header-text p {
@@ -101,7 +101,7 @@
 
 .distributors-usa-btn {
     padding: 5px 10px;
-    background: #2ea948;
+    background: #54b846;
     margin-top: 10px;
     width: 100px;
     display: flex;
@@ -116,7 +116,7 @@
 }
 
 .distributors-bottom-container {
-    background: #2ea948;
+    background: #54b846;
     color: #fff;
 }
 

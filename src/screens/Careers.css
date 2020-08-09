@@ -34,7 +34,7 @@
 }
 
 .career-header-btn {
-  background: #2ea948;
+  background: #54b846;
   padding: 9px 45px;
   border-radius: 27px;
   font-size: 17px;
@@ -58,12 +58,12 @@
 .career-values-pretitle {
   text-transform: uppercase;
   font-weight: 400;
-  color: #2ea948;
+  color: #54b846;
   font-size: 23px;
 }
 
 .career-values-title {
-  color: #2ea948;
+  color: #54b846;
   font-weight: 900;
   margin-top: 5px;
   font-size: 28px;
