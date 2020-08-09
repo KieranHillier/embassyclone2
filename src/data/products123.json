@@ -1,0 +1,218 @@
+[
+    {
+        "title": "Cream & Pudding Cakes",
+        "category1": "Bakery Mixes",
+        "category2": "Dessert",
+        "special": "clean label, plant-based, gluten-free",
+        "description": "It is satisfyingly moist and rich to meet all cravings.",
+        "features": "Available in gluten-free, plant-based, and clean label options.",
+        "keywords": "clean label, plant based, plant-based, vegan, gluten free, gluten-free, whole foods, natural, non gmo, cream, creme, pudding, cakes, cake, bakery, mixes, dessert, muffins, cupcakes, bundt, fruit, mug, pudding, white, chocolate, vanilla, red velvet, mix, cake mix, bake"
+    },
+    {
+        "title": "Layer Cakes",
+        "category1": "Bakery Mixes",
+        "category2": "Dessert",
+        "special": "clean label, gluten-free",
+        "description": "Nothing has a tighter connection than the crumbs in this cake!",
+        "features": "Available in gluten free, and clean label options.",
+        "keywords": "clean label, gluten free, gluten-free, whole foods, natural, non gmo, layer, cupcakes, celebration, pound, slab, white, vanilla, chocolate, red velvet, cakes, cake, layer, mixes, dessert, mix, cake mix, dessert, bakery, bake"
+    },
+    {
+        "title": "Sponge, Chiffon, & Angel Food Cakes",
+        "category1": "Bakery Mixes",
+        "category2": "Dessert",
+        "special": "clean label, gluten-free",
+        "description": "Why work harder than you have to? Skip the step of having to whip up eggs seperately with this mix.",
+        "features": "Available in gluten-free, and clean label options.",
+        "keywords": "clean label, gluten free, gluten-free, whole foods, natural, non gmo, sponge, chiffon, angel, cake, genoise, shortbrea, white, chocolate, vanilla, mixes, mix, cake mix, dessert, bakery, bake"
+    },
+    {
+        "title": "Pancakes & Waffles",
+        "category1": "Bakery Mixes",
+        "category2": "Dessert",
+        "special": "clean label, plant-based, gluten-free",
+        "description": "When life gives you water…make pancakes and waffles!",
+        "features": "Available in gluten-free, plant-based, and clean label options.",
+        "keywords": "clean label, plant-based, vegan, plant based, gluten-free, gluten free, whole foods, natural, non gmo, pancake, waffle, blueberry, cinnamon, butter, fluffy, mix, mixes, dessert, breakfast, bakery, bake"
+    },
+    {
+        "title": "Cookies",
+        "category1": "Bakery Mixes",
+        "category2": "Dessert",
+        "special": "clean label, plant-based, gluten-free",
+        "description": "An irresistible soft, chewy and crispy treat.",
+        "features": "Available in gluten-free, plant-based, and clean label options.",
+        "keywords": "clean label, vegan, whole foods, natural, non gmo, plant-based, gluten-free, plant based, gluten free, cookie, cookies, soft, chewy, sugar, oatmeal, chocolate, chocolate chip, mix, mixes, dessert, bakery, bake"
+    },
+    {
+        "title": "Brownies & Blondies",
+        "category1": "Bakery Mixes",
+        "category2": "Dessert",
+        "special": "clean label, plant-based, gluten-free",
+        "description": "Nothing wrong with indulging in a decadent and chocolately treat.",
+        "features": "Available in gluten-free, plant-based, and clean label options.",
+        "keywords": "clean label, plant-based, plant based, gluten-free, gluten free, vegan, whole foods, natural, non gmo, brownie, blondie, fudgy, cakey, chocolate, chocolate chip, mix, mixes, dessert, bakery, bake"
+    },
+    {
+        "title": "Jelly Rolls",
+        "category1": "Bakery Mixes",
+        "category2": "Dessert",
+        "special": "",
+        "description": "Flexabiliy isn't a problem with this mix, keep on rollin'.",
+        "features": "Available in non-GMO options.",
+        "keywords": "non gmo, jelly roll, jelly, roll, swiss roll, white, chocolate, vanilla, red velvet, mixes, mix, cake mix, cake, dessert, bakery, bake"
+    },
+    {
+        "title": "Multigrain Bread",
+        "category1": "Bakery Mixes",
+        "category2": "Bread",
+        "special": "clean label, plant-based, gluten-free",
+        "description": "Nothing has more heart than our grains.",
+        "features": "Available in gluten-free, plant-based, and clean label options.",
+        "keywords": "clean label, plant based, plant-based, gluten free, gluten-free, vegan, whole foods, natural, non gmo, bagels, buns, grains, multigrain, bread, granola, mixes, mix, bakery, bake"
+    },
+    {
+        "title": "Sweet Dough",
+        "category1": "Bakery Mixes",
+        "category2": "Bread",
+        "special": "clean label",
+        "description": "If it's not tender and rich, we don't want it.",
+        "features": "Available in clean label options.",
+        "keywords": "clean label, plant based, plant-based, gluten free, gluten-free, vegan, whole foods, natural, non gmo, roll, laminated, sweet, dough, bakery, mixes, bread, asain, mix, bake"
+    },
+    {
+        "title": "White Bread",
+        "category1": "Bakery Mixes",
+        "category2": "Bread",
+        "special": "clean label, plant-based, gluten-free",
+        "description": "As soft and light as a feather.",
+        "features": "Available in gluten-free, plant-based, and clean label options.",
+        "keywords": "clean label, plant-based, plant based, gluten-free, gluten free, vegan, whole foods, natural, non gmo, bagels, buns, sweet, loaf, white, bread, asian, bakery, dough, mix, bake"
+    },
+    {
+        "title": "Danish Dough",
+        "category1": "Bakery Mixes",
+        "category2": "Pastry",
+        "special": "clean label",
+        "description": "Just trying to butter you up!",
+        "features": "Available in clean label options.",
+        "keywords": "clean label, plant based, plant-based, gluten free, gluten-free, vegan, whole foods, natural, non gmo, roll, danish, laminated, pastry, sweet, bread, dough, mix, bakery, bake"
+    },
+    {
+        "title": "Pastry Cream & Custard",
+        "category1": "Bakery Mixes",
+        "category2": "Pastry",
+        "special": "clean label, plant-based, gluten-free",
+        "description": "So creamy that you would think you're eating yogurt.",
+        "features": "Available in gluten free, and clean label options. Kosher friendly, and maintains stability after freezing",
+        "keywords": "clean label, gluten free, gluten-free, plant based, plant-based, vegan, whole foods, natural, non gmo, gelatin free, gelatin-free, custard, bakery, mixes, pastry, mix, cream, filling, fillings, bake"
+    },
+    {
+        "title": "Mousse & Cream Stabilizers",
+        "category1": "Bakery Mixes",
+        "category2": "Pastry",
+        "special": "clean label, plant-based, gluten-free",
+        "description": "Our mouse and cream stabilizers could probably hold up a falling bridge.",
+        "features": "Available in gluten free, and clean label options. Kosher friendly, and maintains stability after freezing",
+        "keywords": "clean label, plant-based, plant based, gluten free, gluten-free, vegan, whole foods, natural, non gmo, mousse, cream, stabilizer, stabilizers, pastry, bakery, bake"
+    },
+    {
+        "title": "Bakable Fillings",
+        "category1": "Bakery Mixes",
+        "category2": "Pastry",
+        "special": "clean label, gluten-free",
+        "description": "Crank up the heat! OR We dare you to spread this to the edge.",
+        "features": "Available in gluten free, and clean label options. Maintains stability after freezing",
+        "keywords": "clean label, gluten free, gluten-free, whole foods, natural, non gmo, pastry, mix, bakeable, filling, bechamel, bakery, bake, spread, cinnamon"
+    },
+    {
+        "title": "No Bake Cheesecake",
+        "category1": "Bakery Mixes",
+        "category2": "Pastry",
+        "special": "clean label, plant-based, gluten-free",
+        "description": "No oven space? No problem.",
+        "features": "Available in gluten-free, plant-based, and clean label options. Kosher friendly, and maintains stability after freezing",
+        "keywords": "clean label, gluten free, gluten-free, plant based, plant-based, vegan, whole foods, natural, non gmo, pastry, cheese, cheesecake, no bake, kosher, mix, bakery, bake"
+    },
+    {
+        "title": "Baking Powder",
+        "category1": "Functional Ingredients",
+        "category2": "",
+        "special": "clean label, plant-based, gluten-free",
+        "description": "Always on the rise.",
+        "features": "Non-GMO options, low in sodium, and offered in double or slow acting baking powders. Also available in gluten-free, plant-based, and clean label options.",
+        "keywords": "clean label, gluten free, gluten-free, plant based, plant-based, vegan, whole foods, natural, non gmo, functional, ingredient, ingredients, low sodium, baking powder, aluminum free, fast acting, double acting, double action, encapsulated, functional ingredients, functional, ingredients"
+    },
+    {
+        "title": "Donut Sugar",
+        "category1": "Functional Ingredients",
+        "category2": "",
+        "special": "clean label, plant-based, gluten-free",
+        "description": "Sprinkle it, dip it, or just…eat it.",
+        "features": "Offered in standard, coloured, flavoured, gluten-free, plant-based, and clean label options.",
+        "keywords": "clean label, gluten free, gluten-free, plant based, plant-based, vegan, whole foods, non gmo, natural, powdered donuts, donut, sugar, functional, ingredients, functional ingredient, functional ingredients, flavour, colour, color, decorative"
+    },
+    {
+        "title": "Egg Alternative",
+        "category1": "Functional Ingredients",
+        "category2": "",
+        "special": "clean label, plant-based, gluten-free",
+        "description": "Eggs? What are those?",
+        "features": "Available in gluten-free, plant-based, and clean label options.",
+        "keywords": "clean label, plant-based, plant based, gluten-free, gluten free, whole foods, natural, non gmo, vegan, egg reduction, egg, eggs, eggless, egg replacement, egg substitution, egg free, substitution, alternative, replacement, functional ingredients, functional, ingredients"
+    },
+    {
+        "title": "Shelf Life Extender",
+        "category1": "Functional Ingredients",
+        "category2": "",
+        "special": "clean label, plant-based, gluten-free",
+        "description": "The new form of CPR.",
+        "features": "Powder or liquid? We have both in gluten-free, plant-based, and clean label options.",
+        "keywords": "clean label, plant-based, gluten-free, plant based, gluten free, whole foods, vegan, natural, non gmo, extended shelf life, shelf life, extend, extender, mold inhibitor, preservatives, natural preservatives, moist retention, improver, moist, cake, improver, cake improver, microbial inhibitor, volume improver, functional ingredients, functional, ingredients"
+    },
+    {
+        "title": "Masker",
+        "category1": "Functional Ingredients",
+        "category2": "",
+        "special": "clean label, plant-based, gluten-free",
+        "description": "Plant based, high protein, clean label products are all the rage. But often have unwanted bitter notes. We have a selection of masker flavours to cover pea protein, sweeteners and everything in between. Perfect for use in breads, bagels, tortillas and cookies",
+        "features": "Sweet Gem, Bitter Masker",
+        "keywords": "citric acid, malic acid, masker, mold inhibitor, pea, preservative, flavor, protein, sodium, sodium benzoate, soy, stevia"
+    },
+    {
+        "title": "Enhancer",
+        "category1": "Functional Ingredients",
+        "category2": "",
+        "special": "clean label, plant-based, gluten-free",
+        "description": "Sometimes you just need a little something extra. Looking to reduce sugar in your product or increase sweetness without adding more calories? Ask about our enhancers to make your products shine. Perfect for breads, icing and fillings.",
+        "features": "Sweetness Enhancer",
+        "keywords": "sweetness, umami, sodium, salt, stevia, enhancer, flavor"
+    },
+    {
+        "title": "Pan Release",
+        "category1": "Pan Release",
+        "category2": "",
+        "special": "clean label, plant-based, gluten-free",
+        "description": "Sometimes it's okay to let go.",
+        "features": "Offered in standard, allergin friendly, and non-GMO options. Also available in gluten-free, plant-based, and clean label options.",
+        "keywords": "clean label, plant-based, plant based, gluten-free, gluten free, whole foods, vegan, natural, non gmo, canola, pan release, soy, non stick, soy free, sunflower"
+    },
+    {
+        "title": "Bakery Glaze",
+        "category1": "Glaze",
+        "category2": "",
+        "special": "clean label, plant-based, gluten-free",
+        "description": "Don't be surprised if you can see yourself.",
+        "features": "Available in gluten-free and clean label options.",
+        "keywords": "clean label, plant-based, plant based, gluten-free, gluten free, whole foods, vegan, natural, non gmo, shine, bun shine, roll shine, croissant, pie, glaze"
+    },
+    {
+        "title": "Bakery Glaze1",
+        "category1": "Glaze",
+        "category2": "",
+        "special": "clean label, plant-based, gluten-free",
+        "description": "Don't be surprised if you can see yourself.",
+        "features": "Available in gluten-free and clean label options.",
+        "keywords": "clean label, plant-based, plant based, gluten-free, gluten free, whole foods, vegan, natural, non gmo, shine, bun shine, roll shine, croissant, pie, glaze"
+    }
+]
