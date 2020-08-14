@@ -81,16 +81,16 @@
             "fax": "Fax Number: (450) 667-3342",
             "toll": "Toll Free: 1-800-361-0758",
             "website": "www.yourbakemark.com",
-            "email": "e-mail: quebecatlanticsales@bakemarkcanada.com"
+            "email": "email: quebecatlanticsales@bakemarkcanada.com"
         },       
         {
-            "title": "OVentes Rudolph Inc.",
+            "title": "Ventes Rudolph Inc.",
             "address": "4625 Iberville Street\nMontreal, QC\nH2H 2L9",
             "number": "Phone Number: (514) 596-1998",
             "fax": "Fax Number: (514) 596-0933",
             "toll": "Toll Free: 1-800-268-1998",
             "website": "www.ventesrudolph.com",
-            "email": "e-mail: info@ventesrudolph.com"
+            "email": "email: info@ventesrudolph.com"
         }      
     ], 
     "western": [
@@ -137,7 +137,7 @@
             "fax": "Fax Number: (780) 435-5896",
             "toll": "Toll Free: 1-800-268-2339",
             "website": "www.jandsfoodservice.com",
-            "email": "e-mail: jsfoodservice@telus.net"
+            "email": "email: jsfoodservice@telus.net"
         },      
         {
             "title":  "Snow Cap Enterprises Ltd.",
@@ -146,7 +146,7 @@
             "fax": "Fax Number: (604) 515-3201",
             "toll": "Toll Free: 1-800-561-2868",
             "website": "www.snowcap.com",
-            "email": "e-mail: order@snowcap.com"
+            "email": "email: order@snowcap.com"
         }     
     ],
     "atlantic": [

@@ -116,21 +116,21 @@ class Contact extends Component {
           <div className='contact-info-item'>
             <h2>General Contact</h2>
             <p>Toll-Free: <span>1-800-334-3371 (ext. 200)</span></p>
-            <p>Phone: <span>1-(905)-789-3200</span></p>
-            <p>Fax: <span>1-(905)-789-3201</span></p>
+            <p>Phone: <span>1-905-789-3200</span></p>
+            <p>Fax: <span>1-905-789-3201</span></p>
             <p><span>info@embassyingredients.com</span></p>
           </div>
           <div className='contact-info-item'>
             <h2>Already a Customer?</h2>
             <p>Toll-Free: <span>1-800-334-3371 (ext. 227)</span></p>
-            <p>Phone: <span>1-(905)-789-3200</span></p>
-            <p>Order Desk: <span>1-(905)-789-3227</span></p>
+            <p>Phone: <span>1-905-789-3200</span></p>
+            <p>Order Desk: <span>1-905-789-3227</span></p>
             <p><span>orderdesk@embassyingredients.com</span></p>
           </div>
           <div className='contact-info-item'>
             <h2>Head Office</h2>
             <p>5 Intermodal Drive, Unit 1-2</p>
-            <p>Brampton, Ontario, L6T 5V9, Canada</p>
+            <p>Brampton, Ontario, Canada L6T 5V9</p>
           </div>
           <div className='contact-info-item'>
             <h2>US Office</h2>

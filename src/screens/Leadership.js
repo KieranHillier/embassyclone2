@@ -73,7 +73,6 @@ class Leadership extends Component {
 
   render() {
     const { modalOpen, modalData } = this.state
-    console.log(leadershipImages)
     return (
       <>
         {modalOpen ? (

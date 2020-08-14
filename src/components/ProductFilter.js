@@ -54,11 +54,11 @@ export class ProductFilter extends Component {
                 <div className='filter-min-item' onClick={() => updateCheckbox('Functional Ingredients')} style={parentState.sideFilters.includes('Functional Ingredients') ? {background: '#f3f0f0'} : null}>Functional Ingredients</div>
                 <div className='filter-min-item' onClick={() => updateCheckbox('Pan Release')} style={parentState.sideFilters.includes('Pan Release') ? {background: '#f3f0f0'} : null}>Pan Release</div>
                 <div className='filter-min-item' onClick={() => updateCheckbox('Glaze')} style={parentState.sideFilters.includes('Glaze') ? {background: '#f3f0f0'} : null}>Glaze</div>
-                <div className='filter-min-item filter-min-parent' onClick={() => updateCheckbox('Flavors')} style={parentState.sideFilters.includes('Flavors') ? {background: '#f3f0f0'} : null}>
-                  <p>Flavors</p>
-                  <img className='filter-dropdown-arrow' alt='' src={DropdownArrow} style={!parentState.flavorDropDown ? {transform: 'translateY(-3px) rotate(180deg)'} : null} onClick={() => dropdownToggle('flavorDropDown', 'Flavors')} />
+                <div className='filter-min-item filter-min-parent' onClick={() => updateCheckbox('Flavours')} style={parentState.sideFilters.includes('Flavours') ? {background: '#f3f0f0'} : null}>
+                  <p>Flavours</p>
+                  <img className='filter-dropdown-arrow' alt='' src={DropdownArrow} style={!parentState.flavourDropDown ? {transform: 'translateY(-3px) rotate(180deg)'} : null} onClick={() => dropdownToggle('flavourDropDown', 'Flavours')} />
                 </div>
-                {parentState.flavorDropDown ? (
+                {parentState.flavourDropDown ? (
                   <>
                     <div className='filter-min-item filter-min-item-child' onClick={() => updateCheckboxChild('Sweet')} style={parentState.sideFiltersChild.includes('Sweet') ? {background: '#f3f0f0'} : null}>Sweet</div>
                     <div className='filter-min-item filter-min-item-child' onClick={() => updateCheckboxChild('Spice')} style={parentState.sideFiltersChild.includes('Spice') ? {background: '#f3f0f0'} : null}>Spice</div>
@@ -124,14 +124,14 @@ export class ProductFilter extends Component {
               <label htmlFor='checkbox4'>Glaze</label> 
             </span>
             <div className='filter-toggle-dropdown'>
-              <span className='filter-checkbox' onClick={() => updateCheckbox('Flavors', 'flavorDropDown')}>
-                <input type="checkbox" id='checkbox6' checked={parentState.sideFilters.includes('Flavors') || parentState.flavorDropDown} />
+              <span className='filter-checkbox' onClick={() => updateCheckbox('Flavours', 'flavourDropDown')}>
+                <input type="checkbox" id='checkbox6' checked={parentState.sideFilters.includes('Flavours') || parentState.flavourDropDown} />
                 <span></span>
-                <label htmlFor='checkbox6'>Flavors</label> 
+                <label htmlFor='checkbox6'>Flavours</label>
               </span>
-              <img className='filter-dropdown-arrow' alt='' src={DropdownArrow} style={!parentState.flavorDropDown ? {transform: 'translateY(-3px) rotate(180deg)'} : null} onClick={() => updateCheckbox('Flavors', 'flavorDropDown')} />
+              <img className='filter-dropdown-arrow' alt='' src={DropdownArrow} style={!parentState.flavourDropDown ? {transform: 'translateY(-3px) rotate(180deg)'} : null} onClick={() => updateCheckbox('Flavours', 'flavourDropDown')} />
             </div>
-            {parentState.flavorDropDown ? (
+            {parentState.flavourDropDown ? (
               <div className='filter-toggle-dropdown-contents'>
                 <span className='filter-checkbox-child' onClick={() => updateCheckboxChild('Sweet')}>
                   <input type="checkbox" id='checkbox2' checked={parentState.sideFiltersChild.includes('Sweet')} />

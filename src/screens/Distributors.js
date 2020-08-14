@@ -50,7 +50,6 @@ class Distributors extends Component {
 
   render() {
     const { parents, provinces } = this.state
-    console.log(DistributorsData)
     return (
       <>
         <div className='distributors-container'>
@@ -58,7 +57,7 @@ class Distributors extends Component {
             <div className='distributors-content-container'>
                 <div className='distributors-header-text'>
                   <h1>Distributors</h1>
-                  <p>Embassy Ingredients has customers all over the world and we work with some of the largest and most recognized names in the food service and food product manufacturing inustries. We also server a wide range of bakeries and food processors both direct and through out Distributor and Agents partners.</p>
+                  <p>Embassy Ingredients has customers all over the world and we work with some of the largest and most recognized names in the food service and food product manufacturing industries. We also serve a wide range of bakeries and food processors both direct and throughout Distributor and Agents partners.</p>
                 </div>
                 <div className='distributors-data-container'>
                   <div className='distributors-parent' onClick={() => this._updateParent('canada')}>

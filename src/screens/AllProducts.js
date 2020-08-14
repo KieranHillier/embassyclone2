@@ -38,7 +38,7 @@ export class AllProducts extends Component {
       query: "",
       queryStatus: "initial",
       bakeryDropDown: false,
-      flavorDropDown: false,
+      flavourDropDown: false,
       plantActive: false,
       cleanActive: false,
       glutenActive: false,
@@ -159,10 +159,10 @@ export class AllProducts extends Component {
     if (dropdown) {
       const childFilters = {
         bakeryDropDown: ['Dessert', 'Bread', 'Pastry'],
-        flavorDropDown: ['Sweet', 'Spice', 'Nut', 'Fruit', 'Dairy', 'Alcohol']
+        flavourDropDown: ['Sweet', 'Spice', 'Nut', 'Fruit', 'Dairy', 'Alcohol']
       } 
 
-      if (dropdown === 'bakeryDropDown' || dropdown === 'flavorDropDown') {
+      if (dropdown === 'bakeryDropDown' || dropdown === 'flavourDropDown') {
         const arr = [...sideFiltersChild]
         const children = childFilters[dropdown]
         const filteredResults = arr.filter(ele => !children.includes(ele))
@@ -209,13 +209,13 @@ export class AllProducts extends Component {
     this.setState({
       sideFilters: [],
       sideFiltersChild: [],
-      flavorDropDown: false,
+      flavourDropDown: false,
       bakeryDropDown: false
     }, this._findResults)
   }
 
   _dropdownToggle(category, name) {
-    const { bakeryDropDown, sideFiltersChild, flavorDropDown, sideFilters} = this.state
+    const { bakeryDropDown, sideFiltersChild, flavourDropDown, sideFilters} = this.state
     this.setState({ [category]: !this.state[category] })
 
     //check if Bakery Mixes dropdown needs to reset
@@ -229,18 +229,18 @@ export class AllProducts extends Component {
       })
     }
 
-    //check if Flavors dropdown needs to reset
-    if (name === 'Flavors' && flavorDropDown) {
+    //check if Flavours dropdown needs to reset
+    if (name === 'Flavours' && flavourDropDown) {
       const arr = [...sideFiltersChild]
-      const flavorChildren = ['Sweet', 'Spice', 'Nut', 'Fruit', 'Dairy', 'Alcohol', 'Savoury', 'Functional']
-      const filteredResults = arr.filter(ele => !flavorChildren.includes(ele))
+      const flavourChildren = ['Sweet', 'Spice', 'Nut', 'Fruit', 'Dairy', 'Alcohol', 'Savoury', 'Functional']
+      const filteredResults = arr.filter(ele => !flavourChildren.includes(ele))
       this.setState({ 
-        flavorDropDown: !flavorDropDown,
+        flavourDropDown: !flavourDropDown,
         sideFiltersChild: filteredResults
       })
     }
 
-    if (!sideFilters.includes('Bakery Mixes') || !sideFilters.includes('Flavors')) {
+    if (!sideFilters.includes('Bakery Mixes') || !sideFilters.includes('Flavours')) {
       this._updateCheckbox(name)
     }
   }
@@ -255,7 +255,6 @@ export class AllProducts extends Component {
   }
 
   _openModal(ele) {
-    console.log(ele)
     document.body.style.overflow = "hidden"
     this.setState({
       modalOpen: true,

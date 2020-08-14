@@ -63,14 +63,14 @@ export class Footer extends Component {
               <div className='footer-section'>
                 <h2>General Contact</h2>
                 <p>1-800-334-3371 (ext.200)</p>
-                <p>1-(905)-789-3200</p>
+                <p>1-905-789-3200</p>
                 <p>info@embassyingredients.com</p>
               </div>
               <div className='footer-section'>
                 <h2>Location</h2>
                 <p>Embassy Ingredients Ltd</p>
                 <p>5 Intermodal Drive Unit 1-2</p>
-                <p>Brampton, ON, L6T 5V9</p>
+                <p>Brampton, ON, Canada L6T 5V9</p>
               </div>
               <div className='footer-section'>
                 <h2>Certifications</h2>
@@ -102,7 +102,7 @@ export class Footer extends Component {
             {dropdownIdx === 3 ? (
               <div className='mobile-footer-section'>
                 <p>1-800-334-3371 (ext.200)</p>
-                <p>1-(905)-789-3200</p>
+                <p>1-905-789-3200</p>
                 <p>info@embassyingredients.com</p>
               </div>
             ) : null}
@@ -111,7 +111,7 @@ export class Footer extends Component {
               <div className='mobile-footer-section'>
                 <p>Embassy Ingredients Ltd</p>
                 <p>5 Intermodal Drive Unit 1-2</p>
-                <p>Brampton, ON, L6T 5V9</p>
+                <p>Brampton, ON, Canada L6T 5V9</p>
               </div>
             ) : null}
             <div className='mobile-footer-header' onClick={() => this._toggleDropdown(5)}>Certifications</div>

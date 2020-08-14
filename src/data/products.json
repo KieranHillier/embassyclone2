@@ -14,7 +14,7 @@
         "category2": "Dessert",
         "special": "clean label, gluten-free",
         "description": "Nothing has a tighter connection than the crumbs in this cake!",
-        "features": "Available in gluten free, and clean label options.",
+        "features": "Available in gluten-free, and clean label options.",
         "keywords": "clean label, gluten free, gluten-free, whole foods, natural, non gmo, layer, cupcakes, celebration, pound, slab, white, vanilla, chocolate, red velvet, cakes, cake, layer, mixes, dessert, mix, cake mix, dessert, bakery, bake"
     },
     {
@@ -49,8 +49,8 @@
         "category1": "Bakery Mixes",
         "category2": "Dessert",
         "special": "clean label, plant-based, gluten-free",
-        "description": "Nothing wrong with indulging in a decadent and chocolately treat.",
-        "features": "Available in gluten-free, plant-based, and clean label options.",
+        "description": "Nothing wrong with indulging in a decadent treat.",
+        "features": "Available in gluten-free, plant-based, and clean label options.",
         "keywords": "clean label, plant-based, plant based, gluten-free, gluten free, vegan, whole foods, natural, non gmo, brownie, blondie, fudgy, cakey, chocolate, chocolate chip, mix, mixes, dessert, bakery, bake"
     },
     {
@@ -68,7 +68,7 @@
         "category2": "Bread",
         "special": "clean label, plant-based, gluten-free",
         "description": "Nothing has more heart than our grains.",
-        "features": "Available in gluten-free, plant-based, and clean label options.",
+        "features": "Available in gluten-free, plant-based, and clean label options.",
         "keywords": "clean label, plant based, plant-based, gluten free, gluten-free, vegan, whole foods, natural, non gmo, bagels, buns, grains, multigrain, bread, granola, mixes, mix, bakery, bake"
     },
     {
@@ -86,7 +86,7 @@
         "category2": "Bread",
         "special": "clean label, plant-based, gluten-free",
         "description": "As soft and light as a feather.",
-        "features": "Available in gluten-free, plant-based, and clean label options.",
+        "features": "Available in gluten-free, plant-based, and clean label options.",
         "keywords": "clean label, plant-based, plant based, gluten-free, gluten free, vegan, whole foods, natural, non gmo, bagels, buns, sweet, loaf, white, bread, asian, bakery, dough, mix, bake"
     },
     {
@@ -104,7 +104,7 @@
         "category2": "Pastry",
         "special": "clean label, gluten-free",
         "description": "So creamy that you would think you're eating yogurt.",
-        "features": "Available in gluten free, and clean label options. Kosher friendly, and maintains stability after freezing",
+        "features": "Available in gluten-free, and clean label options. Kosher friendly, and maintains stability after freezing",
         "keywords": "clean label, gluten free, gluten-free, whole foods, natural, non gmo, gelatin free, gelatin-free, custard, bakery, mixes, pastry, mix, cream, filling, fillings, bake"
     },
     {
@@ -113,15 +113,15 @@
         "category2": "Pastry",
         "special": "clean label, gluten-free",
         "description": "Our mouse and cream stabilizers could probably hold up a falling bridge.",
-        "features": "Available in gluten free, and clean label options. Kosher friendly, and maintains stability after freezing",
-        "keywords": "clean label, gluten free, gluten-free, whole foods, natural, non gmo, mousse, cream, stabilizer, stabilizers, pastry, bakery, bake"
+        "features": "Available in gluten-free, and clean label options. Kosher friendly, and maintains stability after freezing",
+        "keywords": "clean label, gluten free, gluten-free, whole foods, natural, non gmo, mousse, cream, stabilizer, stabilizers, pastry, bakery, bake, charlotte"
     },
     {
-        "title": "Bakable Fillings",
+        "title": "Bakeable Fillings",
         "category1": "Bakery Mixes",
         "category2": "Pastry",
         "special": "clean label, gluten-free",
-        "description": "Crank up the heat! OR We dare you to spread this to the edge.",
+        "description": "We dare you to spread this to the edge.",
         "features": "Available in gluten free, and clean label options. Maintains stability after freezing",
         "keywords": "clean label, gluten free, gluten-free, whole foods, natural, non gmo, pastry, mix, bakeable, filling, bechamel, bakery, bake, spread, cinnamon"
     },
@@ -131,7 +131,7 @@
         "category2": "Pastry",
         "special": "clean label, plant-based, gluten-free",
         "description": "No oven space? No problem.",
-        "features": "Available in gluten-free, plant-based, and clean label options. Kosher friendly, and maintains stability after freezing",
+        "features": "Available in gluten-free, plant-based, and clean label options. Kosher friendly, and maintains stability after freezing",
         "keywords": "clean label, gluten free, gluten-free, plant based, plant-based, vegan, whole foods, natural, non gmo, pastry, cheese, cheesecake, no bake, kosher, mix, bakery, bake"
     },
     {
@@ -140,7 +140,7 @@
         "category2": "",
         "special": "clean label, plant-based, gluten-free",
         "description": "Always on the rise.",
-        "features": "Non-GMO options, low in sodium, and offered in double or slow acting baking powders. Also available in gluten-free, plant-based, and clean label options.",
+        "features": "Non-GMO options, low in sodium, and offered in double or slow acting baking powders. Also available in gluten-free, plant-based, and clean label options.",
         "keywords": "clean label, gluten free, gluten-free, plant based, plant-based, vegan, whole foods, natural, non gmo, functional, ingredient, ingredients, low sodium, baking powder, aluminum free, fast acting, double acting, double action, encapsulated, functional ingredients, functional, ingredients"
     },
     {
@@ -149,7 +149,7 @@
         "category2": "",
         "special": "clean label, plant-based, gluten-free",
         "description": "Sprinkle it, dip it, or just…eat it.",
-        "features": "Offered in standard, coloured, flavoured, gluten-free, plant-based, and clean label options.",
+        "features": "Offered in standard, coloured, flavoured, gluten-free, plant-based, and clean label options.",
         "keywords": "clean label, gluten free, gluten-free, plant based, plant-based, vegan, whole foods, non gmo, natural, powdered donuts, donut, sugar, functional, ingredients, functional ingredient, functional ingredients, flavour, colour, color, decorative"
     },
     {
@@ -158,7 +158,7 @@
         "category2": "",
         "special": "clean label, plant-based, gluten-free",
         "description": "Eggs? What are those?",
-        "features": "Available in gluten-free, plant-based, and clean label options.",
+        "features": "Available in gluten-free, plant-based, and clean label options.",
         "keywords": "clean label, plant-based, plant based, gluten-free, gluten free, whole foods, natural, non gmo, vegan, egg reduction, egg, eggs, eggless, egg replacement, egg substitution, egg free, substitution, alternative, replacement, functional ingredients, functional, ingredients"
     },
     {
@@ -167,7 +167,7 @@
         "category2": "",
         "special": "clean label, plant-based, gluten-free",
         "description": "The new form of CPR.",
-        "features": "Powder or liquid? We have both in gluten-free, plant-based, and clean label options.",
+        "features": "Powder or liquid? We have both in gluten-free, plant-based, and clean label options.",
         "keywords": "clean label, plant-based, gluten-free, plant based, gluten free, whole foods, vegan, natural, non gmo, extended shelf life, shelf life, extend, extender, mold inhibitor, preservatives, natural preservatives, moist retention, improver, moist, cake, improver, cake improver, microbial inhibitor, volume improver, functional ingredients, functional, ingredients"
     },
     {
@@ -194,7 +194,7 @@
         "category2": "",
         "special": "clean label, plant-based, gluten-free",
         "description": "Sometimes it's okay to let go.",
-        "features": "Offered in standard, allergin friendly, and non-GMO options. Also available in gluten-free, plant-based, and clean label options.",
+        "features": "Offered in standard, allergen friendly, and non-GMO options. Also available in gluten-free, plant-based, and clean label options.",
         "keywords": "clean label, plant-based, plant based, gluten-free, gluten free, whole foods, vegan, natural, non gmo, canola, pan release, soy, non stick, soy free, sunflower"
     },
     {
@@ -208,106 +208,106 @@
     },
     {
         "title": "Sweet Brown",
-        "category1": "Flavors",
+        "category1": "Flavours",
         "category2": "Sweet",
         "special": "clean label, plant-based, gluten-free",
-        "description": "Looking to satisfy your sweet tooth? Indulgent and decadent flavors that will take you back to your childhood, wherever that may be.",
+        "description": "Looking to satisfy your sweet tooth? Indulgent and decadent flavours that will take you back to your childhood, wherever that may be.",
         "features": "Toasted Marshmallow, Graham Cracker, Roasted Milk Tea, Ube, Buttertart, Honey",
         "keywords": "flavor, flavour, buttertart, birthday cake, brown sugar, sweet, sweet brown, apple pie, french toast, apple crisp, bubble gum, burnt sugar, caramelized, cola, cookie, cotton candy, fruitcake, graham, graham cracker, honey, maple, marshmallow, molasses, panettone, pumpkin pie, red velvet, roasted marshmallow, smores, smore's, snickerdoodle, sugar, sweet potato pie, sweet potato, syrup, toasted marshmallow, pie, milk tea, ube"
     },
     {
         "title": "Caramel",
-        "category1": "Flavors",
+        "category1": "Flavours",
         "category2": "Sweet",
         "special": "clean label, plant-based, gluten-free",
-        "description": "From sweet, milky caramel sauce to burnt sugar notes. Rich, luxurious flavors that will have you feeling all warm and gooey.",
+        "description": "From sweet, milky caramel sauce to burnt sugar notes. Rich, luxurious flavours that will have you feeling all warm and gooey.",
         "features": "Milky Caramel, Burnt Sugar, Butterscotch, Creamy Toffee, Dulce de Leche",
         "keywords": "flavor, flavour, sweet, toffee, butterscotch, burnt sugar, dulce de leche, caramel, caramilk, milky caramel, werthers, caramel popcorn, salted caramel"
     },
     {
         "title": "Maple",
-        "category1": "Flavors",
+        "category1": "Flavours",
         "category2": "Sweet",
         "special": "clean label, plant-based, gluten-free",
-        "description": "Nobody does maple better than Canadians. From a mild pancake syrup taste, to a dark, robust, undeniably maple flavor. Hints of woody or buttery notes and everything in between, we have the perfect maple for all your needs.",
+        "description": "Nobody does maple better than Canadians. From a mild pancake syrup taste, to a dark, robust, undeniably maple flavour. Hints of woody or buttery notes and everything in between, we have the perfect maple for all your needs.",
         "features": "French Toast, Buttery Maple, Maple Bacon, Smoky Maple",
         "keywords": "flavor, flavour, sweet, maple, amber, buttery maple, canadian maple, french toast, maple bacon, maple butter, maple syrup, maple taffy, smoky maple"
     },
     {
         "title": "Coffee",
-        "category1": "Flavors",
+        "category1": "Flavours",
         "category2": "Sweet",
         "special": "clean label, plant-based, gluten-free",
-        "description": "Light roast. Dark. Extra milk. Hold the foam. Sweet and creamy. Bold and bitter. Splash of skim. Hint of cocoa. Your coffee flavor, made to order.",
+        "description": "Light roast. Dark. Extra milk. Hold the foam. Sweet and creamy. Bold and bitter. Splash of skim. Hint of cocoa. Your coffee flavour, made to order.",
         "features": "Triple Espresso, Mocha, Coffee Emulsion, Café Latte, Café au Lait",
         "keywords": "flavor, flavour, sweet, americano, blonde roast, cafe au lait, cafe latte, cappuccino, coffee, dark roast, espresso, latte, mocha, macchiato, moka, coffee bean, spray dried coffee, colombian, affogato, arabica, robusta"
     },
     {
         "title": "Chocolate",
-        "category1": "Flavors",
+        "category1": "Flavours",
         "category2": "Sweet",
         "special": "clean label, plant-based, gluten-free",
-        "description": "Who doesn't love chocolate? Whether you are looking for a standalone flavor, or to add depth and richness to a chocolate cake. Enhance the natural goodness of cocoa powder or create a sweet fudgy dessert. There are so many chocolate flavors to choose from.",
+        "description": "Who doesn't love chocolate? Whether you are looking for a standalone flavour, or to add depth and richness to a chocolate cake. Enhance the natural goodness of cocoa powder or create a sweet fudgy dessert. There are so many chocolate flavours to choose from.",
         "features": "Cookies and Cream, Dark Chocolate, White Chocolate, Milk Chocolate, Chocolate Fudge, Hot Chocolate",
         "keywords": "flavor, flavour, sweet, white chocolate, cookies and cream, cookies & cream, fudge, dark chocolate, hot chocolate, chocolate, cocoa, milk chocolate, cocoa butter"
     },
     {
         "title": "Vanilla",
-        "category1": "Flavors",
+        "category1": "Flavours",
         "category2": "Sweet",
         "special": "clean label, plant-based, gluten-free",
         "description": "Whoever used 'vanilla' as a synonym for boring, clearly hasn't met our lineup. Smoky or creamy, buttery or sweet, beany or classic. We're confident we can pair you with the perfect vanilla.",
-        "features": "Madagascar Bourbon Pure Vanilla Extract, French Vanilla Ice Cream, Vanilla Bean Flavor, Birthday Cake, Butter Vanilla",
+        "features": "Madagascar Bourbon Pure Vanilla Extract, French Vanilla Ice Cream, Vanilla Bean Flavour, Birthday Cake, Butter Vanilla",
         "keywords": "flavor, flavour, vanilla bean, creamy, vanilla bourbon, custard, butter vanilla, french vanilla, vanilla, vanilla extract, vanillin, madagascar, tahitian, vanilla bean, smoky vanilla, birthday cake, sweet"
     },
     {
         "title": "Spice",
-        "category1": "Flavors",
+        "category1": "Flavours",
         "category2": "Spice",
         "special": "clean label, plant-based, gluten-free",
-        "description": "Ready for us to spice up your life? Whether savory or sweet, we have spice flavors to warm up your next project.",
+        "description": "Ready for us to spice up your life? Whether savory or sweet, we have spice flavours to warm up your next project.",
         "features": "Pumpkin Pie, Gingerbread, Cracked Peppercorn, Bun Spice, Saigon Cinnamon",
         "keywords": "flavor, flavour, allspice, anise, bergamot, black pepper, caraway, cardamom, cassia, ceylon, cinnamon, cumin, floral, ginger, gingerale, gingerbread, hibiscus, jasmine, lavender, mint, mustard, nutmeg, pepper, peppercorn, pumpkin spice, rose, saigon, star anise, spice"
     },
     {
         "title": "Nut",
-        "category1": "Flavors",
+        "category1": "Flavours",
         "category2": "Nut",
         "special": "clean label, plant-based, gluten-free",
-        "description": "Feeling a little nutty? All of our nut flavors are allergen free, so you can create safe treats without compromising on that nutty taste you love.",
+        "description": "Feeling a little nutty? All of our nut flavours are allergen free, so you can create safe treats without compromising on that nutty taste you love.",
         "features": "Walnut, Hazelnut, Pecan, Almond Extract, Wheat Germ, Pistachio",
         "keywords": "flavor, flavour, almond, almond extract, cashew, hazelnut, macademia, nut, nut butter, nutty, peanut butter, pecan, pistachio, peanut, walnut, wheat germ"
     },
     {
         "title": "Tropical",
-        "category1": "Flavors",
+        "category1": "Flavours",
         "category2": "Fruit",
         "special": "clean label, plant-based, gluten-free",
-        "description": "Summer doesn’t have to come to an end. Get great tasting, vibrant, and exotic flavors year round. Prefer your bananas slightly green, or over-ripe with lots of spots? We can tailor our flavors to suit your tastebuds.",
+        "description": "Summer doesn’t have to come to an end. Get great tasting, vibrant, and exotic flavours year round. Prefer your bananas slightly green, or over-ripe with lots of spots? We can tailor our flavours to suit your tastebuds.",
         "features": "Caramelized Pineapple, Toasted Coconut, Passion Fruit, Alphonso Mango",
         "keywords": "flavor, flavour, kiwi, banana bread, lychee, coconut, banana, ripe banana, alphonso mango, green banana, guava, mango, mangosteen, passionfruit, pineapple, fruit, tropical, tropical fruit"
     },
     {
         "title": "Berry",
-        "category1": "Flavors",
+        "category1": "Flavours",
         "category2": "Fruit",
         "special": "clean label, plant-based, gluten-free",
-        "description": "That freshly picked taste doesn’t have to be seasonal. Get consistent, fruity flavors any time you like. Whether you are looking for a fresh, juicy blueberry flavor, to deep floral notes, or a cooked jammy taste. Embassy specializes in fruit flavors just for bakery. Need something more? Ask about our fruit compounds - made with real IQF fruit, acidity, and sweetness, perfect for mousses and fillings.",
+        "description": "That freshly picked taste doesn’t have to be seasonal. Get consistent, fruity flavours any time you like. Whether you are looking for a fresh, juicy blueberry flavour, to deep floral notes, or a cooked jammy taste. Embassy specializes in fruit flavours just for bakery. Need something more? Ask about our fruit compounds - made with real IQF fruit, acidity, and sweetness, perfect for mousses and fillings.",
         "features": "Jammy Strawberry, Maraschino Cherry, Tart Cranberry, Mixed Berry, Cranberry, Pomegranate",
         "keywords": "flavor, flavour, dark berry, blue raspberry, pomegranate, blueberry, black cherry, strawberry, berry, cherry, cranberry, raspberry, red berry, ripe strawberry, sour cherry, triple berry, watermelon, white peach, wildberry, fruit"
     },
     {
         "title": "Citrus",
-        "category1": "Flavors",
+        "category1": "Flavours",
         "category2": "Fruit",
         "special": "clean label, plant-based, gluten-free",
-        "description": "Zesty, Juicy, or Peely. From traditional lemon and orange flavors to complex yuzu and Sicilian lemon, there’s a citrus flavor waiting to brighten up your baked goods. Need something more? Ask about our citrus fruit compounds - made with real fruit juice, pieces of citrus peel, and acidity, they're perfect for mousses and fillings.",
+        "description": "Zesty, juicy, or peely. From traditional lemon and orange flavours to complex yuzu and Sicilian lemon, there’s a citrus flavour waiting to brighten up your baked goods. Need something more? Ask about our citrus fruit compounds - made with real fruit juice, pieces of citrus peel, and acidity, they're perfect for mousses and fillings.",
         "features": "Key Lime, Yuzu, Mandarin Orange, Sicilian Lemon Emulsion, Lemon Meringue ",
         "keywords": "flavor, flavour, lemon oil, lime, lime extract, lemon, key lime, peel, citrus, lemon extract, lemon lime, mandarin, orange, orange extract, orange oil, zest, tangerine, yuzu, zesty, fruit"
     },
     {
         "title": "Orchard",
-        "category1": "Flavors",
+        "category1": "Flavours",
         "category2": "Fruit",
         "special": "clean label, plant-based, gluten-free",
         "description": "An apple flavour a day, keeps the boring desserts away. Get all your favorite Autumn fruits, any season you like.",
@@ -316,79 +316,79 @@
     },
     {
         "title": "Cheese",
-        "category1": "Flavors",
+        "category1": "Flavours",
         "category2": "Dairy",
         "special": "clean label, plant-based, gluten-free",
-        "description": "Sharp or Mild. Fresh or Baked. Nutty or Buttery. Our cheesy flavours sure are grate! Test them in bread and bagels, or try them in our savory bechamel filling mix.",
+        "description": "Sharp or mild. Fresh or baked. Nutty or buttery. Our cheesy flavours sure are grate! Test them in bread and bagels, or try them in our savory bechamel filling mix.",
         "features": "Aged Cheddar, Smoked Gouda, Cream Cheese, Gruyere, Asiago, Baked Four Cheese, Blue Cheese, Mac and Cheese",
         "keywords": "flavor, flavour, dairy, cheddar cheese, baked cheese, cheese, blue cheese, asiago, goat cheese, aged cheddar, brie, cheddar, cheesecake, cream cheese, four cheese, gouda, gruyere, mac and cheese, mozzarella, parmesan, parmigiano, sharp cheese, swiss, vermont, savory"
     },
     {
         "title": "Butter",
-        "category1": "Flavors",
+        "category1": "Flavours",
         "category2": "Dairy",
         "special": "clean label, plant-based, gluten-free",
-        "description": "Whether you need a flavor that’s perfect for a rich, flaky croissant. To add mouthfeel to buns. Or a mild buttercream frosting. There’s a butter flavor for every application.",
+        "description": "Whether you need a flavour that’s perfect for a rich, flaky croissant. To add mouthfeel to buns. Or a mild buttercream frosting. There’s a butter flavour for every application.",
         "features": "Brown Butter, Melted Butter, Cultured Butter, Butter Popcorn",
         "keywords": "flavor, flavour, dairy, margarine, butter, popcorn butter, melted butter, brown butter, ghee, cultured butter, garlic butter"
     },
     {
         "title": "Milk",
-        "category1": "Flavors",
+        "category1": "Flavours",
         "category2": "Dairy",
         "special": "clean label, plant-based, gluten-free",
-        "description": "No lactose interance here. Our milk flavours are perfectly creamy and made without allergens or dairy.",
+        "description": "No lactose intolerance here. Our milk flavours are perfectly creamy and made without allergens or dairy.",
         "features": "Milk Cream, Sweet Cream, Dairy, Condensed Milk, Evaporated Milk, Greek Yogurt",
         "keywords": "flavor, flavour, ice cream, cream, dairy, milk, condensed milk, yoghurt, yogurt, buttermilk, dulce de leche, evaporated milk, skim milk, sour cream, sweet cream, whipped cream, mayo, mayonnaise"
     },
     {
         "title": "Alcohol",
-        "category1": "Flavors",
+        "category1": "Flavours",
         "category2": "Alcohol",
         "special": "clean label, plant-based, gluten-free",
-        "description": "It's 5 o'clock somwhere. But in the meantime, try one of our boozy and elegant liquor flavours to add a sophisticated touch to your next project. Ask about our specialty line of alcohol gels, perfect for mousse cakes.",
+        "description": "It's 5 o'clock somewhere. But in the meantime, try one of our boozy and elegant liquor flavours to add a sophisticated touch to your next project. Ask about our specialty line of alcohol gels, perfect for mousse cakes.",
         "features": "Irish Cream, Jamaican Rum, Orange Brandy Gel, Amaretto, Bourbon Whiskey, Gin",
         "keywords": "flavor, flavour, amaretto, beer, bellini, black forest, bourbon, brandy, champagne, cider, cognac, dark rum, eggnog, gin, IPA, ipa, irish cream, kirsch, liquor, orange brandy, orange cognac, prosecco, rum, rum antilles, rum island, rum jamaican, spiced rum, spirits, tonic, triple sec, vermouth, vodka, whiskey, white rum, wine"
     },
     {
         "title": "Savory",
-        "category1": "Flavors",
+        "category1": "Flavours",
         "category2": "Savory",
         "special": "clean label, plant-based, gluten-free",
         "description": "Whether globally inspired or familiar comfort foods, there's a flavour to liven up and add dimension to all your salty snacks.",
-        "features": "Chorizo, Zaatar, Sriracha, Shiitake Mushroom, Pepperoni Pizza, Roasted Garlic",
+        "features": "Chorizo, Za'atar, Sriracha, Shiitake Mushroom, Pepperoni Pizza, Roasted Garlic",
         "keywords": "flavor, flavour, savory, chorizo, beef, corn, buffalo, baked, italian, bacon, chicken, chilli, chili, egg, fish, garlic, hot sauce, malt, olive oil, onion, pizza, popcorn, pork, potato, poutine, ranch, roasted, roasted garlic, sausage, sauteed, sesame, shallot, smoked, smoky, sour, spicy, sriracha, tomato, yeast, zaatar"
     },
     {
         "title": "Herb",
-        "category1": "Flavors",
+        "category1": "Flavours",
         "category2": "Savory",
         "special": "clean label, plant-based, gluten-free",
-        "description": "Not getting the impact you're looking for from real herbs? Get fresh, bold flavors that are tested to withstand even the highest heat applications from bagel to tortilla.",
+        "description": "Not getting the impact you're looking for from real herbs? Get fresh, bold flavours that are tested to withstand even the highest heat applications from bagel to tortilla.",
         "features": "Herb de Provence, Cilantro, Rosemary, Green Onion, Basil",
         "keywords": "flavor, flavour, herb de provence, chive, herb, cilantro, bay leaf, dill, basil, herbs, savory, oregano, green onion, parsley, onion, rosemary, sage, thyme"
     },
     {
         "title": "Bread",
-        "category1": "Flavors",
+        "category1": "Flavours",
         "category2": "Savory",
         "special": "clean label, plant-based, gluten-free",
-        "description": "Do your dinner rolls need a little more oomph? Whether you are looking to add in the missing egg, milk, and butter notes to a plant based brioche. Or enhance the yeasty notes in an artisan loaf. No time to make sour dough starter? No problem. Embassy has bread flavors that’ll bring your buns to the next level.",
+        "description": "Do your dinner rolls need a little more oomph? Whether you are looking to add in the missing egg, milk, and butter notes to a plant based brioche. Or enhance the yeasty notes in an artisan loaf. No time to make sour dough starter? No problem. Embassy has bread flavours that’ll bring your buns to the next level.",
         "features": "Brioche, Bread Aroma, Sour Dough, Olive Oil, Fermented Bread, Beer, Panettone",
         "keywords": "flavor, flavour, dough aroma, brioche, bun, bread aroma, yeast, bread, fermented, sour dough, pannetone, yeasty, yeast, artisan, crusty, savory"
     },
     {
-        "title": "Natural Color",
-        "category1": "Food Coloring",
+        "title": "Natural Colour",
+        "category1": "Food Colouring",
         "category2": "",
         "special": "clean label, plant-based, gluten-free",
         "description": "Don't compromise vibrant, beautiful colours for clean label requirements. Ask about our selection of natural colours for icing and bakery applications.",
-        "features": "Butter Color Annatto, Turmeric, Red Beet, Natural Blue, Caramel Colour",
+        "features": "Butter Colour Annatto, Turmeric, Red Beet, Natural Blue, Caramel Colour",
         "keywords": "color, colour, natural color, annatto, beet, butter color, caramel, butter, caramel color, purple carrot, red raddish, spirulina, suprared, tumeric, matcha"
     },
     {
-        "title": "Artificial Color",
-        "category1": "Food Coloring",
+        "title": "Artificial Colour",
+        "category1": "Food Colouring",
         "category2": "",
         "special": "clean label, plant-based, gluten-free",
         "description": "Fun, affordable, and bold, traditional food colours to brighten up any project.",
