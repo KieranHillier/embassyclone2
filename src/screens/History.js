@@ -36,7 +36,7 @@ class History extends Component {
               <div className='history-content-section'>
                 <div className='history-content-section-left'>
                   <h1>1981</h1>
-                  <p>Martino Brambilla became owner and President at the age of 17. He changed the name of the business to Embassy Food Specialties Ltd. and shifted the primary focus of the business to flavors.</p>
+                  <p>Martino Brambilla became owner and President at the age of 17. He changed the name of the business to Embassy Food Specialties Ltd. and shifted the primary focus of the business to flavours.</p>
                 </div>
                 <div className='history-content-section-middle'></div>
                 <div className='history-content-section-right history-bottle' style={{backgroundImage: `url(${timelineImages[1]})`}}>
@@ -71,7 +71,7 @@ class History extends Component {
               <div className='history-content-section'>
                 <div className='history-content-section-left'>
                   <h1>2018</h1>
-                  <p>Embassy changed the business name to Embassy Ingredients Ltd. to more accurately reflect its flavor and bakery capabilities.</p>
+                  <p>Embassy changed the business name to Embassy Ingredients Ltd. to more accurately reflect its flavour and bakery capabilities.</p>
                 </div>
                 <div className='history-content-section-middle-last'></div>
                 <div className='history-content-section-right' style={{backgroundImage: `url(${timelineImages[5]})`}}>
@@ -91,7 +91,7 @@ class History extends Component {
                 <div className='history-content-section-left-mini'></div>
                 <div className='history-content-section-right-mini'>
                   <h1>1981</h1>
-                  <p>Martino Brambilla became owner and President at the age of 17. He changed the name of the business to Embassy Food Specialties Ltd. and shifted the primary focus of the business to flavors.</p>
+                  <p>Martino Brambilla became owner and President at the age of 17. He changed the name of the business to Embassy Food Specialties Ltd. and shifted the primary focus of the business to flavours.</p>
                 </div>
               </div>
               <div className='history-content-section'>
@@ -119,7 +119,7 @@ class History extends Component {
                 <div className='history-content-section-left-mini-last'></div>
                 <div className='history-content-section-right-mini'>
                   <h1>2018</h1>
-                  <p>Embassy changed the business name to Embassy Ingredients Ltd. to more accurately reflect its flavor and bakery capabilities.</p>
+                  <p>Embassy changed the business name to Embassy Ingredients Ltd. to more accurately reflect its flavour and bakery capabilities.</p>
                 </div>
               </div>
             </>

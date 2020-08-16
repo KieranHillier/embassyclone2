@@ -33,14 +33,6 @@ export class FixedHeader extends Component {
     });
   }
 
-  phoneClick = () => {
-    console.log('phone')
-  }
-
-  emailClick = () => {
-    console.log('email')
-  }
-
   mobileDropDown = (index) => {
     if (index === this.state.mobileDropDownIdx) {
       this.setState({mobileDropDownIdx: 0})
@@ -85,7 +77,7 @@ export class FixedHeader extends Component {
       <div className={'fixed-header'}>
         <div className={this.getSecondaryHeaderStyle()}>
           <div className='fixed-contents-container'>
-            <Link to="/embassyclone2" className={'embassy-logo-container'}>
+            <Link to="/" className={'embassy-logo-container'}>
               <img src={EmbassyLogo} className={windowWidth >= tablet ? 'embassy-logo' : 'embassy-logo-small'} alt='Embassy Logo' />
             </Link>
             {this.state.windowWidth >= this.mediaQuery.tablet ? (

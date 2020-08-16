@@ -18,7 +18,7 @@ function App() {
     <GlobalProvider>
       <FixedHeader />
       <Switch>
-        <Route path='/embassyclone2' component={Home} exact />
+        <Route path='/' component={Home} exact />
         <Route path='/all-products' component={AllProducts} />
         <Route path='/leadership' component={Leadership} />
         <Route path='/history' component={History} />

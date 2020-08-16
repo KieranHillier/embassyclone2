@@ -11,7 +11,7 @@ const clIcons = [
 ];
 
 const clText = [
-  'Natural Flavors & Colors',
+  'Natural Flavours & Colors',
   'No Modified Ingredients',
   'Whole Foods Compliant',
   'Passes Retailer Standards'
@@ -29,8 +29,8 @@ const homeIcons = [
 const homeIconsText = [
   'R&D Bakery Lab',
   'Product Customization',
-  'Flavor Lab',
-  'Certified Flavorists',
+  'Flavour Lab',
+  'Certified Flavourists',
   'Food Scientist',
   'Bakery Specialist'
 ]
@@ -49,7 +49,7 @@ const certificationIcons = [
 const backgroundContent = [
   {
     title: 'Customized Flavours',
-    body: 'Flavoring the wolrd with customized solutions.'
+    body: 'Flavouring the wolrd with customized solutions.'
   },
   {
     title: 'Customized Bakery Ingredients & Flavours',
@@ -57,7 +57,7 @@ const backgroundContent = [
   },
   {
     title: 'Customized Bakery Ingredients',
-    body: 'Combining creativity and science to provide our customers with the very best innovative flavors and bakery ingredients available.'
+    body: 'Combining creativity and science to provide our customers with the very best innovative flavours and bakery ingredients available.'
   },
 ];
 
@@ -127,7 +127,7 @@ export class Home extends Component {
               <div className='home-body-top-container'>
                 <div className='home-body-left-container'>
                   <h2>Unlimited <span className='home-body-thin'>Possibilities</span></h2>
-                  <p>No matter what you are looking for, with our team of Certified Flavorists, Bakery Specialists, and Food Scientists, Embassy offers a variety of formats and concetrates to meet your product and process requirements.</p>
+                  <p>No matter what you are looking for, with our team of Certified Flavourists, Bakery Specialists, and Food Scientists, Embassy offers a variety of formats and concetrates to meet your product and process requirements.</p>
                 </div>
                 <div className='home-body-right-container icons-container'>
                   <div className='home-icons home-icons-padding'>
@@ -145,14 +145,14 @@ export class Home extends Component {
                   </div>
                   <div className='home-body-right-container'>
                     <h2>Clean-Label <span className='home-body-thin'>Matters</span></h2>
-                    <p>Consumers demand it and we create it! Our quality flavors, bakery mixes, and bases are made from the highest quality ingredients. Our focus is to use ingredients customers can pronounce.</p>
+                    <p>Consumers demand it and we create it! Our quality flavours, bakery mixes, and bases are made from the highest quality ingredients. Our focus is to use ingredients customers can pronounce.</p>
                   </div>
                 </div>
               ) : (
                 <div className='home-body-top-container'>
                   <div className='home-body-left-container'>
                     <h2>Clean-Label <span className='home-body-thin'>Matters</span></h2>
-                    <p>Consumers demand it and we create it! Our quality flavors, bakery mixes, and bases are made from the highest quality ingredients. Our focus is to use ingredients customers can pronounce.</p>
+                    <p>Consumers demand it and we create it! Our quality flavours, bakery mixes, and bases are made from the highest quality ingredients. Our focus is to use ingredients customers can pronounce.</p>
                   </div>
                   <div className='home-body-right-container icons-container'>
                     <div className='home-icons mini-cl-icons'>
@@ -194,14 +194,14 @@ export class Home extends Component {
                   </div>
                   <div className='home-body-right-container'>
                     <h2>Unmatched <span className='home-body-thin'>Quality</span></h2>
-                    <p>Our unique approach combines the expertise of Certified Flavorists, Bakery Specialists, and Food Scientists, guaranteeing superior product manufacturing and advanced ingredient development.</p>
+                    <p>Our unique approach combines the expertise of Certified Flavourists, Bakery Specialists, and Food Scientists, guaranteeing superior product manufacturing and advanced ingredient development.</p>
                   </div>
                 </div>
               ) : (
                 <div className='home-body-top-container'>
                   <div className='home-body-left-container'>
                     <h2>Unmatched <span className='home-body-thin'>Quality</span></h2>
-                    <p>Our unique approach combines the expertise of Certified Flavorists, Bakery Specialists, and Food Scientists, guaranteeing superior product manufacturing and advanced ingredient development.</p>
+                    <p>Our unique approach combines the expertise of Certified Flavourists, Bakery Specialists, and Food Scientists, guaranteeing superior product manufacturing and advanced ingredient development.</p>
                   </div>
                   <div className='home-body-right-container'>
                     <div className='home-img-container image-2'></div>

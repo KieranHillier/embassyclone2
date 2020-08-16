@@ -1,6 +1,6 @@
 {
-  "homepage": "http://KieranHillier.github.io/embassyclone2",
-  "name": "my-app",
+  "homepage": "http://KieranHillier.github.io/",
+  "name": "embassy",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
