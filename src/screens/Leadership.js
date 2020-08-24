@@ -6,7 +6,7 @@ const ceoData =   {
   "name": "Martino Brambilla",
   "position": "Founder & President",
   "favouriteTreat": "Donuts",
-  "description": "Martino Brambilla is the founder, and president of Embassy Ingredients since 1981.\n\nMartino sets the company strategy to specialize in both flavours and bakery ingredients in order to create an industry with healthier, tastier, and more flavourful foods.\n\nMartino garduated from both Harvard Business School and London Business School.",
+  "description": "Martino Brambilla is the founder, and president of Embassy Ingredients since 1981.\n\nMartino sets the company strategy to specialize in both flavours and bakery ingredients in order to create an industry with healthier, tastier, and more flavourful foods.\n\nMartino graduated from both Harvard Business School and London Business School.",
   "img": require(`../images/leadership/Martino Brambilla.png`)
 }
 

@@ -11,7 +11,7 @@ const clIcons = [
 ];
 
 const clText = [
-  'Natural Flavours & Colors',
+  'Natural Flavours & Colours',
   'No Modified Ingredients',
   'Whole Foods Compliant',
   'Passes Retailer Standards'
@@ -127,7 +127,7 @@ export class Home extends Component {
               <div className='home-body-top-container'>
                 <div className='home-body-left-container'>
                   <h2>Unlimited <span className='home-body-thin'>Possibilities</span></h2>
-                  <p>No matter what you are looking for, with our team of Certified Flavourists, Bakery Specialists, and Food Scientists, Embassy offers a variety of formats and concetrates to meet your product and process requirements.</p>
+                  <p>No matter what you are looking for, with our team of Certified Flavourists, Bakery Specialists, and Food Scientists, Embassy offers a variety of formats and concentrates to meet your product and process requirements.</p>
                 </div>
                 <div className='home-body-right-container icons-container'>
                   <div className='home-icons home-icons-padding'>

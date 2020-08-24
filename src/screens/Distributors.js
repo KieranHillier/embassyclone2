@@ -96,7 +96,7 @@ class Distributors extends Component {
                     {parents.usa ? (
                       <div className='distributors-usa-text'>
                         <h3>Want to work with Embassy in the United States?</h3>
-                        <p>If you are interested in using Embassy Ingredients for your business in the U.S., please contact us directly and find our more information about the industries we serve, our products, finished concepts, and terms of sale.</p>
+                        <p>If you are interested in using Embassy Ingredients for your business in the U.S., please contact us directly and find out more information about the industries we serve, our products, finished concepts, and terms of sale.</p>
                         <div className='distributors-usa-btn'>
                           <Link to="/contact">Contact Us</Link>
                         </div>

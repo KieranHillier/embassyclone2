@@ -40,7 +40,7 @@ class Careers extends Component {
                   <div className='career-values-item-overlay'>
                     <div className='career-values-item-text'>
                       <h3>work together like cookies &amp; cream</h3>
-                      <p>Think critically and constuctively as a team player</p>
+                      <p>Think critically and constructively as a team player</p>
                     </div>
                   </div>                  
                 </div>

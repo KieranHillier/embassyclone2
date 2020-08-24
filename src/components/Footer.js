@@ -85,17 +85,16 @@ export class Footer extends Component {
             <div className='mobile-footer-header' onClick={() => this._toggleDropdown(1)}>Company</div>
             {dropdownIdx === 1 ? (
               <div className='mobile-footer-section'>
-                <Link to="/about">Products</Link>
-                <Link to="/about">Distributors</Link>
+                <Link to="/all-products">Products</Link>
+                <Link to="/distributors">Distributors</Link>
               </div>
             ) : null}
             <div className='mobile-footer-header' onClick={() => this._toggleDropdown(2)}>About Us</div>
             {dropdownIdx === 2 ? (
               <div className='mobile-footer-section'>
-                <Link to="/about">What We Do</Link>
-                <Link to="/about">Our History</Link>
-                <Link to="/about">Leadership Team</Link>
-                <Link to="/about">Careers</Link>
+                <Link to="/careers">Careers</Link>
+                <Link to="/leadership">Leadership</Link>
+                <Link to="/history">Our History</Link>
               </div>
             ) : null}
             <div className='mobile-footer-header' onClick={() => this._toggleDropdown(3)}>General Contact</div>
