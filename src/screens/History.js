@@ -54,7 +54,7 @@ class History extends Component {
               <div className='history-content-section'>
                 <div className='history-content-section-left'>
                   <h1>2004</h1>
-                  <p>Embassy moved into a new custom-deisgned manufacturing facility outside of Toronto, Ontario.</p>
+                  <p>Embassy moved into a new custom-designed manufacturing facility outside of Toronto, Ontario.</p>
                 </div>
                 <div className='history-content-section-middle'></div>
                 <div className='history-content-section-right' style={{backgroundImage: `url(${timelineImages[3]})`}}>
@@ -105,7 +105,7 @@ class History extends Component {
                 <div className='history-content-section-left-mini'></div>
                 <div className='history-content-section-right-mini'>
                   <h1>2004</h1>
-                  <p>Embassy moved into a new custom-deisgned manufacturing facility outside of Toronto, Ontario.</p>
+                  <p>Embassy moved into a new custom-designed manufacturing facility outside of Toronto, Ontario.</p>
                 </div>
               </div>
               <div className='history-content-section'>
