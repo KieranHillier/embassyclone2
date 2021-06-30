@@ -52,7 +52,6 @@ export class ProductFilter extends Component {
                   </>
                 ) : null}
                 <div className='filter-min-item' onClick={() => updateCheckbox('Functional Ingredients')} style={parentState.sideFilters.includes('Functional Ingredients') ? {background: '#f3f0f0'} : null}>Functional Ingredients</div>
-                <div className='filter-min-item' onClick={() => updateCheckbox('Pan Release')} style={parentState.sideFilters.includes('Pan Release') ? {background: '#f3f0f0'} : null}>Pan Release</div>
                 <div className='filter-min-item' onClick={() => updateCheckbox('Glaze')} style={parentState.sideFilters.includes('Glaze') ? {background: '#f3f0f0'} : null}>Glaze</div>
                 <div className='filter-min-item filter-min-parent' onClick={() => updateCheckbox('Flavours')} style={parentState.sideFilters.includes('Flavours') ? {background: '#f3f0f0'} : null}>
                   <p>Flavours</p>
@@ -112,11 +111,6 @@ export class ProductFilter extends Component {
               <input type="checkbox" id='checkbox2' checked={parentState.sideFilters.includes('Functional Ingredients')} />
               <span></span>
               <label htmlFor='checkbox2'>Functional Ingredients</label> 
-            </span>
-            <span className='filter-checkbox' onClick={() => updateCheckbox('Pan Release')}>
-              <input type="checkbox" id='checkbox3' checked={parentState.sideFilters.includes('Pan Release')} />
-              <span></span>
-              <label htmlFor='checkbox3'>Pan Release</label> 
             </span>
             <span className='filter-checkbox' onClick={() => updateCheckbox('Glaze')}>
               <input type="checkbox" id='checkbox4' checked={parentState.sideFilters.includes('Glaze')} />
