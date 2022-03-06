@@ -81,11 +81,6 @@ class Distributors extends Component {
                         <img className='distributors-icon' alt='' src={DropdownArrow} style={!provinces.western ? {transform: 'rotate(90deg)'} : {transform: 'rotate(180deg)'}} />
                       </div>
                       {provinces.western ? this._renderChildren('western') : null}
-                      <div className='distributors-province' onClick={() => this._updateProvince('atlantic')}>
-                        <h2 style={provinces.atlantic ? {color: '#54b846'} : null}>Atlantic Canada</h2>
-                        <img className='distributors-icon' alt='' src={DropdownArrow} style={!provinces.atlantic ? {transform: 'rotate(90deg)'} : {transform: 'rotate(180deg)'}} />
-                      </div>
-                      {provinces.atlantic ? this._renderChildren('atlantic') : null}
                     </>
                   ) : null} 
                   <div className='distributors-usa-container'>

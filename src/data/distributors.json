@@ -37,15 +37,6 @@
             "email": ""
         },
         {
-            "title":  "Jim’s Brother Trading",
-            "address": "40 Dynamic Drive\nUnit #1\nScarborough, ON\nM1V 2W2",
-            "number": "Phone Number: (416) 321-8002",
-            "fax": "Fax Number: (416) 321-8138",
-            "toll": "",
-            "website": "",
-            "email": ""
-        },
-        {
             "title":  "Olympic Wholesale Ltd.",
             "address": "75 Green Court\nAjax, ON\nL1S 6W9",
             "number": "Phone Number: (905) 426-5188",
@@ -61,15 +52,6 @@
             "fax": "Fax Number: (416) 742-7811",
             "toll": "",
             "website": "",
-            "email": ""
-        },
-        {
-            "title":  "Traynors Bakery",
-            "address": "191 Victoria Street South\nHamilton, ON\nL8N 3C8",
-            "number": "Phone Number: (905) 522-2730",
-            "fax": "Fax Number: (905) 521-0095",
-            "toll": "Toll Free: 1-800-263-9239",
-            "website": "www.traynors.ca",
             "email": ""
         }
     ], 
@@ -129,16 +111,7 @@
             "toll": "Toll Free: 1-800-665-2062",
             "website": "www.yourbakemark.com",
             "email": ""
-        },      
-        {
-            "title":  "J & S Food Service",
-            "address": "6040 Gateway Boulevard\nEdmonton, AB\nT6H 2H6",
-            "number": "Phone Number: (780) 435-5446",
-            "fax": "Fax Number: (780) 435-5896",
-            "toll": "Toll Free: 1-800-268-2339",
-            "website": "www.jandsfoodservice.com",
-            "email": "email: jsfoodservice@telus.net"
-        },      
+        },          
         {
             "title":  "Snow Cap Enterprises Ltd.",
             "address": "5698 Trapp Ave.\nBurnaby, BC\nV3N 5G4",
@@ -148,17 +121,6 @@
             "website": "www.snowcap.com",
             "email": "email: order@snowcap.com"
         }     
-    ],
-    "atlantic": [
-        {
-            "title":  "B.M.S Distributors",
-            "address": "4852 Plymouth Road\nR.R. #2\nNew Glasgow, NS\nB2H 5C5",
-            "number": "Phone Number: (902) 755-3020",
-            "fax": "Fax Number: (902) 755-3460",
-            "toll": "Toll Free: 1-800-267-3478",
-            "website": "www.bmsdistributors.com",
-            "email": ""          
-        }
     ],
     "mexico": [
         {
@@ -172,15 +134,6 @@
         }
     ],
     "central_america": [
-        {
-            "title":  "American Bakery Distributors (Nicaragua)",
-            "address": "Cocteleria abuelitaaa\nLas Conchas\nCuidad\nJardin Managua, Nicaragua",
-            "number": "Phone Number: +505 8613 4374",
-            "fax": "",
-            "toll": "",
-            "website": "abd.com.ni",
-            "email": "email: gventas@abd.com.ni"          
-        },
         {
             "title":  "EP Market (Panama)",
             "address": "Terminal Industrial Zona Uno\nGalera 104\nCiudad de Panamá\nPanama",
@@ -198,24 +151,6 @@
             "toll": "",
             "website": "",
             "email": ""           
-        },
-        {
-            "title":  "NTD (Dominican Republic) - Santo Domingo",
-            "address": "Santo Domingo Antigua Carretera Duarte Km. 17\nBarrio Arenoso\nLos Alcarrizos, Santo Domingo\nRepública Dominicana",
-            "number": "Phone Number: (809) 564 8888",
-            "fax": "Fax Number: (809) 372 4040",
-            "toll": "",
-            "website": "www.ntdingredientes.com",
-            "email": "email: ventas@ntdingredientes.com"          
-        },
-        {
-            "title":  "NTD (Dominican Republic) - Punta Cana",
-            "address": "Naves Industriales 4B, 5, 6, 7\nCiudad Caracolí\nBávaro, Punta Cana\n23000\nRepública Dominicana",
-            "number": "Phone Number: (809) 564 8888 Ext. 302",
-            "fax": "",
-            "toll": "",
-            "website": "www.ntdingredientes.com",
-            "email": "email: ventas@ntdingredientes.com"         
         }
     ],
     "middle_east_and_asia": [
