@@ -69,7 +69,7 @@ export class Footer extends Component {
               <div className='footer-section'>
                 <h2>Location</h2>
                 <p>Embassy Ingredients Ltd</p>
-                <p>5 Intermodal Drive Unit 1-2</p>
+                <p>5 Intermodal Drive</p>
                 <p>Brampton, ON, Canada L6T 5V9</p>
               </div>
               <div className='footer-section'>
@@ -109,7 +109,7 @@ export class Footer extends Component {
             {dropdownIdx === 4 ? (
               <div className='mobile-footer-section'>
                 <p>Embassy Ingredients Ltd</p>
-                <p>5 Intermodal Drive Unit 1-2</p>
+                <p>5 Intermodal Drive</p>
                 <p>Brampton, ON, Canada L6T 5V9</p>
               </div>
             ) : null}

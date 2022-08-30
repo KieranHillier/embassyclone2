@@ -29,7 +29,7 @@ class History extends Component {
                 <div className='history-content-section-left' style={{backgroundImage: `url(${timelineImages[0]})`}}></div>
                 <div className='history-content-section-middle'></div>
                 <div className='history-content-section-right'>
-                  <h1>1971</h1>
+                  <h1>1979</h1>
                   <p>Giannangelo Brambilla founded Embassy Food and Supply Ltd. as a company to service hotels and restaurants in the Toronto, Ontario area.</p>
                 </div>
               </div>
@@ -83,7 +83,7 @@ class History extends Component {
               <div className='history-content-section'>
                 <div className='history-content-section-left-mini'></div>
                 <div className='history-content-section-right-mini'>
-                  <h1>1971</h1>
+                  <h1>1979</h1>
                   <p>Giannangelo Brambilla founded Embassy Food and Supply Ltd. as a company to service hotels and restaurants in the Toronto, Ontario area.</p>
                 </div>
               </div>

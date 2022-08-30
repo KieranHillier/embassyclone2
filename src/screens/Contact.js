@@ -129,7 +129,7 @@ class Contact extends Component {
           </div>
           <div className='contact-info-item'>
             <h2>Head Office</h2>
-            <p>5 Intermodal Drive, Unit 1-2</p>
+            <p>5 Intermodal Drive</p>
             <p>Brampton, Ontario, Canada L6T 5V9</p>
           </div>
           <div className='contact-info-item'>
