@@ -124,9 +124,6 @@ class History extends Component {
               </div>
             </>
           )}
-
-
-
         </div>
       </div>
     );
