@@ -207,9 +207,10 @@
   }
 
   .certification-icons {
-    display: grid;
-    grid-template-columns: repeat(4,auto);
-    grid-gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 350px;
+    gap: 5px
   }
 }
 

@@ -43,7 +43,8 @@ const certificationIcons = [
   require('../images/fixed-footer/halal.png'),
   require('../images/fixed-footer/non-gmo.png'),
   require('../images/fixed-footer/organic.png'),
-  require('../images/fixed-footer/ctpat.png')
+  require('../images/fixed-footer/ctpat.png'),
+  require('../images/fixed-footer/zero-waste.png'),
 ];
 
 const backgroundContent = [
