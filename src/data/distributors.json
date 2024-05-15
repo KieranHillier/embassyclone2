@@ -1,168 +1,138 @@
 {
-    "ontario": [
-        {
-            "title":  "Albion Bakery Supplies",
-            "address": "25 Connell Court\nUnit #8\nToronto, ON\nM8Z 1E8",
-            "number": "Phone Number: (416) 252-4660",
-            "fax": "Fax Number: (416) 252-9993",
-            "toll": "",
-            "website": "www.albionbakerysupplies.ca",
-            "email": ""
-        },
-        {
-            "title":  "BakeMark Canada",
-            "address": "2725 Bristol Circle\nUnit #2\nOakville, ON\nL6H 6X5",
-            "number": "Phone Number: (905) 829-2221",
-            "fax": "Fax Number: (905) 829-9501",
-            "toll": "Toll Free: 1-800-361-4998",
-            "website": "www.yourbakemark.com",
-            "email": null
-        },
-        {
-            "title":  "Bakers & Us",
-            "address": "15 McCulloch Avenue\nUnit #3\nEtobicoke, ON\nM9W 4M5",
-            "number": "Phone Number: (416) 247-7444",
-            "fax": "Fax Number: (416) 247-4700",
-            "toll": null,
-            "website": "www.bakersandus.ca/en",
-            "email": null
-        },
-        {
-            "title":  "Flanagan Foodservice, Inc.",
-            "address": "100 Sasaga Drive\nKitchener, ON\nN2C 2G7",
-            "number": "Phone Number: (519) 748-6878",
-            "fax": "Fax Number: (519) 748-1155",
-            "toll": "Toll Free: 1-800-265-6550",
-            "website": "www.flanagan.ca",
-            "email": ""
-        },
-        {
-            "title":  "Olympic Wholesale Ltd.",
-            "address": "75 Green Court\nAjax, ON\nL1S 6W9",
-            "number": "Phone Number: (905) 426-5188",
-            "fax": "Fax Number: (905) 426-3210",
-            "toll": "Toll Free: 1-800-263-4697",
-            "website": "www.olympicwholesale.ca",
-            "email": ""
-        },
-        {
-            "title":  "Ontario Bakery Supplies Ltd.",
-            "address": "84 Oakdale Road\nDownsview, ON\nM3N 1V9",
-            "number": "Phone Number: (416) 742-6741",
-            "fax": "Fax Number: (416) 742-7811",
-            "toll": "",
-            "website": "",
-            "email": ""
-        }
-    ], 
-    "quebec": [
-        {
-            "title": "BakeMark Canada",
-            "address": "2345 Frances Hughes\nLaval, QC\nH7S 1N5",
-            "number": "Phone Number: (450) 667-3388",
-            "fax": "Fax Number: (450) 667-3342",
-            "toll": "Toll Free: 1-800-361-0758",
-            "website": "www.yourbakemark.com",
-            "email": "email: quebecatlanticsales@bakemarkcanada.com"
-        },       
-        {
-            "title": "Ventes Rudolph Inc.",
-            "address": "4625 Iberville Street\nMontreal, QC\nH2H 2L9",
-            "number": "Phone Number: (514) 596-1998",
-            "fax": "Fax Number: (514) 596-0933",
-            "toll": "Toll Free: 1-800-268-1998",
-            "website": "www.ventesrudolph.com",
-            "email": "email: info@ventesrudolph.com"
-        }      
-    ], 
-    "western": [
-        {
-            "title":  "BakeMark Canada (CGY, AB)",
-            "address": "3202 – 9th Street South East\nCalgary, AB\nT2G 3C3",
-            "number": "Phone Number: (403) 243-5493",
-            "fax": "Fax Number: (403) 287-3762",
-            "toll": "Toll Free: 1-800-661-1248",
-            "website": "www.yourbakemark.com",
-            "email": ""
-        },       
-        {
-            "title":  "BakeMark Canada (EDM, AB)",
-            "address": "10754 – 181 Street\nEdmonton, AB\nT5S 1K8",
-            "number": "Phone Number: (780) 483-2831",
-            "fax": "Fax Number: (780) 489-1394",
-            "toll": "Toll Free: 1-800-363-8234",
-            "website": "www.yourbakemark.com",
-            "email": ""
-        },      
-        {
-            "title":  "BakeMark Canada (BC)",
-            "address": "2480 Viking Way\nRichmond, BC\nV6V 1N2",
-            "number": "Phone Number: (604) 303-1700",
-            "fax": "Fax Number: (604) 270-8002",
-            "toll": "Toll Free: 1-800-665-9441",
-            "website": "www.yourbakemark.com",
-            "email": ""
-        },      
-        {
-            "title":  "BakeMark Canada (MB)",
-            "address": "1000 Alexander Avenue\nWinnipeg, MB\nR3E 3M1",
-            "number": "Phone Number: (204) 774-2424",
-            "fax": "Fax Number: (204) 772-8312",
-            "toll": "Toll Free: 1-800-665-2062",
-            "website": "www.yourbakemark.com",
-            "email": ""
-        },          
-        {
-            "title":  "Snow Cap Enterprises Ltd.",
-            "address": "5698 Trapp Ave.\nBurnaby, BC\nV3N 5G4",
-            "number": "Phone Number: (604) 515-3200",
-            "fax": "Fax Number: (604) 515-3201",
-            "toll": "Toll Free: 1-800-561-2868",
-            "website": "www.snowcap.com",
-            "email": "email: order@snowcap.com"
-        }     
-    ],
-    "mexico": [
-        {
-            "title":  "Lallemand Mexico",
-            "address": "Fundidores s/n Manzana 1, Lote 13\nParque Industrial Xhala\nCuautitlan Izcalli\n54714\nMexico",
-            "number": "Phone Number: +52 (55) 262 05300",
-            "fax": "Fax Number: +52 (55) 262 05124",
-            "toll": "",
-            "website": "www.lallemandmexico.com",
-            "email": ""          
-        }
-    ],
-    "central_america": [
-        {
-            "title":  "EP Market (Panama)",
-            "address": "Terminal Industrial Zona Uno\nGalera 104\nCiudad de Panamá\nPanama",
-            "number": "Phone Number: +507 388 6070 / 6770 1220",
-            "fax": "",
-            "toll": "",
-            "website": "ep-market.com",
-            "email": "email: ventas@ep-market.com"          
-        },
-        {
-            "title":  "Fides (Honduras)",
-            "address": "Proveedora Alimenticia, S. de R.L.\n12 Calle 2 y 3 Avenida, Colonia Buenos Aires,\n200 mts. al este de Ferretería Alfesa\nSan Pedro Sula, Cortés\nHonduras",
-            "number": "Phone Number: +504 2551 7430",
-            "fax": "",
-            "toll": "",
-            "website": "",
-            "email": ""           
-        }
-    ],
-    "middle_east_and_asia": [
-        {
-            "title":  "Interspan Canada Inc.",
-            "address": "231 Millway Ave\nUnit #6\nConcord, ON\nL4K 3W7",
-            "number": "Phone Number: (905) 660-9336",
-            "fax": "Fax Number: (905) 660-9228",
-            "toll": "",
-            "website": "www.interspancanada.com/foods",
-            "email": ""          
-        }
-    ]
+  "ontario": [
+    {
+      "title": "Albion Bakery Supplies",
+      "address": "25 Connell Court\nUnit #8\nToronto, ON\nM8Z 1E8",
+      "number": "Phone Number: (416) 252-4660",
+      "fax": "Fax Number: (416) 252-9993",
+      "toll": "",
+      "website": "www.albionbakerysupplies.ca",
+      "email": ""
+    },
+    {
+      "title": "BakeMark Canada",
+      "address": "2725 Bristol Circle\nUnit #2\nOakville, ON\nL6H 6X5",
+      "number": "Phone Number: (905) 829-2221",
+      "fax": "Fax Number: (905) 829-9501",
+      "toll": "Toll Free: 1-800-361-4998",
+      "website": "www.yourbakemark.com",
+      "email": null
+    },
+    {
+      "title": "Bakers & Us",
+      "address": "15 McCulloch Avenue\nUnit #3\nEtobicoke, ON\nM9W 4M5",
+      "number": "Phone Number: (416) 247-7444",
+      "fax": "Fax Number: (416) 247-4700",
+      "toll": null,
+      "website": "www.bakersandus.ca/en",
+      "email": null
+    },
+    {
+      "title": "Flanagan Foodservice, Inc.",
+      "address": "100 Sasaga Drive\nKitchener, ON\nN2C 2G7",
+      "number": "Phone Number: (519) 748-6878",
+      "fax": "Fax Number: (519) 748-1155",
+      "toll": "Toll Free: 1-800-265-6550",
+      "website": "www.flanagan.ca",
+      "email": ""
+    },
+    {
+      "title": "Olympic Wholesale Ltd.",
+      "address": "75 Green Court\nAjax, ON\nL1S 6W9",
+      "number": "Phone Number: (905) 426-5188",
+      "fax": "Fax Number: (905) 426-3210",
+      "toll": "Toll Free: 1-800-263-4697",
+      "website": "www.olympicwholesale.ca",
+      "email": ""
+    },
+    {
+      "title": "Ontario Bakery Supplies Ltd.",
+      "address": "84 Oakdale Road\nDownsview, ON\nM3N 1V9",
+      "number": "Phone Number: (416) 742-6741",
+      "fax": "Fax Number: (416) 742-7811",
+      "toll": "",
+      "website": "",
+      "email": ""
+    }
+  ],
+  "quebec": [
+    {
+      "title": "BakeMark Canada",
+      "address": "2345 Frances Hughes\nLaval, QC\nH7S 1N5",
+      "number": "Phone Number: (450) 667-3388",
+      "fax": "Fax Number: (450) 667-3342",
+      "toll": "Toll Free: 1-800-361-0758",
+      "website": "www.yourbakemark.com",
+      "email": "email: quebecatlanticsales@bakemarkcanada.com"
+    },
+    {
+      "title": "Ventes Rudolph Inc.",
+      "address": "4625 Iberville Street\nMontreal, QC\nH2H 2L9",
+      "number": "Phone Number: (514) 596-1998",
+      "fax": "Fax Number: (514) 596-0933",
+      "toll": "Toll Free: 1-800-268-1998",
+      "website": "www.ventesrudolph.com",
+      "email": "email: info@ventesrudolph.com"
+    }
+  ],
+  "western": [
+    {
+      "title": "BakeMark Canada (CGY, AB)",
+      "address": "3202 – 9th Street South East\nCalgary, AB\nT2G 3C3",
+      "number": "Phone Number: (403) 243-5493",
+      "fax": "Fax Number: (403) 287-3762",
+      "toll": "Toll Free: 1-800-661-1248",
+      "website": "www.yourbakemark.com",
+      "email": ""
+    },
+    {
+      "title": "BakeMark Canada (EDM, AB)",
+      "address": "10754 – 181 Street\nEdmonton, AB\nT5S 1K8",
+      "number": "Phone Number: (780) 483-2831",
+      "fax": "Fax Number: (780) 489-1394",
+      "toll": "Toll Free: 1-800-363-8234",
+      "website": "www.yourbakemark.com",
+      "email": ""
+    },
+    {
+      "title": "BakeMark Canada (BC)",
+      "address": "2480 Viking Way\nRichmond, BC\nV6V 1N2",
+      "number": "Phone Number: (604) 303-1700",
+      "fax": "Fax Number: (604) 270-8002",
+      "toll": "Toll Free: 1-800-665-9441",
+      "website": "www.yourbakemark.com",
+      "email": ""
+    },
+    {
+      "title": "BakeMark Canada (MB)",
+      "address": "1000 Alexander Avenue\nWinnipeg, MB\nR3E 3M1",
+      "number": "Phone Number: (204) 774-2424",
+      "fax": "Fax Number: (204) 772-8312",
+      "toll": "Toll Free: 1-800-665-2062",
+      "website": "www.yourbakemark.com",
+      "email": ""
+    },
+    {
+      "title": "Snow Cap Enterprises Ltd.",
+      "address": "5698 Trapp Ave.\nBurnaby, BC\nV3N 5G4",
+      "number": "Phone Number: (604) 515-3200",
+      "fax": "Fax Number: (604) 515-3201",
+      "toll": "Toll Free: 1-800-561-2868",
+      "website": "www.snowcap.com",
+      "email": "email: order@snowcap.com"
+    }
+  ],
+  "mexico": [],
+  "central_america": [
+    {
+      "title": "EP Market (Panama)",
+      "address": "Terminal Industrial Zona Uno\nGalera 104\nCiudad de Panamá\nPanama",
+      "number": "Phone Number: +507 388 6070 / 6770 1220",
+      "fax": "",
+      "toll": "",
+      "website": "ep-market.com",
+      "email": "email: ventas@ep-market.com"
+    }
+  ],
+  "middle_east_and_asia": []
 }
-
