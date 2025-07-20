@@ -40,10 +40,11 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   border: 1px solid #cec6c6;
-  background: #FBFBFB;
+  background: #fbfbfb;
 }
 
-.contact-inputfield:focus, .contact-textarea:focus {
+.contact-inputfield:focus,
+.contact-textarea:focus {
   outline: none;
 }
 
@@ -60,7 +61,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   border: 1px solid #cec6c6;
-  background: #FBFBFB;
+  background: #fbfbfb;
   resize: none;
 }
 
@@ -74,6 +75,13 @@
   border-radius: 7px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.contact-textarea-btn.loading {
+  background-color: #999;
+  cursor: not-allowed;
+  opacity: 0.7;
+  pointer-events: none;
 }
 
 .contact-info-container {
@@ -101,11 +109,12 @@
   width: 275px;
 }
 
-.contact-info-item:last-of-type, .contact-info-item:nth-of-type(2) {
+.contact-info-item:last-of-type,
+.contact-info-item:nth-of-type(2) {
   padding-right: 0;
 }
 
-.contact-info-item h2{
+.contact-info-item h2 {
   color: #54b846;
   margin-bottom: 7px;
 }
@@ -114,7 +123,8 @@
   font-family: 'AirbnbBook';
 }
 
-.contact-info-item:nth-of-type(3) p, .contact-info-item:nth-of-type(4) p {
+.contact-info-item:nth-of-type(3) p,
+.contact-info-item:nth-of-type(4) p {
   font-family: 'AirbnbBook';
 }
 
@@ -131,8 +141,7 @@
   width: 30px;
 }
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-
+@media (min-width: 576px) {
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -151,9 +160,9 @@
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .contact-input-container {
-    grid-template-columns: repeat(2,auto);
+    grid-template-columns: repeat(2, auto);
   }
 
   .contact-info-container {
@@ -168,11 +177,10 @@
   .contact-info-item {
     width: unset;
   }
-  
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
   .contact-container {
     max-width: 1200px;
     margin: 0 auto;

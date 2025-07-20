@@ -28,15 +28,6 @@
       "email": null
     },
     {
-      "title": "Flanagan Foodservice, Inc.",
-      "address": "100 Sasaga Drive\nKitchener, ON\nN2C 2G7",
-      "number": "Phone Number: (519) 748-6878",
-      "fax": "Fax Number: (519) 748-1155",
-      "toll": "Toll Free: 1-800-265-6550",
-      "website": "www.flanagan.ca",
-      "email": ""
-    },
-    {
       "title": "Olympic Wholesale Ltd.",
       "address": "75 Green Court\nAjax, ON\nL1S 6W9",
       "number": "Phone Number: (905) 426-5188",
@@ -123,16 +114,6 @@
     }
   ],
   "mexico": [],
-  "central_america": [
-    {
-      "title": "EP Market (Panama)",
-      "address": "Terminal Industrial Zona Uno\nGalera 104\nCiudad de Panamá\nPanama",
-      "number": "Phone Number: +507 388 6070 / 6770 1220",
-      "fax": "",
-      "toll": "",
-      "website": "ep-market.com",
-      "email": "email: ventas@ep-market.com"
-    }
-  ],
+  "central_america": [],
   "middle_east_and_asia": []
 }
