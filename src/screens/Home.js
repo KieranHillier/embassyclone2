@@ -126,7 +126,7 @@ export class Home extends Component {
             <div className="home-promise-text">
               <p>brand promise</p>
               <h2>
-                Tailored Approach - Fanatically Bakery Focused - Customer
+                Tailored Experience - Fanatically Bakery Focused - Customer
                 Obsessed
               </h2>
             </div>
