@@ -84,10 +84,11 @@ export class FixedHeader extends Component {
               <nav className={'header-navigation'}>
                 <ul>
                   <li><Link to="/careers" className={'header-dropdown'} onMouseEnter={() => this._hoverFixedHeader(1)} onMouseLeave={() => this._closeFixedHeader()}>ABOUT</Link>
-                    <ul style={hoveredHeader === 1 ? {display: 'flex'} : {display: 'none'}} onMouseEnter={() => this._hoverFixedHeader(1)} onMouseLeave={() => this._closeFixedHeader()}>     
+                    <ul style={hoveredHeader === 1 ? {display: 'flex'} : {display: 'none'}} onMouseEnter={() => this._hoverFixedHeader(1)} onMouseLeave={() => this._closeFixedHeader()}>
                       <li><Link to="/careers" onClick={() => this._closeFixedHeader()}>Careers</Link></li>
                       <li><Link to="/leadership" onClick={() => this._closeFixedHeader()}>Leadership</Link></li>
                       <li><Link to="/history" onClick={() => this._closeFixedHeader()}>Our History</Link></li>
+                      <li><Link to="/legal" onClick={() => this._closeFixedHeader()}>Legal</Link></li>
                     </ul>
                   </li>
                   <li><Link to="/all-products" className='header-navigation'>PRODUCTS</Link></li>
@@ -114,6 +115,7 @@ export class FixedHeader extends Component {
                   <Link to="/careers" onClick={() => this._closeHamburgerMenu()}>Careers</Link>
                   <Link to="/leadership" onClick={() => this._closeHamburgerMenu()}>Leadership</Link>
                   <Link to="/history" onClick={() => this._closeHamburgerMenu()}>Our History</Link>
+                  <Link to="/legal" onClick={() => this._closeHamburgerMenu()}>Legal</Link>
                 </div>
               </div>
               <div className='mobile-nav-dropdown-header-fixed' onClick={() => this._closeHamburgerMenu()}>

@@ -13,6 +13,7 @@ import Contact from './screens/Contact';
 import NoMatch from './screens/NoMatch';
 import Distributors from './screens/Distributors';
 import Accessibility from './screens/Accessibility';
+import Legal from './screens/Legal';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path='/careers' component={Careers} />
         <Route path='/contact' component={Contact} />
         <Route path='/distributors' component={Distributors} />
+        <Route path='/legal' component={Legal} />
         <Route path='*' component={NoMatch} />
       </Switch>
       <Footer />
