@@ -58,13 +58,15 @@ export class Footer extends Component {
                 <h2>Company</h2>
                 <Link to="/all-products">Products</Link>
                 <Link to="/distributors">Distributors</Link>
+                <Link to="/contact">Contact</Link>
                 <Link to="/accessibility">Accessibility</Link>
               </div>
               <div className="footer-section">
-                <h2>About Us</h2>
+                <h2>About</h2>
                 <Link to="/careers">Careers</Link>
-                <Link to="/leadership">Leadership Team</Link>
+                <Link to="/leadership">Leadership</Link>
                 <Link to="/history">Our History</Link>
+                <Link to="/legal">Legal</Link>
               </div>
               <div className="footer-section">
                 <h2>General Contact</h2>
@@ -98,6 +100,7 @@ export class Footer extends Component {
               <div className="mobile-footer-section">
                 <Link to="/all-products">Products</Link>
                 <Link to="/distributors">Distributors</Link>
+                <Link to="/contact">Contact</Link>
                 <Link to="/accessibility">Accessibility</Link>
               </div>
             ) : null}
@@ -105,13 +108,14 @@ export class Footer extends Component {
               className="mobile-footer-header"
               onClick={() => this._toggleDropdown(2)}
             >
-              About Us
+              About
             </div>
             {dropdownIdx === 2 ? (
               <div className="mobile-footer-section">
                 <Link to="/careers">Careers</Link>
                 <Link to="/leadership">Leadership</Link>
                 <Link to="/history">Our History</Link>
+                <Link to="/legal">Legal</Link>
               </div>
             ) : null}
             <div
@@ -157,7 +161,7 @@ export class Footer extends Component {
         )}
         <div className="bottom-container">
           <div className="bottom-content-container">
-            <p>&#169; Copyright 2024 Embassy Ingredients</p>
+            <p>&#169; Copyright 2026 Embassy Ingredients</p>
             <div className="media-container">
               <a
                 href="https://twitter.com/embassyingrdnts"

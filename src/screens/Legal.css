@@ -68,6 +68,10 @@
   color: var(--primary-color, #54b846);
 }
 
+.signature {
+  padding-bottom: 75px;
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .legal-container {
