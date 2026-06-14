@@ -17,7 +17,7 @@ class Legal extends Component {
 
         <h3 className="legal-subheading color-primary">PURPOSE</h3>
         <p className="legal-paragraph">
-          This annual report for the 2025 financial reporting year has been
+          This annual report for the 2026 financial reporting year has been
           created by Embassy Ingredients Ltd. (
           <strong>"Embassy Ingredients"</strong> or the{' '}
           <strong>"Company"</strong>) for the sole purpose of meeting its
@@ -28,7 +28,7 @@ class Legal extends Component {
           , SC 2023, c 9 (the <strong>"Act"</strong>). The report outlines the
           approach and initiatives taken by Embassy Ingredients to identify and
           address the risks of forced labour and child labour in its business
-          operations and supply chains in the 2025 financial reporting year.
+          operations and supply chains in the 2026 financial reporting year.
         </p>
 
         <h3 className="legal-subheading color-primary">COMPANY COMMITMENT</h3>
@@ -69,13 +69,13 @@ class Legal extends Component {
           Embassy Ingredients sources a range of food products and by-products
           primarily from manufacturers and distributors mainly located in Canada
           and the United States. Additionally, some vendors supplying Embassy
-          Ingredients are based in countries such as India, Brazil, Denmark, and
-          Nepal, providing either food-related goods, technology solutions, or
-          other services to the Company.
+          Ingredients are based in countries such as India, Denmark, Belgium,
+          China, Austria and Nepal, providing either food-related goods,
+          technology solutions, or other services to the Company.
         </p>
 
         <h3 className="legal-subheading color-primary">
-          STEPS TAKEN BY EMBASSY INGREDIENTS IN 2025
+          STEPS TAKEN BY EMBASSY INGREDIENTS IN 2026
         </h3>
         <p className="legal-paragraph">
           To prevent and reduce the risk that forced labour or child labour is
@@ -83,35 +83,27 @@ class Legal extends Component {
           of goods imported into Canada, Embassy Ingredients maintained policies
           that include, but are not limited to, a Policy Manual and prioritized
           working with temporary worker agencies that have strong labour
-          policies in place.
+          policies in place and commenced requiring new vendors to attest to
+          their social responsibility.
         </p>
 
         <h3 className="legal-subheading color-primary">
-          POLICIES AND DUE DILLIGENCE PROCESSES
+          POLICIES AND DUE DILIGENCE PROCESSES
         </h3>
         <p className="legal-paragraph">
           To help prevent and reduce the potential risk that forced labour or
           child labour is used at any step of the production of goods in Canada
           or elsewhere, or of goods imported into Canada, Embassy Ingredients
           implemented and maintained the following policies and due diligence
-          processes in 2025:
+          processes in 2026:
         </p>
 
         <div className="legal-list-item">
           <p className="legal-paragraph">
             <strong>a)</strong> The temporary worker agency engaged by Embassy
-            Ingredients has a New, Young, and Vulnerable Worker Policy in place,
-            which ensures that new, young, and vulnerable workers fully
-            understand their rights and responsibilities by requiring
-            supervisors to provide clear orientation and training. For example,
-            support is adapted for those who face literacy or language barriers
-            by reading materials aloud or offering verbal clarification. Workers
-            are also asked questions to check their understanding, and minors
-            are required to have a parent or guardian present during the
-            registration process, during which the parent/guardian must sign
-            both the Parent Guardian Consent form and the employment agreement.
-            To date, Embassy Ingredients has not hired any minor from the
-            temporary worker agencies it partners with.
+            Ingredients has an Anti-Child &amp; Anti-Forced Labour Policy which
+            enforces a zero tolerance for both Child &amp; Forced labour. Their
+            standards follow Canadian labour laws and Bill S-211.
           </p>
         </div>
 
@@ -134,16 +126,26 @@ class Legal extends Component {
           </p>
         </div>
 
+        <div className="legal-list-item">
+          <p className="legal-paragraph">
+            <strong>d)</strong> As part of the vendor approval process, we
+            require our vendors to submit a Sustainability Questionnaire. Within
+            the questionnaire, the prospective vendor is asked if they comply
+            with local laws including fair wages, working hours &amp; no child
+            or forced labour.
+          </p>
+        </div>
+
         <h3 className="legal-subheading color-primary">
           FORCED LABOUR AND CHILD LABOUR RISKS
         </h3>
         <p className="legal-paragraph">
           Embassy Ingredients has not started the process of identifying the
           risk that child labour and/or forced labour is used in its supply
-          chain. Embassy Ingredients is aware that there may be higher risks
-          associated with certain regions, goods, and industries, and intends to
-          explore options for engaging with the risk identification process in
-          subsequent reporting years.
+          chain outside of the initial questionnaire. Embassy Ingredients is
+          aware that there may be higher risks associated with certain regions,
+          goods, and industries, and intends to explore options for engaging
+          with the risk identification process in subsequent reporting years.
         </p>
 
         <h3 className="legal-subheading color-primary">REMEDIATION MEASURES</h3>
@@ -167,7 +169,7 @@ class Legal extends Component {
           TRAINING PROVIDED TO EMPLOYEES
         </h3>
         <p className="legal-paragraph">
-          In 2025, Embassy Ingredients did not provide training to its employees
+          In 2026, Embassy Ingredients did not provide training to its employees
           on forced labour or child labour. Moving forward, it will be assessing
           what related training may be appropriate.
         </p>
@@ -182,10 +184,11 @@ class Legal extends Component {
           supply chain. However, as outlined above, the policies and procedures
           established by Embassy Ingredients, including the Policy Manual, the
           requirement for age verification with a government-issued piece of
-          identification during onboarding, and the New, Young & Vulnerable
-          Worker policy implemented by the temporary worker agency, help to
-          reduce the risk of child labour and/or forced labour within Embassy
-          Ingredients' activities and supply chain.
+          identification during onboarding, the Anti-Child &amp; Anti-Forced
+          Labour policy implemented by the temporary worker agency and the
+          initial questionnaire to new vendors on their social responsibility,
+          help to reduce the risk of child labour and/or forced labour within
+          Embassy Ingredients' activities and supply chain.
         </p>
 
         <h3 className="legal-subheading color-primary">
