@@ -69,7 +69,37 @@
 }
 
 .signature {
+  padding-bottom: 40px;
+}
+
+/* Signature Blocks */
+
+.legal-signature-block {
+  text-align: left;
+  min-width: 280px;
+  max-width: 400px;
   padding-bottom: 75px;
+}
+
+.legal-signature-name {
+  font-family: 'Brush Script MT', 'Great Vibes', 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  margin-bottom: 0.1rem;
+  color: #333;
+}
+
+.legal-signature-line {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 0 0 0.75rem 0;
+  width: 100%;
+}
+
+.legal-signature-typed {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+  color: #333;
 }
 
 /* Medium devices (tablets, 768px and up) */

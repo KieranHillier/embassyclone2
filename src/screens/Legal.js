@@ -203,6 +203,18 @@ class Legal extends Component {
           material respects for the purposes of the Act, for the reporting year
           listed above.
         </p>
+
+        <div className="legal-signature-block">
+          <p className="legal-signature-name">"Martino Brambilla"</p>
+          <hr className="legal-signature-line" />
+          <p className="legal-signature-typed">Martino Brambilla</p>
+          <p className="legal-signature-typed">President,</p>
+          <p className="legal-signature-typed">Embassy Ingredients Ltd.</p>
+          <p className="legal-signature-typed">January 22, 2026</p>
+          <p className="legal-signature-typed">
+            I have authority to bind Embassy Ingredients Ltd.
+          </p>
+        </div>
       </div>
     )
   }
