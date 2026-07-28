@@ -39,7 +39,7 @@ const certificationIcons = [
   require('../images/fixed-footer/brc2.png'),
   require('../images/fixed-footer/cor1.png'),
   require('../images/fixed-footer/peanut1.png'),
-  require('../images/fixed-footer/gluten-free1.png'),
+  require('../images/fixed-footer/gluten-free2.png'),
   require('../images/fixed-footer/halal.png'),
   require('../images/fixed-footer/non-gmo.png'),
   require('../images/fixed-footer/organic.png'),
